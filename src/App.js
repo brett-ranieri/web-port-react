@@ -7,8 +7,13 @@ function App() {
 	return (
 		// <FullPageScroll />
 		<div>
+			<img
+				src='https://placehold.co/800x300'
+				alt='placeholder'
+				className='w-full h-[400px] object-cover'
+			/>
 			<ProjectPage />
-			<AboutPage />
+			{/* <AboutPage /> */}
 		</div>
 	);
 }
