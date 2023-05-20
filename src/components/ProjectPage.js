@@ -16,7 +16,7 @@ const ProjectPage = () => {
 
 	return (
 		<div>
-			<h1>Howdy, I'm the Project Page</h1>
+			<h1 className='text-4xl font-bold text-gray-900'>Howdy, I'm the Project Page</h1>
 			<div className='relative flex items-center'>
 				<MdChevronLeft
 					className='opacity-50 cursor-point hover:opacity-100'
