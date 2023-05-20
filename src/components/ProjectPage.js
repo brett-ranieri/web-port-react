@@ -25,7 +25,7 @@ const ProjectPage = () => {
 				/>
 				<div
 					id='slider'
-					className='w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll smooth'
+					className='w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll smooth scrollbar-hide'
 				>
 					{data.map((project) => (
 						<ProjectCard
