@@ -6,12 +6,12 @@ import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 const ProjectPage = () => {
 	const slideLeft = () => {
 		const slider = document.getElementById("slider");
-		slider.scrollLeft = slider.scrollLeft - 700;
+		slider.scrollLeft = slider.scrollLeft - 400;
 	};
 
 	const slideRight = () => {
 		const slider = document.getElementById("slider");
-		slider.scrollLeft = slider.scrollLeft + 700;
+		slider.scrollLeft = slider.scrollLeft + 400;
 	};
 
 	return (
