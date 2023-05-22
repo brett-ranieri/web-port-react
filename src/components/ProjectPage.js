@@ -4,13 +4,13 @@ import { data } from "../projectData";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 
 const ProjectPage = () => {
-	const slider = document.getElementById("slider");
-
 	const slideLeft = () => {
+		const slider = document.getElementById("slider");
 		slider.scrollLeft = slider.scrollLeft - 700;
 	};
 
 	const slideRight = () => {
+		const slider = document.getElementById("slider");
 		slider.scrollLeft = slider.scrollLeft + 700;
 	};
 
