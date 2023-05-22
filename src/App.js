@@ -1,6 +1,7 @@
-import FullPageScroll from "./components/FullPageScroll";
+// import FullPageScroll from "./components/FullPageScroll";
 import AboutPage from "./components/AboutPage";
 import ProjectPage from "./components/ProjectPage";
+import ContactPage from "./components/ContactPage";
 import "./App.css";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
 			/>
 			<ProjectPage />
 			<AboutPage />
+			<ContactPage />
 		</div>
 	);
 }
