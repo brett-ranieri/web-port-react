@@ -28,18 +28,22 @@
 	color: #61dafb;
 }
 
-.project {
-	background-color: #f5b041;
+.main-view-comp {
 	height: 100vh;
 	width: 100%;
 	position: relative;
 }
 
-.card {
+.project {
+	background-color: #f5b041;
+}
+
+.about {
 	background-color: grey;
-	width: 400px;
-	height: 400px;
-	margin: 10px auto;
+}
+
+.contact {
+	background-color: mediumturquoise;
 }
 
 @keyframes App-logo-spin {

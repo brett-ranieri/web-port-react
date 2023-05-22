@@ -15,7 +15,7 @@ const ProjectPage = () => {
 	};
 
 	return (
-		<div>
+		<div className='project main-view-comp'>
 			<h1 className='text-4xl font-bold text-gray-900'>Howdy, I'm the Project Page</h1>
 			<div className='relative flex items-center'>
 				<MdChevronLeft

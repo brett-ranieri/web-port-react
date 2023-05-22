@@ -10,10 +10,10 @@ function App() {
 			<img
 				src='https://placehold.co/800x300'
 				alt='placeholder'
-				className='w-full h-[400px] object-cover'
+				className='w-full h-[100vh] object-cover'
 			/>
 			<ProjectPage />
-			{/* <AboutPage /> */}
+			<AboutPage />
 		</div>
 	);
 }
