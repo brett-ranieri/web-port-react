@@ -16,6 +16,8 @@ const ProjectView = () => {
 		slider.scrollLeft = slider.scrollLeft + 400;
 	};
 
+	const viewData = data.slice(0, 4);
+
 	return (
 		<div className='project main-view-comp'>
 			<h1 className='text-4xl font-bold text-gray-900'>Howdy, I'm the Project Page</h1>
@@ -29,7 +31,7 @@ const ProjectView = () => {
 					id='slider'
 					className='w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll smooth scrollbar-hide'
 				>
-					{data.map((project) => (
+					{viewData.map((project) => (
 						<ProjectCard
 							project={project}
 							key={project.number}
@@ -42,7 +44,7 @@ const ProjectView = () => {
 					size={40}
 				/>
 			</div>
-			<div className='btn-container btn-style'>
+			<div className='flex-container btn-style'>
 				<Button
 					variant='gradient'
 					size='md'
