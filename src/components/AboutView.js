@@ -1,6 +1,6 @@
 import React from "react";
 
-const AboutPage = () => {
+const AboutView = () => {
 	return (
 		<div className='about main-view-comp'>
 			<h1>I'm the About Page</h1>
@@ -9,4 +9,4 @@ const AboutPage = () => {
 	);
 };
 
-export default AboutPage;
+export default AboutView;

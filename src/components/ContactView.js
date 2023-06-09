@@ -1,6 +1,6 @@
 import React from "react";
 
-const ContactPage = () => {
+const ContactView = () => {
 	return (
 		<div className='contact main-view-comp'>
 			<h1>I'm the Contact Page</h1>
@@ -14,4 +14,4 @@ const ContactPage = () => {
 	);
 };
 
-export default ContactPage;
+export default ContactView;

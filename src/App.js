@@ -1,7 +1,7 @@
 // import FullPageScroll from "./components/FullPageScroll";
-import AboutPage from "./components/AboutPage";
-import ProjectPage from "./components/ProjectPage";
-import ContactPage from "./components/ContactPage";
+import AboutView from "./components/AboutView";
+import ProjectView from "./components/ProjectView";
+import ContactView from "./components/ContactView";
 import { useRef } from "react";
 import "./App.css";
 import NavBar from "./components/NavBar";
@@ -35,13 +35,13 @@ function App() {
 				className='w-full h-[100vh] object-cover'
 			/>
 			<div ref={projects}>
-				<ProjectPage />
+				<ProjectView />
 			</div>
 			<div ref={about}>
-				<AboutPage />
+				<AboutView />
 			</div>
 			<div ref={contact}>
-				<ContactPage />
+				<ContactView />
 			</div>
 			<ScrollToTop />
 		</div>

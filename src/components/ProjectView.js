@@ -3,7 +3,7 @@ import ProjectCard from "./ProjectCard";
 import { data } from "../projectData";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 
-const ProjectPage = () => {
+const ProjectView = () => {
 	const slideLeft = () => {
 		const slider = document.getElementById("slider");
 		slider.scrollLeft = slider.scrollLeft - 400;
@@ -44,4 +44,4 @@ const ProjectPage = () => {
 	);
 };
 
-export default ProjectPage;
+export default ProjectView;
