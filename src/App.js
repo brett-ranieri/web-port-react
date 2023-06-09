@@ -6,6 +6,8 @@ import { useRef } from "react";
 import "./App.css";
 import NavBar from "./components/NavBar";
 import ScrollToTop from "./components/ScrollToTop";
+import { BrowserRouter, Routes, Route, Navigate, Link } from "react-router-dom";
+import ProjectsPage from "./components/ProjectsPage";
 
 function App() {
 	const projects = useRef(null);
@@ -22,29 +24,46 @@ function App() {
 
 	return (
 		// <FullPageScroll />
-		<div>
-			<NavBar
-				scrollToSection={scrollToSection}
-				projects={projects}
-				about={about}
-				contact={contact}
-			/>
-			<img
-				src='https://placehold.co/800x300'
-				alt='placeholder'
-				className='w-full h-[100vh] object-cover'
-			/>
-			<div ref={projects}>
-				<ProjectView />
-			</div>
-			<div ref={about}>
-				<AboutView />
-			</div>
-			<div ref={contact}>
-				<ContactView />
-			</div>
-			<ScrollToTop />
-		</div>
+		<BrowserRouter>
+			<Routes>
+				<Route
+					path='/'
+					element={
+						<div>
+							<NavBar
+								scrollToSection={scrollToSection}
+								projects={projects}
+								about={about}
+								contact={contact}
+							/>
+							<img
+								src='https://placehold.co/800x300'
+								alt='placeholder'
+								className='w-full h-[100vh] object-cover'
+							/>
+							<div ref={projects}>
+								<ProjectView />
+							</div>
+							<div ref={about}>
+								<AboutView />
+							</div>
+							<div ref={contact}>
+								<ContactView />
+							</div>
+							<ScrollToTop />
+						</div>
+					}
+				/>
+				<Route
+					path='/projects'
+					element={
+						<div>
+							<ProjectsPage />
+						</div>
+					}
+				/>
+			</Routes>
+		</BrowserRouter>
 	);
 }
 

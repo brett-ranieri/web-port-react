@@ -2,6 +2,8 @@ import React from "react";
 import ProjectCard from "./ProjectCard";
 import { data } from "../projectData";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
+import { Link } from "react-router-dom";
+import { Button } from "@material-tailwind/react";
 
 const ProjectView = () => {
 	const slideLeft = () => {
@@ -39,6 +41,14 @@ const ProjectView = () => {
 					onClick={slideRight}
 					size={40}
 				/>
+			</div>
+			<div className='btn-container btn-style'>
+				<Button
+					variant='gradient'
+					size='md'
+				>
+					<Link to='/projects'>See all Projects</Link>
+				</Button>
 			</div>
 		</div>
 	);

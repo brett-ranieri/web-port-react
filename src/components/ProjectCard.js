@@ -10,7 +10,7 @@ const ProjectCard = ({ project }) => {
 				src='https://placehold.co/300x150'
 				alt='placeholder'
 			/>
-			<p className='whitespace-normal'>{project.description}</p>
+			<p className='whitespace-normal'>{project.shortDescription}</p>
 		</div>
 	);
 };
