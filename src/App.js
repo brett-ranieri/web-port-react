@@ -5,6 +5,7 @@ import ContactPage from "./components/ContactPage";
 import { useRef } from "react";
 import "./App.css";
 import NavBar from "./components/NavBar";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
 	const projects = useRef(null);
@@ -42,6 +43,7 @@ function App() {
 			<div ref={contact}>
 				<ContactPage />
 			</div>
+			<ScrollToTop />
 		</div>
 	);
 }
