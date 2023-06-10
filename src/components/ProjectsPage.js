@@ -1,5 +1,5 @@
 import React from "react";
-import ProjectCard from "./ProjectCard";
+import ProjectPageCard from "./ProjectPageCard";
 import { data } from "../projectData";
 import { Link } from "react-router-dom";
 import { Button } from "@material-tailwind/react";
@@ -16,12 +16,15 @@ const ProjectsPage = () => {
 
 	return (
 		<div>
+			<div className='flex-container btn-style'>
+				<Link to='/'>Back to Main</Link>
+			</div>
 			<h1 className='text-4xl font-bold text-gray-900'>Howdy, I'm the Project Page</h1>
 			{/* <Button onClick={handleState}>Set State</Button>
 			<Button onClick={logState}>Log State</Button> */}
 			<div className='flex-container'>
 				{data.map((project) => (
-					<ProjectCard
+					<ProjectPageCard
 						project={project}
 						key={project.number}
 					/>

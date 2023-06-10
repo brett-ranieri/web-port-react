@@ -82,3 +82,8 @@
 	margin-top: 3em;
 	margin-bottom: 1em;
 }
+
+.proj-page-card {
+	width: 80vw;
+	height: 600px;
+}
