@@ -2,17 +2,34 @@
 import AboutView from "./components/AboutView";
 import ProjectView from "./components/ProjectView";
 import ContactView from "./components/ContactView";
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import "./App.css";
 import NavBar from "./components/NavBar";
 import ScrollToTop from "./components/ScrollToTop";
 import { BrowserRouter, Routes, Route, Navigate, Link } from "react-router-dom";
 import ProjectsPage from "./components/ProjectsPage";
+// import { Button } from "@material-tailwind/react";
 
 function App() {
 	const projects = useRef(null);
 	const about = useRef(null);
 	const contact = useRef(null);
+
+	////////////////////State for Project View////////////////////////
+	// let [mainView, setMainView] = useState(false);
+
+	// 	useEffect(() => {
+	// 		setMainView(false);
+	// 		console.log("used");
+	// 	});
+
+	// 	function handleState() {
+	// 		setMainView(true);
+	// 	}
+
+	// 	function logState() {
+	// 		console.log(mainView);
+	// 	}
 
 	const scrollToSection = (elementRef) => {
 		window.scrollTo({
@@ -35,6 +52,7 @@ function App() {
 								about={about}
 								contact={contact}
 							/>
+							{/* <Button onClick={logState}>Log State</Button> */}
 							<img
 								src='https://placehold.co/800x300'
 								alt='placeholder'
@@ -57,7 +75,10 @@ function App() {
 					path='/projects'
 					element={
 						<div>
-							<ProjectsPage />
+							<ProjectsPage
+							// handleState={handleState}
+							// mainView={mainView}
+							/>
 						</div>
 					}
 				/>
