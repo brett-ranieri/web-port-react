@@ -45,12 +45,12 @@ const ProjectView = () => {
 				/>
 			</div>
 			<div className='flex-container btn-style'>
-				<Button
-					variant='gradient'
-					size='md'
+				<Link
+					className='link-btn'
+					to='/projects'
 				>
-					<Link to='/projects'>See all Projects</Link>
-				</Button>
+					See all Projects
+				</Link>
 			</div>
 		</div>
 	);

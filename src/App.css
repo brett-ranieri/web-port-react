@@ -87,3 +87,24 @@
 	width: 80vw;
 	height: 600px;
 }
+
+.link-btn {
+	width: 160px;
+	height: 40px;
+	line-height: 40px;
+	padding: 12 24;
+	background-color: rgb(82, 211, 168);
+	border-radius: 15px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.proj-btn-container {
+	position: fixed;
+	background-color: antiquewhite;
+	padding: 1em;
+	width: 100%;
+}
+.proj-container {
+	padding-top: 90px;
+}

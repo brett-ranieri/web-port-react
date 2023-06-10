@@ -16,27 +16,27 @@ const ProjectsPage = () => {
 
 	return (
 		<div>
-			<div className='flex-container btn-style'>
-				<Link to='/'>Back to Main</Link>
-			</div>
-			<h1 className='text-4xl font-bold text-gray-900'>Howdy, I'm the Project Page</h1>
-			{/* <Button onClick={handleState}>Set State</Button>
-			<Button onClick={logState}>Log State</Button> */}
-			<div className='flex-container'>
-				{data.map((project) => (
-					<ProjectPageCard
-						project={project}
-						key={project.number}
-					/>
-				))}
-			</div>
-			<div className='flex-container btn-style'>
-				<Button
-					variant='gradient'
-					size='md'
+			<div className='flex-container proj-btn-container'>
+				<Link
+					className='link-btn'
+					to='/'
 				>
-					<Link to='/'>Back to Main</Link>
-				</Button>
+					Back to Main
+				</Link>
+			</div>
+
+			<div className='proj-container'>
+				<h1 className='text-4xl font-bold text-gray-900'>Howdy, I'm the Project Page</h1>
+				{/* <Button onClick={handleState}>Set State</Button>
+			<Button onClick={logState}>Log State</Button> */}
+				<div className='flex-container'>
+					{data.map((project) => (
+						<ProjectPageCard
+							project={project}
+							key={project.number}
+						/>
+					))}
+				</div>
 			</div>
 		</div>
 	);
