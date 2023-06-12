@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ScrollToTop from "./ScrollToTop";
+import { images } from "../projectImages";
 // import { useEffect } from "react";
 
 const PictureGallery = () => {
@@ -31,7 +32,16 @@ const PictureGallery = () => {
 
 			<div className='about-container'>
 				<h1 className='text-4xl font-bold text-gray-900'>Look at me! I'm the Picture Gallery!</h1>
-				<div>I'm a div that will contain lots of pictures</div>
+				<div>
+					{images.map((content) => (
+						<div>
+							<img
+								src={content.image}
+								alt={content.id}
+							/>
+						</div>
+					))}
+				</div>
 				<ScrollToTop />
 			</div>
 		</div>
