@@ -2,6 +2,7 @@ import React from "react";
 import ProjectPageCard from "./ProjectPageCard";
 import { data } from "../projectData";
 import { Link } from "react-router-dom";
+import ScrollToTop from "./ScrollToTop";
 import { Button } from "@material-tailwind/react";
 // import { useEffect } from "react";
 
@@ -37,6 +38,7 @@ const ProjectsPage = () => {
 						/>
 					))}
 				</div>
+				<ScrollToTop />
 			</div>
 		</div>
 	);
