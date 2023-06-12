@@ -8,6 +8,7 @@ import NavBar from "./components/NavBar";
 import ScrollToTop from "./components/ScrollToTop";
 import { BrowserRouter, Routes, Route, Navigate, Link } from "react-router-dom";
 import ProjectsPage from "./components/ProjectsPage";
+import AboutPage from "./components/AboutPage";
 // import { Button } from "@material-tailwind/react";
 
 function App() {
@@ -76,6 +77,17 @@ function App() {
 					element={
 						<div>
 							<ProjectsPage
+							// handleState={handleState}
+							// mainView={mainView}
+							/>
+						</div>
+					}
+				/>
+				<Route
+					path='/about'
+					element={
+						<div>
+							<AboutPage
 							// handleState={handleState}
 							// mainView={mainView}
 							/>

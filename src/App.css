@@ -105,6 +105,7 @@
 	padding: 1em;
 	width: 100%;
 }
-.proj-container {
+.proj-container,
+.about-container {
 	padding-top: 90px;
 }
