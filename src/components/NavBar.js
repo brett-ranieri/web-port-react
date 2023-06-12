@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Navbar, MobileNav, Typography, Button, IconButton } from "@material-tailwind/react";
+import { Navbar, Collapse, Typography, Button, IconButton } from "@material-tailwind/react";
 
 export default function NavBar({ scrollToSection, projects, about, contact }) {
 	const [openNav, setOpenNav] = useState(false);
@@ -120,19 +120,48 @@ export default function NavBar({ scrollToSection, projects, about, contact }) {
 					)}
 				</IconButton>
 			</div>
-			<MobileNav open={openNav}>
+			<Collapse open={openNav}>
 				<div className='container mx-auto'>
-					{navList}
 					<Button
 						variant='gradient'
 						size='sm'
-						fullWidth
 						className='mb-2'
+						onClick={() => {
+							scrollToSection(projects);
+						}}
 					>
-						<span>Buy Now</span>
+						Projects
+					</Button>
+					<Button
+						variant='gradient'
+						size='sm'
+						className='mb-2 ml-2'
+						onClick={() => {
+							scrollToSection(about);
+						}}
+					>
+						About
+					</Button>
+					<Button
+						variant='gradient'
+						size='sm'
+						className='mb-2 ml-2'
+						onClick={() => {
+							scrollToSection(contact);
+						}}
+					>
+						Contact
+					</Button>
+					<Button
+						variant='gradient'
+						size='sm'
+						className='mb-2 ml-2'
+						onClick={() => {}}
+					>
+						Give Me Some Nature!
 					</Button>
 				</div>
-			</MobileNav>
+			</Collapse>
 		</Navbar>
 	);
 }
