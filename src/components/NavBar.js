@@ -3,11 +3,52 @@ import { Navbar, Collapse, Typography, Button, IconButton } from "@material-tail
 
 export default function NavBar({ scrollToSection, projects, about, contact }) {
 	const [openNav, setOpenNav] = useState(false);
+	const [previousChoosen, setPreviousChoosen] = useState("");
+	const [needChoosen, setNeedChoosen] = useState(false);
 
 	useEffect(() => {
 		window.addEventListener("resize", () => window.innerWidth >= 960 && setOpenNav(false));
 	}, []);
 
+	useEffect(() => {
+		console.log("choice made");
+		returnPicture(previousChoosen);
+	}, [previousChoosen]);
+
+	useEffect(() => {
+		if (needChoosen) {
+			console.log("still needed");
+			console.log(previousChoosen);
+			getPicture();
+			setNeedChoosen(false);
+		} else {
+		}
+	}, [needChoosen]);
+
+	const naturePictures = [254, 443, 567, 889];
+
+	function randomPicture() {
+		console.log("rando");
+		const pictures = naturePictures;
+		let previous = previousChoosen;
+		let choosen = pictures[Math.floor(Math.random() * pictures.length)];
+		if (choosen === previous) {
+			setNeedChoosen(true);
+		} else {
+			setNeedChoosen(false);
+			setPreviousChoosen(choosen);
+		}
+	}
+
+	function getPicture() {
+		console.log("get");
+		randomPicture();
+	}
+
+	function returnPicture(picture) {
+		console.log("im returned ", picture);
+		return picture;
+	}
 	const navList = (
 		<ul className='mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6'>
 			<Typography
@@ -79,6 +120,7 @@ export default function NavBar({ scrollToSection, projects, about, contact }) {
 					variant='gradient'
 					size='sm'
 					className='hidden lg:inline-block'
+					onClick={() => getPicture()}
 				>
 					<span>Give me some nature!</span>
 				</Button>
