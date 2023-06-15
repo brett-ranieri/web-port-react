@@ -11,11 +11,13 @@ import ProjectsPage from "./components/ProjectsPage";
 import AboutPage from "./components/AboutPage";
 import PictureGallery from "./components/PictureGallery";
 // import { Button } from "@material-tailwind/react";
+import Modal from "./components/Modal";
 
 function App() {
 	const projects = useRef(null);
 	const about = useRef(null);
 	const contact = useRef(null);
+	const [showModal, setShowModal] = useState(false);
 
 	////////////////////State for Project View////////////////////////
 	// let [mainView, setMainView] = useState(false);
@@ -53,8 +55,15 @@ function App() {
 								projects={projects}
 								about={about}
 								contact={contact}
+								onOpen={() => setShowModal(true)}
 							/>
-							{/* <Button onClick={logState}>Log State</Button> */}
+							<Modal
+								isVisible={showModal}
+								onClose={() => {
+									setShowModal(false);
+								}}
+							/>
+							{/* <button onClick={() => setShowModal(true)}>Modal Test</button> */}
 							<img
 								src='https://placehold.co/800x300'
 								alt='placeholder'

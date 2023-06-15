@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Navbar, Collapse, Typography, Button, IconButton } from "@material-tailwind/react";
 
-export default function NavBar({ scrollToSection, projects, about, contact }) {
+export default function NavBar({ scrollToSection, projects, about, contact, onOpen }) {
 	const [openNav, setOpenNav] = useState(false);
 
 	useEffect(() => {
@@ -211,7 +211,7 @@ export default function NavBar({ scrollToSection, projects, about, contact }) {
 					variant='gradient'
 					size='sm'
 					className='hidden lg:inline-block'
-					onClick={() => getPicture()}
+					onClick={() => onOpen()}
 				>
 					<span>Give me some nature!</span>
 				</Button>
@@ -313,7 +313,7 @@ export default function NavBar({ scrollToSection, projects, about, contact }) {
 						variant='gradient'
 						size='sm'
 						className='mb-2 ml-2'
-						onClick={() => {}}
+						onClick={() => onOpen()}
 					>
 						Give Me Some Nature!
 					</Button>

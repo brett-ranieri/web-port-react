@@ -52,3 +52,38 @@ export const images = [
 		image: "./img/img13.jpg",
 	},
 ];
+
+export const natureImages = [
+	{
+		id: 1,
+		image: "./img/img1.jpg",
+	},
+	{
+		id: 2,
+		image: "./img/img2.jpg",
+	},
+	{
+		id: 3,
+		image: "./img/img3.jpg",
+	},
+	{
+		id: 4,
+		image: "./img/img4.jpg",
+	},
+	{
+		id: 5,
+		image: "./img/img5.jpg",
+	},
+
+	{ id: 9, image: "./img/img9.jpg" },
+	{
+		id: 13,
+		image: "./img/img13.jpg",
+	},
+];
+
+export const startImage = { image: "./img/img14.jpg" };
+
+export const endImage = { image: "./img/img15.jpg" };
+
+export const againImage = { image: "./img/img16.jpg" };
