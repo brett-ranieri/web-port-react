@@ -62,8 +62,8 @@
 }
 
 .scroll-btn-style {
-	height: 40px;
-	width: 40px;
+	height: 80px;
+	width: 80px;
 	border-radius: 50%;
 	border: 2px solid #000;
 	background-color: #fff;
@@ -112,4 +112,35 @@
 .proj-container,
 .about-container {
 	padding-top: 90px;
+}
+
+.modal-btn-style {
+	height: auto;
+	width: auto;
+	border-radius: 15px;
+	border: 3px solid #fece7a;
+	background-color: #2f341a;
+	color: #fece7a;
+	cursor: pointer;
+}
+
+.modal-btn-style:hover {
+	border: 3px solid #2f341a;
+	background-color: #fece7a;
+	color: #2f341a;
+}
+
+.footsteps,
+.tent {
+	width: 70px;
+	height: 70px;
+}
+
+.modal-container {
+	background-color: #5f6935;
+	color: #fece7a;
+}
+
+.nature-img {
+	box-shadow: 0 10px 40px -8px #cba461;
 }
