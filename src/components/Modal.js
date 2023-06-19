@@ -73,21 +73,21 @@ const Modal = ({ isVisible, onClose }) => {
 			>
 				<div className='w-[60vw] flex flex-col modal-container rounded'>
 					<div className='p-2 rounded'>
-						<h3 className='text-xl font-semibold mb-2'>That's all there is to see!</h3>
+						<h3 className='text-xl font-semibold mb-2 modal-text'>That's all there is to see!</h3>
 						<div className='flex justify-center items-center p-2'>
 							<img
 								src={content.image}
 								alt={content.alt}
-								className='h-[45vh] rounded shadow-2xl'
+								className='h-[45vh] rounded nature-img'
 							/>
 						</div>
-						<p className='p-2'>{content.blurb}</p>
+						<p className='p-2 modal-text'>{content.blurb}</p>
 						<div className='flex flex-row justify-center p-2'>
 							<button
 								className='modal-btn-style flex justify-center items-center p-2 shadow hover:shadow-2xl'
 								onClick={handleReset}
 							>
-								Let's head back to camp! <GiCampingTent className='footsteps place-self-end' />
+								Let's head back to camp! <GiCampingTent className='btn-icon place-self-end' />
 							</button>
 						</div>
 					</div>
@@ -104,17 +104,17 @@ const Modal = ({ isVisible, onClose }) => {
 			>
 				<div className='w-[85vw] flex flex-col modal-container rounded'>
 					<div className='p-2 rounded'>
-						<h3 className='text-xl font-semibold text-grat-900 mb-2'>
+						<h3 className='text-xl font-semibold text-grat-900 mb-2 modal-text'>
 							WOAH, didn't see you there!
 						</h3>
 						<div className='flex justify-center items-center p-2'>
 							<img
 								src={content.image}
 								alt={content.alt}
-								className='h-[50vh] rounded'
+								className='h-[50vh] rounded nature-img'
 							/>
 						</div>
-						<p className='p-2'>
+						<p className='p-2 modal-text'>
 							Snuck right up on us...we didn't expect you back here. You're welcome to take another
 							hike, but you're not going to see anything new.
 							<br />
@@ -131,13 +131,13 @@ const Modal = ({ isVisible, onClose }) => {
 								className='modal-btn-style flex justify-center items-center p-2'
 								onClick={onClose}
 							>
-								Maybe I'll stay at camp... <GiCampingTent className='footsteps place-self-end' />
+								Maybe I'll stay at camp... <GiCampingTent className='btn-icon place-self-end' />
 							</button>
 							<button
 								className='modal-btn-style flex justify-center items-center p-2'
 								onClick={getPicture}
 							>
-								Another Hike Please! <GiFootsteps className='footsteps place-self-end' />
+								Another Hike Please! <GiFootsteps className='btn-icon place-self-end' />
 							</button>
 						</div>
 					</div>
@@ -155,18 +155,19 @@ const Modal = ({ isVisible, onClose }) => {
 				>
 					<div className='w-[85vw] flex flex-col modal-container rounded'>
 						<div className='p-2 rounded'>
-							<h3 className='text-xl font-semibold text-grat-900 mb-2'>
-								I hear you're looking for some nature...
+							<h3 className='text-xl font-semibold text-grat-900 mb-2 modal-text'>
+								Looking for some nature?
 							</h3>
 							<div className='flex justify-center items-center p-2'>
 								<img
 									src={content.image}
 									alt={content.alt}
-									className='h-[50vh] rounded shadow-2xl'
+									className='h-[50vh] rounded nature-img'
 								/>
 							</div>
-							<div className='flex flex-row justify-normal p-2'>
-								<p>
+							<div className='flex flex-col justify-normal p-2'>
+								<h4 className='text-l font-semibold modal-text'>Well you're in the right place!</h4>
+								<p className='modal-text'>
 									My wife and I went on a camping trip to Rocky Mountain National Park and let me
 									tell you, it was <span className='text-lg font-bold'>GORGEOUS!</span> If you feel
 									like taking a virtual hike and seeing some of the beauty just press on the
@@ -179,13 +180,13 @@ const Modal = ({ isVisible, onClose }) => {
 									className='modal-btn-style flex justify-center items-center p-2'
 									onClick={onClose}
 								>
-									Nah, I'm gonna stay at camp <GiCampingTent className='footsteps' />
+									Nah, I'm gonna stay at camp <GiCampingTent className='btn-icon' />
 								</button>
 								<button
 									className='modal-btn-style flex justify-center items-center p-2'
 									onClick={handleFirstClick}
 								>
-									Let's Go! <GiFootsteps className='footsteps' />
+									Let's Go! <GiFootsteps className='btn-icon' />
 								</button>
 							</div>
 						</div>
@@ -199,7 +200,9 @@ const Modal = ({ isVisible, onClose }) => {
 				>
 					<div className='w-auto flex flex-col modal-container rounded'>
 						<div className='p-2 rounded'>
-							<h3 className='text-xl font-semibold text-grat-900 mb-2'>We're on an ADVENTURE!</h3>
+							<h3 className='text-xl font-semibold text-grat-900 mb-2 modal-text'>
+								We're on an ADVENTURE!
+							</h3>
 							<div className='flex justify-center items-center p-2'>
 								<img
 									src={content.image}
@@ -208,20 +211,20 @@ const Modal = ({ isVisible, onClose }) => {
 								/>
 							</div>
 							<div className='flex flex-row justify-normal p-2'>
-								<p>{content.blurb}</p>
+								<p className='modal-text'>{content.blurb}</p>
 							</div>
 							<div className='flex flex-row justify-around p-3'>
 								<button
 									className='modal-btn-style flex justify-center items-center p-2'
 									onClick={onClose}
 								>
-									<GiCampingTent className='tent' />
+									<GiCampingTent className='btn-icon' />
 								</button>
 								<button
 									className='modal-btn-style flex justify-center items-center p-2'
 									onClick={getPicture}
 								>
-									<GiFootsteps className='footsteps' />
+									<GiFootsteps className='btn-icon' />
 								</button>
 							</div>
 						</div>

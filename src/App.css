@@ -114,7 +114,8 @@
 	padding-top: 90px;
 }
 
-.modal-btn-style {
+.modal-btn-style,
+.nature-btn {
 	height: auto;
 	width: auto;
 	border-radius: 15px;
@@ -122,25 +123,38 @@
 	background-color: #2f341a;
 	color: #fece7a;
 	cursor: pointer;
+	box-shadow: 5px 5px 8px #2f341a;
 }
 
-.modal-btn-style:hover {
+.modal-btn-style:hover,
+.nature-btn:hover {
 	border: 3px solid #2f341a;
 	background-color: #fece7a;
 	color: #2f341a;
+	box-shadow: -5px 5px 8px #2f341a;
 }
 
-.footsteps,
-.tent {
+.btn-icon {
 	width: 70px;
 	height: 70px;
+}
+
+.menu-btn-icon {
+	width: 20px;
+	height: 20px;
 }
 
 .modal-container {
 	background-color: #5f6935;
 	color: #fece7a;
+	border: 3px solid #2f341a;
 }
 
 .nature-img {
-	box-shadow: 0 10px 40px -8px #cba461;
+	box-shadow: 5px 5px 8px #2f341a;
+	border: 1px solid #2f341a;
+}
+
+.modal-text {
+	text-shadow: 5px 5px 5px #2f341a;
 }

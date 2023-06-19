@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Navbar, Collapse, Typography, Button, IconButton } from "@material-tailwind/react";
-
+import { BiSearchAlt } from "react-icons/bi";
+import { GiPineTree } from "react-icons/gi";
 export default function NavBar({ scrollToSection, projects, about, contact, onOpen }) {
 	const [openNav, setOpenNav] = useState(false);
 
@@ -207,14 +208,14 @@ export default function NavBar({ scrollToSection, projects, about, contact, onOp
 					Brett Ranieri
 				</Typography>
 				<div className='hidden lg:block'>{navList}</div>
-				<Button
-					variant='gradient'
-					size='sm'
-					className='hidden lg:inline-block'
+				<button
+					className='hidden lg:inline-block nature-btn p-2'
 					onClick={() => onOpen()}
 				>
-					<span>Give me some nature!</span>
-				</Button>
+					<div className='flex flex-row justify-center items-center'>
+						<BiSearchAlt className='menu-btn-icon' /> <GiPineTree className='menu-btn-icon' />
+					</div>
+				</button>
 				{/* <Button
 					variant='gradient'
 					size='sm'
@@ -309,14 +310,14 @@ export default function NavBar({ scrollToSection, projects, about, contact, onOp
 					>
 						Contact
 					</Button>
-					<Button
+					<button
 						variant='gradient'
 						size='sm'
-						className='mb-2 ml-2'
+						className='mb-2 ml-2 nature-btn p-2 flex flex-row justify-center items-center'
 						onClick={() => onOpen()}
 					>
-						Give Me Some Nature!
-					</Button>
+						<BiSearchAlt className='menu-btn-icon' /> <GiPineTree className='menu-btn-icon' />
+					</button>
 				</div>
 			</Collapse>
 		</Navbar>
