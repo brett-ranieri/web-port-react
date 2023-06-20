@@ -29,7 +29,7 @@
 }
 
 .main-view-comp {
-	height: 100vh;
+	height: 700px;
 	width: 100%;
 	position: relative;
 }
@@ -86,6 +86,30 @@
 .proj-page-card {
 	width: 80vw;
 	height: 600px;
+}
+
+.proj-card {
+	border-radius: 5px;
+	border: 2px solid #000;
+	background-color: #fff;
+	color: #333;
+	display: inline-grid;
+	box-shadow: 5px 5px 8px #2f341a;
+}
+
+.proj-title {
+	font-size: 1.5em;
+	line-height: 1.75em;
+	text-shadow: 3px 3px 8px #2f341a;
+}
+
+.slider-btn {
+	background-color: #fff;
+	height: 200px;
+}
+
+#slider {
+	background-color: grey;
 }
 
 .link-btn {

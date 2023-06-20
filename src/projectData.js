@@ -11,7 +11,7 @@ export const data = [
 			"Fully responsive front end application built with React, React Bootstrap, and Parcel that allows users to interact with data stored in myMovie API. I also built the server side component on a MERN Stack. Users can sign up, save and update personal information, as well as create a list of their favorites movies.",
 		shortDescription: "Front end React App that interacts with myMovie-database",
 		type: "Bootcamp Project",
-		images: ["./img/project/myMovie_1.png"],
+		images: [{ source: "./img/project/myMovie_1.png", alt: "screenshot of myMovie app" }],
 	},
 	{
 		name: "myMovie-API",
@@ -25,7 +25,7 @@ export const data = [
 			"Rest API made with MongoDB and hosted on Vercel. Allows users to store/update personal information (encrypts user passwords) and allows access to information about different movies, directors, and genres. CORS protected",
 		shortDescription: "Rest API made with MongoDB that allows users to store and access data.",
 		type: "Bootcamp Project",
-		images: [],
+		images: [{ source: "https://placehold.co/300x150", alt: "placeholder" }],
 	},
 	{
 		name: "Pokedex",
@@ -40,7 +40,7 @@ export const data = [
 		shortDescription:
 			"First Javascript application ever made! Loads data from external API and allows user to interface.",
 		type: "Bootcamp Project",
-		images: ["./img/project/pokedex_1.png"],
+		images: [{ source: "./img/project/pokedex_1.png", alt: "screenshot of Pokedex" }],
 	},
 	{
 		name: "Meet App",
@@ -55,7 +55,10 @@ export const data = [
 		shortDescription:
 			"Serverless, progressive web application built with React. Allows authenticated users to browse/filter events provided from Google Calendar API.",
 		type: "Bootcamp Project",
-		images: ["./img/project/meet_1.png", "./img/project/meet_2.png"],
+		images: [
+			{ source: "./img/project/meet_1.png", alt: "screenshot of meet app" },
+			{ source: "./img/project/meet_2.png", alt: "screenshot of meet app" },
+		],
 	},
 	{
 		name: "Hello World",
@@ -69,7 +72,10 @@ export const data = [
 			"Chat App made with React Native. Allows users to log in and join a chat room where they can send text messages, pictures (taken with camera or shared from photos), and share their devices location. All data stored in a Firebase database. ",
 		shortDescription: "React Native chat app that uses Firebase database.",
 		type: "Bootcamp Project",
-		images: ["./img/project/hello_1.png", "./img/project/hello_2.png"],
+		images: [
+			{ source: "./img/project/hello_1.png", alt: "screenshot of hello world app" },
+			{ source: "./img/project/hello_2.png", alt: "screenshot of hello world app" },
+		],
 	},
 	{
 		name: "MyMovie Angular Frontend",
@@ -83,14 +89,19 @@ export const data = [
 			"Frontend UI for the myMovie-API that is made with Angular. Same functioninality as that of React Frontend but this project allowed me to get a better understanding of TypeScript and Two-way data binding.",
 		shortDescription: "Angular Front end application for myMovie-API",
 		type: "Bootcamp Project",
-		images: [],
+		images: [{ source: "https://placehold.co/300x150", alt: "placeholder" }],
 	},
 	{
 		name: "Seventh Project",
-		languages: "React",
+		languages: "Lots",
+		technologies: "None",
+		stack: "",
 		number: 7,
-		description:
-			"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-		shortDescription: "I'm short!",
+		website: "https://brett-ranieri.github.io/myMovie-Angular-client/",
+		gitLink: "https://github.com/brett-ranieri/myMovie-Angular-client",
+		description: "I'm a long descriptiong, look at how long I am.",
+		shortDescription: "I'm short",
+		type: "Bootcamp Project",
+		images: [{ source: "https://placehold.co/300x150", alt: "placeholder" }],
 	},
 ];

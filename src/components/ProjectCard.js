@@ -2,13 +2,13 @@ import React from "react";
 
 const ProjectCard = ({ project }) => {
 	return (
-		<div className='w-[400px] h-[400px] inline-block p-2'>
-			<h1>{project.name}</h1>
-			<p>{project.languages}</p>
+		<div className='w-[350px] h-[400px] m-2 p-2 proj-card'>
+			<h1 className='proj-title'>{project.name}</h1>
+			<p className='italic'>Languages: {project.languages}</p>
 			<img
-				className='cursor-pointer hover:scale-105 ease-in-out duration-300'
-				src='https://placehold.co/300x150'
-				alt='placeholder'
+				className='w-[300px] cursor-pointer hover:scale-75 ease-in-out duration-300'
+				src={project.images[0].source}
+				alt={project.images[0].alt}
 			/>
 			<p className='whitespace-normal'>{project.shortDescription}</p>
 		</div>
