@@ -4,12 +4,12 @@ import { data } from "../projectData";
 import { Link } from "react-router-dom";
 import ScrollToTop from "./ScrollToTop";
 import { Button } from "@material-tailwind/react";
-// import { useEffect } from "react";
+import { useEffect } from "react";
 
 const ProjectsPage = () => {
-	// useEffect(() => {
-	// 	handleState();
-	// });
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	});
 
 	// function logState() {
 	// 	console.log(mainView);
