@@ -38,8 +38,63 @@
 	background-color: #f5b041;
 }
 
-.about {
-	background-color: grey;
+.about-view {
+	position: relative;
+	height: 700px;
+	width: 100%;
+}
+
+.about-view-header {
+	position: absolute;
+	top: 70px;
+	right: 250px;
+	z-index: 101;
+}
+
+.about-view-text-container {
+	position: absolute;
+	width: 325px;
+	height: 250px;
+	bottom: 85px;
+	left: 120px;
+	z-index: 101;
+	background-color: #fece7a;
+	opacity: 0.7;
+}
+
+.about-view-text {
+	position: absolute;
+	width: 315px;
+	height: auto;
+	bottom: 89px;
+	left: 126px;
+	z-index: 102;
+	color: #fff;
+}
+.about-view-content {
+	position: relative;
+	max-width: 1000px;
+}
+
+.about-btn-style {
+	position: absolute;
+	bottom: 30px;
+	right: 250px;
+	z-index: 102;
+}
+
+.blur {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-image: url("/public/img/wedding_photo.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	filter: blur(8px);
+	z-index: -1;
 }
 
 .contact {
@@ -119,6 +174,7 @@
 }
 
 .link-btn {
+	display: block;
 	width: 160px;
 	height: 40px;
 	line-height: 40px;
@@ -187,4 +243,9 @@
 
 .modal-text {
 	text-shadow: 5px 5px 5px #2f341a;
+}
+
+.wedding-img {
+	transition: height 1s ease-in-out 0.1s;
+	z-index: 100;
 }
