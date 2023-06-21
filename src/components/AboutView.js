@@ -5,7 +5,7 @@ const AboutView = () => {
 	const [scrollZoomOne, setScrollZoomOne] = useState(false);
 	useEffect(() => {
 		window.addEventListener("scroll", () => {
-			if (window.scrollY > 1100) {
+			if (window.scrollY > 900) {
 				setScrollZoomOne(true);
 			} else {
 				setScrollZoomOne(false);
