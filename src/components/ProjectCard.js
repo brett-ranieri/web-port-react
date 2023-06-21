@@ -1,22 +1,25 @@
 import React from "react";
 
-const ProjectCard = ({ project }) => {
+const ProjectCard = ({ project, onOpen, setProjModalContent }) => {
 	const clickEvent = () => {
-		console.log("clicked");
+		setProjModalContent(project);
+		onOpen();
 	};
 
 	return (
-		<div className='w-[350px] h-[400px] m-2 p-2 proj-card'>
-			<h1 className='proj-title'>{project.name}</h1>
-			<p className='italic'>Languages: {project.languages}</p>
-			<img
-				className='w-[300px] cursor-pointer hover:scale-75 ease-in-out duration-300'
-				src={project.images[0].source}
-				alt={project.images[0].alt}
-				onClick={() => clickEvent()}
-			/>
-			<p className='whitespace-normal'>{project.shortDescription}</p>
-		</div>
+		<>
+			<div className='w-[350px] h-[400px] m-2 p-2 proj-card'>
+				<h1 className='proj-title'>{project.name}</h1>
+				<p className='italic'>Languages: {project.languages}</p>
+				<img
+					className='w-[300px] cursor-pointer hover:scale-75 ease-in-out duration-300'
+					src={project.images[0].source}
+					alt={project.images[0].alt}
+					onClick={() => clickEvent()}
+				/>
+				<p className='whitespace-normal'>{project.shortDescription}</p>
+			</div>
+		</>
 	);
 };
 

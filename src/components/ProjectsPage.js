@@ -21,6 +21,7 @@ const ProjectsPage = () => {
 				<Link
 					className='link-btn'
 					to='/'
+					onClick={console.log("clicked")}
 				>
 					Back to Main
 				</Link>

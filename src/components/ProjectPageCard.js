@@ -23,12 +23,16 @@ const ProjectPageCard = ({ project }) => {
 				<a
 					href={project.website}
 					className='m-2'
+					target='_blank'
+					rel='noreferrer'
 				>
 					Live Website
 				</a>
 				<a
 					href={project.gitLink}
 					className='m-2'
+					target='_blank'
+					rel='noreferrer'
 				>
 					<FaGithubSquare className='btn-icon' />
 				</a>

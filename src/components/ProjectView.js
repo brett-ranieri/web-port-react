@@ -4,7 +4,7 @@ import { data } from "../projectData";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 import { Link } from "react-router-dom";
 
-const ProjectView = () => {
+const ProjectView = ({ onOpen, setProjModalContent }) => {
 	const slideLeft = () => {
 		const slider = document.getElementById("slider");
 		slider.scrollLeft = slider.scrollLeft - 370;
@@ -19,7 +19,7 @@ const ProjectView = () => {
 
 	return (
 		<div className='project main-view-comp'>
-			<h1 className='p-3 text-4xl font-bold text-gray-900'>My Work</h1>
+			<h1 className='p-3 text-4xl font-bold text-gray-900'>Highlighted Work</h1>
 			<p className='p-3 text-l text-gray-900'>
 				The slider below displays some of my favorite recent projects. Click on the screenshots of
 				any project to learn more.
@@ -36,6 +36,8 @@ const ProjectView = () => {
 				>
 					{viewData.map((project) => (
 						<ProjectCard
+							onOpen={onOpen}
+							setProjModalContent={setProjModalContent}
 							project={project}
 							key={project.number}
 						/>

@@ -73,6 +73,7 @@
 }
 .about-view-content {
 	position: relative;
+	/* although it caps size of sharp image, for some reason adding position relative here is causing h1, p and button to animate along with image grow... */
 	max-width: 1000px;
 }
 
@@ -135,6 +136,10 @@
 
 .btn-style {
 	margin-top: 3em;
+	margin-bottom: 1em;
+}
+
+.proj-modal-btn-style {
 	margin-bottom: 1em;
 }
 
@@ -248,4 +253,13 @@
 .wedding-img {
 	transition: height 1s ease-in-out 0.1s;
 	z-index: 100;
+}
+
+.project-modal {
+	z-index: 200;
+}
+
+.proj-modal-container {
+	background-color: #dc9e3a;
+	border: 3px solid #62461a;
 }
