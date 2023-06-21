@@ -99,7 +99,7 @@
 }
 
 .contact {
-	background-color: mediumturquoise;
+	background-color: #89cfc7;
 }
 
 @keyframes App-logo-spin {
@@ -262,4 +262,16 @@
 .proj-modal-container {
 	background-color: #dc9e3a;
 	border: 3px solid #62461a;
+}
+
+.footer-container {
+	position: relative;
+}
+
+.img-attribute {
+	position: absolute;
+	bottom: 50px;
+	left: 50px;
+	z-index: 102;
+	color: #fff;
 }

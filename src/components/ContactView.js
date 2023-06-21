@@ -5,19 +5,23 @@ import { BsTelephoneOutbound } from "react-icons/bs";
 
 const ContactView = () => {
 	return (
-		<div className='contact main-view-comp'>
+		<div className='contact main-view-comp flex flex-col justify-center items-center p-6'>
 			<h1 className='p-3 text-4xl font-bold text-gray-900'>Reach Out</h1>
 			<p className='p-3 text-l text-gray-900'>
 				I look forward to hearing from you after you have had the time to review my portfolio
-				page/projects. Reach out in whichever way is most convenient for you.
+				page/projects.
 			</p>
 			<div className='photo-form-container'>
 				<img
 					src='./img/photo-of-brett.jpg'
 					alt='brett pointing at sun'
-					className='w-[30vw] m-3 rounded'
+					className='w-[30vw] max-w-xs m-3 rounded'
 				/>
 			</div>
+			<p className='p-3 text-l text-gray-900'>
+				{" "}
+				Please contact me in whichever way is most convenient for you.
+			</p>
 			<div className='contact-links flex flex-row justify-center items-center p-6'>
 				<a
 					href='https://github.com/brett-ranieri'

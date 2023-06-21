@@ -98,6 +98,19 @@ function App() {
 							<div ref={contact}>
 								<ContactView />
 							</div>
+							<div className='footer-container'>
+								<img
+									src='./img/tree-banner.jpg'
+									alt='layers of pine trees in fog'
+									className='w-[100vw] h-[400px] object-cover'
+								/>
+								<div className='img-attribute'>
+									Image by{" "}
+									<a href='https://www.freepik.com/free-vector/forest-banners_793671.htm#query=trees&position=3&from_view=search&track=sph'>
+										Freepik
+									</a>
+								</div>
+							</div>
 							<ScrollToTop />
 						</div>
 					}
