@@ -87,7 +87,7 @@ function App() {
 									alt='brett standing looking out over mountains'
 									className='w-full object-cover'
 								/>
-								<div className='header-text'>
+								<div className='marker header-text'>
 									<h1 className='p-3 text-4xl font-bold text-gray-900'>Brett Ranieri</h1>
 									<h3 className='p-3 text-2xl font-semibold text-gray-900'>Web Developer</h3>
 								</div>

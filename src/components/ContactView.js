@@ -6,7 +6,7 @@ import { BsTelephoneOutbound } from "react-icons/bs";
 const ContactView = () => {
 	return (
 		<div className='contact main-view-comp flex flex-col justify-center items-center p-6'>
-			<h1 className='p-3 text-4xl font-bold text-gray-900'>Reach Out</h1>
+			<h1 className='marker p-3 text-4xl font-bold text-gray-900'>Reach Out</h1>
 			<p className='p-3 text-l text-gray-900'>
 				I look forward to hearing from you after you have had the time to review my portfolio
 				page/projects.

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
 .App {
 	text-align: center;
 }
@@ -119,7 +121,7 @@
 
 .scroll-btn-style {
 	height: 50px;
-	width: 50px;
+	width: 0px;
 	border-radius: 50%;
 	border: 2px solid #000;
 	background-color: #fff;
@@ -255,8 +257,9 @@
 	z-index: 100;
 }
 
-.project-modal {
-	z-index: 200;
+.project-modal,
+.nature-modal {
+	z-index: 500;
 }
 
 .proj-modal-container {
@@ -267,6 +270,7 @@
 .footer-container,
 .header-container {
 	position: relative;
+	z-index: 100;
 }
 
 .img-attribute {
@@ -282,4 +286,8 @@
 	top: 50px;
 	right: 50px;
 	z-index: 102;
+}
+
+.marker {
+	font-family: "Permanent Marker", cursive;
 }

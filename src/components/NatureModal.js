@@ -67,7 +67,7 @@ const NatureModal = ({ isVisible, onClose }) => {
 	if (finalSlide)
 		return (
 			<div
-				className='fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex justify-center items-center'
+				className='nature-modal fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex justify-center items-center'
 				id='wrapper'
 				onClick={handleClose}
 			>
@@ -98,7 +98,7 @@ const NatureModal = ({ isVisible, onClose }) => {
 	if (backAgain)
 		return (
 			<div
-				className='fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex justify-center items-center'
+				className='nature-modal fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex justify-center items-center'
 				id='wrapper'
 				onClick={handleClose}
 			>
@@ -149,7 +149,7 @@ const NatureModal = ({ isVisible, onClose }) => {
 		<>
 			{firstClick ? (
 				<div
-					className='fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex justify-center items-center modal-open'
+					className='nature-modal fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex justify-center items-center modal-open'
 					id='wrapper'
 					onClick={handleClose}
 				>
@@ -194,7 +194,7 @@ const NatureModal = ({ isVisible, onClose }) => {
 				</div>
 			) : (
 				<div
-					className='fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex justify-center items-center'
+					className='nature-modal fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex justify-center items-center'
 					id='wrapper'
 					onClick={handleClose}
 				>
