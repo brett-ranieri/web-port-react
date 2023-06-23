@@ -16,7 +16,7 @@ export const data = [
 	{
 		name: "myMovie-API",
 		languages: "JavaScript",
-		technologies: "MongoDB, Node.js, Express, Mongoose, MongoDB Atlas, Vercel",
+		technologies: "MongoDB, Node.js, Express, Mongoose, MongoDB Atlas, Vercel, JSDoc",
 		stack: "MERN",
 		number: 2,
 		website: "",
@@ -80,7 +80,7 @@ export const data = [
 	{
 		name: "MyMovie Angular Frontend",
 		languages: "TypeScript, HTML, CSS",
-		technologies: "Angular, Angular Material",
+		technologies: "Angular, Angular Material, JSDoc",
 		stack: "",
 		number: 6,
 		website: "https://brett-ranieri.github.io/myMovie-Angular-client/",
