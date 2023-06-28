@@ -11,7 +11,11 @@ export const data = [
 			"Fully responsive front end application built with React, React Bootstrap, and Parcel that allows users to interact with data stored in myMovie API. I also built the server side component on a MERN Stack. Users can sign up, save and update personal information, as well as create a list of their favorites movies.",
 		shortDescription: "Front end React App that interacts with myMovie-database",
 		type: "Bootcamp Project",
-		images: [{ source: "./img/project/myMovie_1.png", alt: "screenshot of myMovie app" }],
+		images: [
+			{ source: "./img/project/myMovie_1.png", alt: "screenshot of myMovie app" },
+			{ source: "https://placehold.co/300x150", alt: "placeholder1" },
+			{ source: "https://placehold.co/300x150", alt: "placeholder2" },
+		],
 	},
 	{
 		name: "myMovie-API",
@@ -25,7 +29,11 @@ export const data = [
 			"Rest API made with MongoDB and hosted on Vercel. Allows users to store/update personal information (encrypts user passwords) and allows access to information about different movies, directors, and genres. CORS protected",
 		shortDescription: "Rest API made with MongoDB that allows users to store and access data.",
 		type: "Bootcamp Project",
-		images: [{ source: "https://placehold.co/300x150", alt: "placeholder" }],
+		images: [
+			{ source: "https://placehold.co/300x150", alt: "placeholder3" },
+			{ source: "https://placehold.co/300x150", alt: "placeholder4" },
+			{ source: "https://placehold.co/300x150", alt: "placeholder5" },
+		],
 	},
 	{
 		name: "Pokedex",
@@ -40,7 +48,11 @@ export const data = [
 		shortDescription:
 			"First Javascript application ever made! Loads data from external API and allows user to interface.",
 		type: "Bootcamp Project",
-		images: [{ source: "./img/project/pokedex_1.png", alt: "screenshot of Pokedex" }],
+		images: [
+			{ source: "./img/project/pokedex_1.png", alt: "screenshot of Pokedex" },
+			{ source: "https://placehold.co/300x150", alt: "placeholder6" },
+			{ source: "https://placehold.co/300x150", alt: "placeholder7" },
+		],
 	},
 	{
 		name: "Meet App",
@@ -57,7 +69,8 @@ export const data = [
 		type: "Bootcamp Project",
 		images: [
 			{ source: "./img/project/meet_1.png", alt: "screenshot of meet app" },
-			{ source: "./img/project/meet_2.png", alt: "screenshot of meet app" },
+			{ source: "./img/project/meet_2.png", alt: "another screenshot of meet app" },
+			{ source: "https://placehold.co/300x150", alt: "placeholder8" },
 		],
 	},
 	{
@@ -74,7 +87,8 @@ export const data = [
 		type: "Bootcamp Project",
 		images: [
 			{ source: "./img/project/hello_1.png", alt: "screenshot of hello world app" },
-			{ source: "./img/project/hello_2.png", alt: "screenshot of hello world app" },
+			{ source: "./img/project/hello_2.png", alt: "another screenshot of hello world app" },
+			{ source: "https://placehold.co/300x150", alt: "placeholder9" },
 		],
 	},
 	{
@@ -89,7 +103,11 @@ export const data = [
 			"Frontend UI for the myMovie-API that is made with Angular. Same functioninality as that of React Frontend but this project allowed me to get a better understanding of TypeScript and Two-way data binding.",
 		shortDescription: "Angular Front end application for myMovie-API",
 		type: "Bootcamp Project",
-		images: [{ source: "https://placehold.co/300x150", alt: "placeholder" }],
+		images: [
+			{ source: "https://placehold.co/300x150", alt: "placeholder10" },
+			{ source: "https://placehold.co/300x150", alt: "placeholder11" },
+			{ source: "https://placehold.co/300x150", alt: "placeholder12" },
+		],
 	},
 	{
 		name: "Seventh Project",
@@ -102,6 +120,10 @@ export const data = [
 		description: "I'm a long descriptiong, look at how long I am.",
 		shortDescription: "I'm short",
 		type: "Bootcamp Project",
-		images: [{ source: "https://placehold.co/300x150", alt: "placeholder" }],
+		images: [
+			{ source: "https://placehold.co/300x150", alt: "placeholder13" },
+			{ source: "https://placehold.co/300x150", alt: "placeholder14" },
+			{ source: "https://placehold.co/300x150", alt: "placeholder15" },
+		],
 	},
 ];

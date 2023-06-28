@@ -33,10 +33,12 @@ const ProjectsPage = () => {
 			<Button onClick={logState}>Log State</Button> */}
 				<div className='flex-container'>
 					{data.map((project) => (
-						<ProjectPageCard
-							project={project}
-							key={project.number}
-						/>
+						<React.Fragment key={project.number}>
+							<ProjectPageCard
+								project={project}
+								number={project.number}
+							/>
+						</React.Fragment>
 					))}
 				</div>
 				<ScrollToTop />
