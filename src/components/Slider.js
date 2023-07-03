@@ -120,19 +120,18 @@ const Slider = ({ sliderType, sliderMove, onOpen, setProjModalContent, project, 
 					/>
 					<div
 						id='slider'
-						className='flex flex-row justify-center p-2 picture-gallery m-2 w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll smooth scrollbar-hide'
+						className='flex flex-row justify-center p-2 m-2 w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll smooth scrollbar-hide'
 					>
-						<div className='img-container '>
-							{images.map((content) => (
-								<img
-									src={content.image}
-									alt={content.id}
-									key={content.id}
-									className='gallery-slider m-2'
-								/>
-							))}
-						</div>
-						.
+						{/* <div className='img-container '> */}
+						{images.map((content) => (
+							<img
+								src={content.image}
+								alt={content.id}
+								key={content.id}
+								className='gallery-slider m-2'
+							/>
+						))}
+						{/* </div> */}
 					</div>
 					<MdChevronRight
 						className='slider-btn opacity-50 cursor-point hover:opacity-100'
