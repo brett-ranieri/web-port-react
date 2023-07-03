@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Slider from "./Slider";
 
-const ProjectView = ({ onOpen, setProjModalContent }) => {
+const ProjectView = ({ onOpen, modControl }) => {
 	return (
 		<div className='project main-view-comp'>
 			<h1 className='marker p-3 text-4xl font-bold text-gray-900'>Highlighted Work</h1>
@@ -14,7 +14,7 @@ const ProjectView = ({ onOpen, setProjModalContent }) => {
 				sliderType={1}
 				sliderMove={370}
 				onOpen={onOpen}
-				setProjModalContent={setProjModalContent}
+				modControl={modControl}
 			/>
 			<div className='flex-container btn-style'>
 				<Link

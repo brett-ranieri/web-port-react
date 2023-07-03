@@ -1,8 +1,8 @@
 import React from "react";
 
-const ProjectCard = ({ project, onOpen, setProjModalContent }) => {
+const ProjectCard = ({ project, onOpen, modControl }) => {
 	const clickEvent = () => {
-		setProjModalContent(project);
+		modControl(project, project.number);
 		onOpen();
 	};
 

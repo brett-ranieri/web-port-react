@@ -21,6 +21,7 @@ function App() {
 	const [showModal, setShowModal] = useState(false);
 	const [showModal2, setShowModal2] = useState(false);
 	const [projModalContent, setProjModalContent] = useState({});
+	const [modNumber, setModNumber] = useState(0);
 
 	////////////////////State for Project View////////////////////////
 	// let [mainView, setMainView] = useState(false);
@@ -45,6 +46,11 @@ function App() {
 			document.body.style.overflow = "unset";
 		}
 	}, [showModal, showModal2]);
+
+	const modControl = (project, number) => {
+		setProjModalContent(project);
+		setModNumber(number);
+	};
 
 	const scrollToSection = (elementRef) => {
 		window.scrollTo({
@@ -80,6 +86,7 @@ function App() {
 									setShowModal2(false);
 								}}
 								projModalContent={projModalContent}
+								modNumber={modNumber}
 							/>
 							<div className='header-container'>
 								<img
@@ -95,7 +102,7 @@ function App() {
 							<div ref={projects}>
 								<ProjectView
 									onOpen={() => setShowModal2(true)}
-									setProjModalContent={setProjModalContent}
+									modControl={modControl}
 								/>
 							</div>
 							<div ref={about}>

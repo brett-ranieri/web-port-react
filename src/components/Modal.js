@@ -2,7 +2,7 @@ import React from "react";
 import ProjectPageCard from "./ProjectPageCard";
 import { Link } from "react-router-dom";
 
-const Modal = ({ isVisible, onClose, projModalContent }) => {
+const Modal = ({ isVisible, onClose, projModalContent, modNumber }) => {
 	const handleClose = (e) => {
 		if (e.target.id === "projWrapper") onClose();
 	};
@@ -17,7 +17,10 @@ const Modal = ({ isVisible, onClose, projModalContent }) => {
 				onClick={handleClose}
 			>
 				<div className='w-[85vw] flex flex-col proj-modal-container rounded'>
-					<ProjectPageCard project={projModalContent} />
+					<ProjectPageCard
+						project={projModalContent}
+						number={modNumber}
+					/>
 					<div className='flex-container proj-modal-btn-style mt-0'>
 						<Link
 							className='link-btn'

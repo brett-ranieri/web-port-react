@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCard";
 import { data } from "../projectData";
 import { images } from "../projectImages";
 
-const Slider = ({ sliderType, sliderMove, onOpen, setProjModalContent, project, number }) => {
+const Slider = ({ sliderType, sliderMove, onOpen, project, number, modControl }) => {
 	const [sliderView, setSliderView] = useState("");
 
 	useEffect(() => {
@@ -61,7 +61,7 @@ const Slider = ({ sliderType, sliderMove, onOpen, setProjModalContent, project, 
 							<React.Fragment key={project.number}>
 								<ProjectCard
 									onOpen={onOpen}
-									setProjModalContent={setProjModalContent}
+									modControl={modControl}
 									project={project}
 								/>
 							</React.Fragment>
