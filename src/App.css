@@ -201,6 +201,7 @@
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
+	z-index: 1000;
 }
 .proj-container,
 .about-container {
@@ -299,4 +300,8 @@
 .picture-gallery {
 	flex-direction: column;
 	flex-wrap: wrap;
+}
+
+.no-highlight {
+	-webkit-tap-highlight-color: transparent;
 }

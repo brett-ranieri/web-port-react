@@ -81,27 +81,27 @@ const Slider = ({ sliderType, sliderMove, onOpen, setProjModalContent, project, 
 			<>
 				<div className='relative flex items-center'>
 					<MdChevronLeft
-						className='slider-btn opacity-50 cursor-point hover:opacity-100'
+						className='no-highlight slider-btn opacity-50 cursor-point hover:opacity-100'
 						onClick={slideLeft}
 						size={40}
 					/>
 					<div
 						id={number}
-						className=' m-2 w-[70vw] h-full overflow-x-scroll scroll whitespace-nowrap scroll smooth scrollbar-hide'
+						className='flex flex-row m-2 w-[70vw] h-full overflow-x-scroll scroll whitespace-nowrap scroll smooth scrollbar-hide'
 					>
-						<div className='img-container flex flex-row justify-center p-2'>
-							{project.images.map((image) => (
-								<img
-									key={image.alt}
-									className='h-[250px] hover:scale-105 ease-in-out duration-300 m-2'
-									src={image.source}
-									alt={image.alt}
-								/>
-							))}
-						</div>
+						{/* <div className='img-container flex flex-row justify-center p-2'> */}
+						{project.images.map((image) => (
+							<img
+								key={image.alt}
+								className='h-[250px] hover:scale-105 ease-in-out duration-300 m-2'
+								src={image.source}
+								alt={image.alt}
+							/>
+						))}
+						{/* </div> */}
 					</div>
 					<MdChevronRight
-						className='slider-btn opacity-50 cursor-point hover:opacity-100'
+						className='no-highlight slider-btn opacity-50 cursor-point hover:opacity-100'
 						onClick={slideRight}
 						size={40}
 					/>

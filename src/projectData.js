@@ -94,7 +94,7 @@ export const data = [
 	{
 		name: "MyMovie Angular Frontend",
 		languages: "TypeScript, HTML, CSS",
-		technologies: "Angular, Angular Material, JSDoc",
+		technologies: "Angular, Angular Material, TypeDoc",
 		stack: "",
 		number: 6,
 		website: "https://brett-ranieri.github.io/myMovie-Angular-client/",
