@@ -20,24 +20,24 @@ const Slider = ({ sliderType, sliderMove, onOpen, setProjModalContent, project, 
 	}, [sliderType]);
 
 	const slideLeft = () => {
-		if (sliderView === ("project" || "gallery")) {
-			const slider = document.getElementById("slider");
-			slider.scrollLeft = slider.scrollLeft - sliderMove;
-		} else {
+		if (sliderView === "projectCard") {
 			const slider = document.getElementById(number);
 
 			console.log(slider);
+			slider.scrollLeft = slider.scrollLeft - sliderMove;
+		} else {
+			const slider = document.getElementById("slider");
 			slider.scrollLeft = slider.scrollLeft - sliderMove;
 		}
 	};
 
 	const slideRight = () => {
-		if (sliderView === ("project" || "gallery")) {
-			const slider = document.getElementById("slider");
-			slider.scrollLeft = slider.scrollLeft + sliderMove;
-		} else {
+		if (sliderView === "projectCard") {
 			const slider = document.getElementById(number);
 			console.log(slider);
+			slider.scrollLeft = slider.scrollLeft + sliderMove;
+		} else {
+			const slider = document.getElementById("slider");
 			slider.scrollLeft = slider.scrollLeft + sliderMove;
 		}
 	};
