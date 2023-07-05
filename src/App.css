@@ -232,6 +232,10 @@
 	width: 70px;
 	height: 70px;
 }
+.tele-icon {
+	width: 50px;
+	height: 50px;
+}
 
 .menu-btn-icon {
 	width: 20px;
@@ -239,6 +243,8 @@
 }
 
 .modal-container {
+	width: 600px;
+	height: 650px;
 	background-color: #5f6935;
 	color: #fece7a;
 	border: 3px solid #2f341a;
@@ -247,6 +253,30 @@
 .nature-img {
 	box-shadow: 5px 5px 8px #2f341a;
 	border: 1px solid #2f341a;
+}
+
+.first-click-img {
+	height: 20em;
+	float: left;
+}
+
+.last-click-img {
+	height: 20em;
+	float: right;
+}
+
+.float-container {
+	height: auto;
+}
+
+.nat-icon {
+	height: 90px;
+	width: 90px;
+}
+
+.modal-link:hover {
+	text-shadow: 5px 5px 5px #fece7a;
+	color: #2f341a;
 }
 
 .modal-text {

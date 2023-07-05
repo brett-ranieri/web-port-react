@@ -51,7 +51,7 @@ const ContactView = () => {
 					target='_blank'
 					rel='noreferrer'
 				>
-					<BsTelephoneOutbound className='btn-icon' />
+					<BsTelephoneOutbound className='tele-icon' />
 				</a>
 			</div>
 		</div>

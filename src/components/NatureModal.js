@@ -1,7 +1,9 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { natureImages, startImage, endImage, againImage, firstClickImage } from "../projectImages";
+import { natureImages, endImage, againImage, firstClickImage } from "../projectImages";
 import { GiFootsteps, GiCampingTent } from "react-icons/gi";
+import { FaGithubSquare } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const NatureModal = ({ isVisible, onClose }) => {
 	const [firstClick, setFirstClick] = useState(true);
@@ -27,8 +29,7 @@ const NatureModal = ({ isVisible, onClose }) => {
 
 	function handleFirstClick() {
 		setFirstClick(false);
-		setContent(startImage);
-		console.log(naturePictures.length);
+		getPicture();
 	}
 
 	function handleReset() {
@@ -71,24 +72,49 @@ const NatureModal = ({ isVisible, onClose }) => {
 				id='wrapper'
 				onClick={handleClose}
 			>
-				<div className='w-[60vw] flex flex-col modal-container rounded'>
+				<div className='flex flex-col modal-container rounded'>
 					<div className='p-2 rounded'>
-						<h3 className='text-xl font-semibold mb-2 modal-text'>That's all there is to see!</h3>
-						<div className='flex justify-center items-center p-2'>
+						<h3 className='text-2xl font-semibold mb-2 modal-text'>You've done it!</h3>
+						<div>
 							<img
 								src={content.image}
 								alt={content.alt}
-								className='h-[45vh] rounded nature-img'
+								className='last-click-img rounded nature-img m-2'
 							/>
+							<div>
+								<p className='modal-text p-2'>
+									Look at you sticking it out until the end. Way to perserve, I know that wasn't too
+									easy of a hike...especially if you live closer to sea level!
+									<br />
+									<br />
+									You've made it to the final image, which is a picture of my wife standing on a
+									trail bridge looking up at the forest around Lake Bierstadt. At this point that
+									array of pictures has a length of zero...it's the only way you'd see this content.
+									<span className='font-bold'> IF</span> you were to close the modal now and click
+									the button in the NavBar again something new will happen...just saying.
+									<br />
+									<br />
+									Clicking on the GitHub link below will take you to the repo for this project
+									(specifically the code for this NatureModal component). Of course, you can click
+									on the tent to close the modal and keep exploring elsewhere.
+								</p>
+							</div>
 						</div>
-						<p className='p-2 modal-text'>{content.blurb}</p>
-						<div className='flex flex-row justify-center p-2'>
+						<div className='flex flex-row justify-around items-center p-3 h-[116px]'>
 							<button
-								className='modal-btn-style flex justify-center items-center p-2 shadow hover:shadow-2xl'
+								className='modal-btn-style flex justify-center items-center p-2'
 								onClick={handleReset}
 							>
-								Let's head back to camp! <GiCampingTent className='btn-icon place-self-end' />
+								<GiCampingTent className='btn-icon' />
 							</button>
+							<a
+								href='https://github.com/brett-ranieri/web-port-react'
+								className='m-6 hover:scale-105 ease-in-out duration-300'
+								target='_blank'
+								rel='noreferrer'
+							>
+								<FaGithubSquare className='nat-icon' />
+							</a>
 						</div>
 					</div>
 				</div>
@@ -102,42 +128,73 @@ const NatureModal = ({ isVisible, onClose }) => {
 				id='wrapper'
 				onClick={handleClose}
 			>
-				<div className='w-[85vw] flex flex-col modal-container rounded'>
+				<div className='flex flex-col modal-container rounded'>
 					<div className='p-2 rounded'>
-						<h3 className='text-xl font-semibold text-grat-900 mb-2 modal-text'>
+						<h3 className='text-3xl font-semibold text-grat-900 mb-2 modal-text'>
 							WOAH, didn't see you there!
 						</h3>
-						<div className='flex justify-center items-center p-2'>
+						<div>
 							<img
 								src={content.image}
 								alt={content.alt}
-								className='h-[50vh] rounded nature-img'
+								className='first-click-img rounded nature-img m-2'
 							/>
+							<div>
+								<p className=' p-2 modal-text'>
+									<p className='modal-text p-2'>
+										Snuck right up on us...we didn't expect you back here. You're welcome to take
+										another hike, but you're not going to see anything new.
+										<br />
+										<br />
+										<span className='italic'>
+											*SPOILER ALERT*
+											<br />
+											That array of pictures I keep talking about has been re-populated and will now
+											appear in a new order if you were to step through the exercise again. You're
+											welcome to do so if you'd like, and at this point you know the drill so I'll
+											save the insturctions...but let me tell you there's definitely more to see
+											here on my site.
+										</span>
+										<br />
+										<br />
+										<p>
+											Maybe you want to spend some time checking out my{" "}
+											<Link
+												className='modal-link font-bold underline'
+												to='/projects'
+												onClick={onClose}
+											>
+												projects?
+											</Link>
+										</p>
+										<p>
+											The{" "}
+											<Link
+												className='modal-link font-bold underline'
+												to='/picture_gallery'
+												onClick={onClose}
+											>
+												Gallery
+											</Link>{" "}
+											also has more nature pictures!
+										</p>
+									</p>
+								</p>
+							</div>
 						</div>
-						<p className='p-2 modal-text'>
-							Snuck right up on us...we didn't expect you back here. You're welcome to take another
-							hike, but you're not going to see anything new.
-							<br />
-							<span className='italic'>
-								*SPOILER ALERT*
-								<br />
-								The array of pictures has been re-populated and will appear in a new order.
-							</span>
-						</p>
-						<p>Maybe you want to spend some time checking out myu projects?</p>
-						<p>The gallery also has A LOT more nature pictures</p>
+
 						<div className='flex flex-row justify-around p-3'>
 							<button
 								className='modal-btn-style flex justify-center items-center p-2'
 								onClick={onClose}
 							>
-								Maybe I'll stay at camp... <GiCampingTent className='btn-icon place-self-end' />
+								<GiCampingTent className='btn-icon' />
 							</button>
 							<button
 								className='modal-btn-style flex justify-center items-center p-2'
 								onClick={getPicture}
 							>
-								Another Hike Please! <GiFootsteps className='btn-icon place-self-end' />
+								<GiFootsteps className='btn-icon' />
 							</button>
 						</div>
 					</div>
@@ -153,40 +210,52 @@ const NatureModal = ({ isVisible, onClose }) => {
 					id='wrapper'
 					onClick={handleClose}
 				>
-					<div className='w-[85vw] flex flex-col modal-container rounded'>
+					<div className='flex flex-col modal-container rounded'>
 						<div className='p-2 rounded'>
-							<h3 className='text-xl font-semibold text-grat-900 mb-2 modal-text'>
+							<h3 className='text-3xl font-semibold text-grat-900 mb-2 modal-text'>
 								Looking for some nature?
 							</h3>
-							<div className='flex justify-center items-center p-2'>
+							<div className='float-container'>
 								<img
 									src={content.image}
 									alt={content.alt}
-									className='h-[50vh] rounded nature-img'
+									className='first-click-img rounded nature-img m-2 mt-7'
 								/>
+
+								<div>
+									<h4 className='text-2xl font-semibold modal-text p-2 m-1'>
+										You're in the right place!
+									</h4>
+									<p className='modal-text p-2'>
+										My wife and I went on a camping trip to Rocky Mountain National Park and let me
+										tell you, it was <span className='text-xl font-bold'>GORGEOUS!</span>
+										<br />
+										<br />I wanted to make a feature that allowed users to explore photos from our
+										trip, hence this side modal adventure. All photos are stored in an array, as you
+										"hike" this array will be spliced at a random point and the choosen image will
+										be presented. Each step you take, another image is spliced from the array until
+										there's none left!
+										<br />
+										<br />
+										If you feel like taking a virtual hike and seeing some of the beauty just press
+										on the footsteps. Don't worry though, at any point you can head back to camp
+										(close the modal) by clicking the tent.
+									</p>
+								</div>
 							</div>
-							<div className='flex flex-col justify-normal p-2'>
-								<h4 className='text-l font-semibold modal-text'>Well you're in the right place!</h4>
-								<p className='modal-text'>
-									My wife and I went on a camping trip to Rocky Mountain National Park and let me
-									tell you, it was <span className='text-lg font-bold'>GORGEOUS!</span> If you feel
-									like taking a virtual hike and seeing some of the beauty just press on the
-									footsteps. Don't worry though, at any point you can head on back to camp by
-									clicking the tent.
-								</p>
-							</div>
+
 							<div className='flex flex-row justify-around p-3'>
 								<button
 									className='modal-btn-style flex justify-center items-center p-2'
 									onClick={onClose}
 								>
-									Nah, I'm gonna stay at camp <GiCampingTent className='btn-icon' />
+									<GiCampingTent className='btn-icon' />
 								</button>
 								<button
 									className='modal-btn-style flex justify-center items-center p-2'
 									onClick={handleFirstClick}
 								>
-									Let's Go! <GiFootsteps className='btn-icon' />
+									<GiFootsteps className='btn-icon' />
 								</button>
 							</div>
 						</div>
@@ -198,7 +267,7 @@ const NatureModal = ({ isVisible, onClose }) => {
 					id='wrapper'
 					onClick={handleClose}
 				>
-					<div className='w-auto flex flex-col modal-container rounded'>
+					<div className='flex flex-col modal-container rounded'>
 						<div className='p-2 rounded'>
 							<h3 className='text-xl font-semibold text-grat-900 mb-2 modal-text'>
 								We're on an ADVENTURE!
