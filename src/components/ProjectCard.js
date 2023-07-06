@@ -8,7 +8,7 @@ const ProjectCard = ({ project, onOpen, modControl }) => {
 
 	return (
 		<>
-			<div className='w-[350px] h-[400px] m-2 p-2 proj-card'>
+			<div className='w-[350px] h-[400px] mx-2.5 my-4 p-2 proj-card'>
 				<h1 className='proj-title'>{project.name}</h1>
 				<p className='italic'>Languages: {project.languages}</p>
 				<div className='flex justify-center items-center pb-2'>

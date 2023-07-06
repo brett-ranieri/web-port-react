@@ -50,7 +50,8 @@ font-family: 'Merienda', cursive; */
 	z-index: 1000;
 }
 
-.navbar-container {
+.navbar-container,
+.header-container {
 	box-shadow: -5px 5px 8px #2f341a;
 }
 
@@ -90,7 +91,7 @@ font-family: 'Merienda', cursive; */
 }
 
 .project {
-	background-color: #f5b041;
+	background-color: antiquewhite;
 }
 
 .about-view {
@@ -157,6 +158,20 @@ font-family: 'Merienda', cursive; */
 	background-color: #89cfc7;
 }
 
+.section-title {
+	font-size: 4em;
+	color: #2f341a;
+}
+
+.section-text {
+	color: #5f6935;
+	font-size: 1em;
+}
+
+.section-second {
+	font-size: 2.5em;
+}
+
 @keyframes App-logo-spin {
 	from {
 		transform: rotate(0deg);
@@ -189,11 +204,6 @@ font-family: 'Merienda', cursive; */
 	justify-content: center;
 }
 
-.btn-style {
-	margin-top: 3em;
-	margin-bottom: 1em;
-}
-
 .proj-modal-btn-style {
 	margin-bottom: 1em;
 }
@@ -211,11 +221,16 @@ font-family: 'Merienda', cursive; */
 
 .proj-card {
 	border-radius: 5px;
-	border: 2px solid #000;
-	background-color: #fff;
-	color: #333;
+	border: 2px solid #fece7a;
+	background-color: #5f6935;
+	color: #fece7a;
 	display: inline-grid;
-	box-shadow: 5px 5px 8px #2f341a;
+	/* box-shadow: 5px 5px 8px #fece7a; */
+}
+
+.proj-card:hover {
+	border: 2px solid #2f341a;
+	box-shadow: 5px 5px 8px #fece7a;
 }
 
 .proj-title {
@@ -224,14 +239,34 @@ font-family: 'Merienda', cursive; */
 	text-shadow: 3px 3px 8px #2f341a;
 }
 
+/*///////////////// SLIDE STYLING //////////////*/
 .slider-btn {
-	background-color: #fff;
+	background-color: #5f6935;
+	color: #fece7a;
 	height: 200px;
 }
 
 #slider {
-	background-color: grey;
+	background-color: #2f341a;
 }
+
+.proj-btn-container {
+	position: fixed;
+	background-color: antiquewhite;
+	padding: 1em;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	box-shadow: -5px 5px 8px #2f341a;
+	z-index: 1000;
+}
+.proj-container,
+.about-container {
+	padding-top: 90px;
+}
+/*/////////////// BUTTON STYLING /////////////////*/
 
 .link-btn {
 	display: block;
@@ -255,23 +290,6 @@ font-family: 'Merienda', cursive; */
 	border: 3px solid #9fb83d;
 	color: #9fb83d;
 	box-shadow: -5px 5px 8px #2f341a;
-}
-
-.proj-btn-container {
-	position: fixed;
-	background-color: antiquewhite;
-	padding: 1em;
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	box-shadow: -5px 5px 8px #2f341a;
-	z-index: 1000;
-}
-.proj-container,
-.about-container {
-	padding-top: 90px;
 }
 
 .modal-btn-style,
@@ -400,6 +418,7 @@ font-family: 'Merienda', cursive; */
 	position: absolute;
 	top: 50px;
 	right: 50px;
+	color: #2f341a;
 	z-index: 102;
 }
 
