@@ -1,8 +1,16 @@
 import React from "react";
 import { FaGithubSquare } from "react-icons/fa";
 import Slider from "./Slider";
+import { useState, useEffect } from "react";
 
 const ProjectPageCard = ({ project, number }) => {
+	const [webAddress, setWebAddress] = useState(true);
+
+	useEffect(() => {
+		if (!project.website) {
+			setWebAddress(false);
+		}
+	}, [project.website]);
 	// if (project.website === "") return <div>I'm a project that doesn't have a website!</div>;
 	return (
 		<div className='proj-page-card hover:scale-105 ease-in-out duration-300 inline-block p-2 m-4'>
@@ -30,7 +38,11 @@ const ProjectPageCard = ({ project, number }) => {
 			<div className='link-container flex flex-row justify-center items-center p-2'>
 				<a
 					href={project.website}
-					className='modal-link underline m-2 hover:scale-105 ease-in-out duration-300'
+					className={
+						!webAddress
+							? "hidden"
+							: "modal-link underline m-2 hover:scale-105 ease-in-out duration-300"
+					}
 					target='_blank'
 					rel='noreferrer'
 				>
