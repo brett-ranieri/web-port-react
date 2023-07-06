@@ -23,8 +23,9 @@ const Modal = ({ isVisible, onClose, projModalContent, modNumber }) => {
 					/>
 					<div className='flex-container proj-modal-btn-style mt-0'>
 						<Link
-							className='link-btn'
+							className='primary-btn px-4 py-2'
 							to='/projects'
+							onClick={onClose}
 						>
 							See all Projects
 						</Link>
