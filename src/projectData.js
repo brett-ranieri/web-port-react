@@ -13,8 +13,10 @@ export const data = [
 		type: "Bootcamp Project",
 		images: [
 			{ source: "./img/project/myMovie_1.png", alt: "screenshot of myMovie app" },
-			{ source: "https://placehold.co/300x150", alt: "placeholder1" },
-			{ source: "https://placehold.co/300x150", alt: "placeholder2" },
+			{ source: "./img/project/myMovie_2.png", alt: "screenshot of profile page" },
+			{ source: "./img/project/myMovie_3.png", alt: "screenshot of movie details" },
+			{ source: "./img/project/myMovie_4.png", alt: "screenshot of movie details further down" },
+			{ source: "./img/project/myMovie_5.png", alt: "screenshot of sign up form" },
 		],
 	},
 	{
@@ -30,9 +32,9 @@ export const data = [
 		shortDescription: "Rest API made with MongoDB that allows users to store and access data.",
 		type: "Bootcamp Project",
 		images: [
-			{ source: "https://placehold.co/300x150", alt: "placeholder3" },
-			{ source: "https://placehold.co/300x150", alt: "placeholder4" },
-			{ source: "https://placehold.co/300x150", alt: "placeholder5" },
+			{ source: "./img/project/api_1.png", alt: "screenshot of MongoDB Atlas collection" },
+			{ source: "./img/project/api_2.png", alt: "screenshot of Postman endpoint testing" },
+			// { source: "https://placehold.co/300x150", alt: "placeholder5" },
 		],
 	},
 	{
@@ -50,8 +52,8 @@ export const data = [
 		type: "Bootcamp Project",
 		images: [
 			{ source: "./img/project/pokedex_1.png", alt: "screenshot of Pokedex" },
-			{ source: "https://placehold.co/300x150", alt: "placeholder6" },
-			{ source: "https://placehold.co/300x150", alt: "placeholder7" },
+			{ source: "./img/project/pokedex_2.png", alt: "screenshot of search" },
+			{ source: "./img/project/pokedex_3.png", alt: "screenshot of pikachu modal" },
 		],
 	},
 	{
@@ -70,7 +72,9 @@ export const data = [
 		images: [
 			{ source: "./img/project/meet_1.png", alt: "screenshot of meet app" },
 			{ source: "./img/project/meet_2.png", alt: "another screenshot of meet app" },
-			{ source: "https://placehold.co/300x150", alt: "placeholder8" },
+			{ source: "./img/project/meet_3.png", alt: "screenshot of google login" },
+			{ source: "./img/project/meet_4.png", alt: "screenshot of offline search" },
+			{ source: "./img/project/meet_5.png", alt: "close up of offline search" },
 		],
 	},
 	{
@@ -104,9 +108,9 @@ export const data = [
 		shortDescription: "Angular Front end application for myMovie-API",
 		type: "Bootcamp Project",
 		images: [
-			{ source: "https://placehold.co/300x150", alt: "placeholder10" },
-			{ source: "https://placehold.co/300x150", alt: "placeholder11" },
-			{ source: "https://placehold.co/300x150", alt: "placeholder12" },
+			{ source: "./img/project/angular_1.png", alt: "screenshot of angular movies" },
+			{ source: "./img/project/angular_2.png", alt: "screenshot of angular summary modal" },
+			{ source: "./img/project/angular_3.png", alt: "screenshot of angular update info form" },
 		],
 	},
 	{
