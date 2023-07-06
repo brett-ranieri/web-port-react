@@ -79,7 +79,7 @@ const Slider = ({ sliderType, sliderMove, onOpen, project, number, modControl })
 	if (sliderView === "projectCard")
 		return (
 			<>
-				<div className='relative flex items-center'>
+				<div className='proj-slider relative flex items-center'>
 					<MdChevronLeft
 						className='no-highlight slider-btn opacity-50 cursor-point hover:opacity-100'
 						onClick={slideLeft}

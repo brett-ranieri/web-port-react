@@ -174,7 +174,11 @@ font-family: 'Merienda', cursive; */
 .section-second {
 	font-size: 2.5em;
 	color: #5f6935;
-	text-shadow: 5px 5px 10px #2f341a;
+	/* text-shadow: 5px 5px 10px #2f341a; */
+}
+
+.page-text {
+	text-shadow: 3px 3px 5px #fece7a;
 }
 
 @keyframes App-logo-spin {
@@ -202,10 +206,11 @@ font-family: 'Merienda', cursive; */
 	height: auto;
 	padding: 10px;
 	border-radius: 5px;
-	border: 2px solid #000;
-	background-color: #fff;
-	color: #333;
-	box-shadow: 5px 5px 8px #2f341a;
+	border: 4px solid #2f341a;
+	background-color: #fece7a;
+	color: #2f341a;
+	text-shadow: 3px 3px 8px #5f6935;
+	box-shadow: 15px 15px 8px #2f341a;
 }
 
 .proj-card {
@@ -230,7 +235,10 @@ font-family: 'Merienda', cursive; */
 	font-weight: bold;
 }
 
-.proj-t
+.proj-slider {
+	background-color: #2f341a;
+	border-radius: 10px;
+}
 
 /*///////////////// SLIDE STYLING //////////////*/
 .slider-btn {
@@ -258,6 +266,7 @@ font-family: 'Merienda', cursive; */
 .proj-container,
 .about-container {
 	padding-top: 90px;
+	background-color: #5f6935;
 }
 /*/////////////// BUTTON STYLING /////////////////*/
 

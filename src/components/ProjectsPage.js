@@ -19,7 +19,7 @@ const ProjectsPage = () => {
 		<div>
 			<div className='flex-container proj-btn-container'>
 				<Link
-					className='link-btn'
+					className='secondary-btn py-2 px-4'
 					to='/'
 					onClick={console.log("clicked")}
 				>
@@ -28,7 +28,11 @@ const ProjectsPage = () => {
 			</div>
 
 			<div className='proj-container'>
-				<h1 className='text-4xl font-bold text-gray-900'>Howdy, I'm the Project Page</h1>
+				<h1 className='section-title marker page-text mt-3 pl-6'>Full List of Projects</h1>
+				<p className='section-text page-text pl-10 pb-6'>
+					Scroll down to browse all of my projects. The cards on this page contain more details as
+					well as links to view the GitHub Repo and Live Website (if applicable) of each project.
+				</p>
 				{/* <Button onClick={handleState}>Set State</Button>
 			<Button onClick={logState}>Log State</Button> */}
 				<div className='flex-container'>
