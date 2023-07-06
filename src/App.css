@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Hairline&family=Bungee+Inline&family=Bungee+Outline&family=Bungee+Shade&family=Bungee+Spice&family=Ceviche+One&family=Expletus+Sans&family=Merienda:wght@400;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap");
 
-/* font-family: 'Bungee', cursive;
-font-family: 'Bungee Hairline', cursive;
-font-family: 'Bungee Inline', cursive;
-font-family: 'Bungee Outline', cursive;
-font-family: 'Bungee Shade', cursive;
-font-family: 'Bungee Spice', cursive;
+/* 
 font-family: 'Ceviche One', cursive;
 font-family: 'Expletus Sans', cursive;
 font-family: 'Merienda', cursive; */
+
+/*
+font-family: 'Raleway', sans-serif;
+ */
 
 .App {
 	text-align: center;
@@ -169,6 +169,7 @@ font-family: 'Merienda', cursive; */
 	color: #2f341a;
 	font-size: 1em;
 	text-shadow: 3px 3px 5px #5f6935;
+	font-family: "Raleway", sans-serif;
 }
 
 .section-second {
@@ -223,8 +224,9 @@ font-family: 'Merienda', cursive; */
 }
 
 .proj-title {
-	font-size: 1.5em;
+	font-size: 2.5em;
 	line-height: 1.75em;
+	font-family: "Ceviche One", cursive;
 }
 
 .proj-card:hover {
@@ -369,17 +371,24 @@ font-family: 'Merienda', cursive; */
 .btn-icon {
 	width: 70px;
 	height: 70px;
-	color: #2f341a;
 }
+
 .tele-icon {
 	width: 50px;
 	height: 50px;
+}
+
+.contact-links {
 	color: #2f341a;
 }
 
 .menu-btn-icon {
 	width: 20px;
 	height: 20px;
+}
+
+.port-link:hover {
+	color: #5f6935;
 }
 
 .modal-container {
@@ -434,8 +443,8 @@ font-family: 'Merienda', cursive; */
 }
 
 .proj-modal-container {
-	background-color: #dc9e3a;
-	border: 3px solid #62461a;
+	background-color: #5f6935;
+	border: 3px solid #fece7a;
 }
 
 .footer-container,
