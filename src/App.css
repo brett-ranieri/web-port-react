@@ -1,4 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Hairline&family=Bungee+Inline&family=Bungee+Outline&family=Bungee+Shade&family=Bungee+Spice&family=Ceviche+One&family=Expletus+Sans&family=Merienda:wght@400;800&display=swap");
+
+/* font-family: 'Bungee', cursive;
+font-family: 'Bungee Hairline', cursive;
+font-family: 'Bungee Inline', cursive;
+font-family: 'Bungee Outline', cursive;
+font-family: 'Bungee Shade', cursive;
+font-family: 'Bungee Spice', cursive;
+font-family: 'Ceviche One', cursive;
+font-family: 'Expletus Sans', cursive;
+font-family: 'Merienda', cursive; */
 
 .App {
 	text-align: center;
@@ -28,6 +39,48 @@
 
 .App-link {
 	color: #61dafb;
+}
+
+.navbar-container,
+.navbar {
+	background-color: antiquewhite;
+	border-width: 0;
+	border-radius: 0;
+	position: relative;
+	z-index: 1000;
+}
+
+.navbar-container {
+	box-shadow: -5px 5px 8px #2f341a;
+}
+
+.logo-text {
+	font-size: 60px;
+	color: #2f341a;
+}
+
+.logo-one {
+	font-family: "Bungee", cursive;
+}
+
+.logo-two {
+	font-family: "Bungee Outline", cursive;
+}
+
+.logo-three {
+	font-family: "Bungee Inline", cursive;
+}
+
+.logo-four {
+	font-family: "Bungee Shade", cursive;
+}
+
+.logo-five {
+	font-family: "Bungee Hairline", cursive;
+}
+
+.logo-six {
+	font-family: "Bungee Spice", cursive;
 }
 
 .main-view-comp {
@@ -182,14 +235,26 @@
 
 .link-btn {
 	display: block;
-	width: 160px;
+	width: auto;
+	padding-left: 15px;
+	padding-right: 15px;
 	height: 40px;
-	line-height: 40px;
-	padding: 12 24;
-	background-color: rgb(82, 211, 168);
-	border-radius: 15px;
+	line-height: 35px;
+	font-size: 18px;
+	letter-spacing: 1px;
+	color: #fff;
+	background: #2f341a;
+	border: 2px solid #fff;
+	border-radius: 10px;
 	text-align: center;
-	vertical-align: middle;
+	position: relative;
+	transition: all 0.35s;
+}
+
+.link-btn:hover {
+	border: 3px solid #9fb83d;
+	color: #9fb83d;
+	box-shadow: -5px 5px 8px #2f341a;
 }
 
 .proj-btn-container {
@@ -201,6 +266,7 @@
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
+	box-shadow: -5px 5px 8px #2f341a;
 	z-index: 1000;
 }
 .proj-container,
@@ -225,6 +291,24 @@
 	border: 3px solid #2f341a;
 	background-color: #fece7a;
 	color: #2f341a;
+	box-shadow: -5px 5px 8px #2f341a;
+}
+
+.secondary-btn {
+	height: auto;
+	width: auto;
+	border-radius: 15px;
+	border: 3px solid #2f341a;
+	background-color: #fece7a;
+	color: #2f341a;
+	cursor: pointer;
+	box-shadow: 5px 5px 8px #2f341a;
+}
+
+.secondary-btn:hover {
+	border: 3px solid #fece7a;
+	background-color: #2f341a;
+	color: #fece7a;
 	box-shadow: -5px 5px 8px #2f341a;
 }
 
