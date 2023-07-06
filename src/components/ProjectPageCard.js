@@ -5,12 +5,16 @@ import { useState, useEffect } from "react";
 
 const ProjectPageCard = ({ project, number }) => {
 	const [webAddress, setWebAddress] = useState(true);
+	const [specialMessage, setSpecialMessage] = useState(true);
 
 	useEffect(() => {
 		if (!project.website) {
 			setWebAddress(false);
 		}
-	}, [project.website]);
+		if (!project.special) {
+			setSpecialMessage(false);
+		}
+	}, [project.website, project.special]);
 	// if (project.website === "") return <div>I'm a project that doesn't have a website!</div>;
 	return (
 		<div className='proj-page-card hover:scale-102 ease-in-out duration-300 inline-block p-2 m-4'>
@@ -36,6 +40,13 @@ const ProjectPageCard = ({ project, number }) => {
 			/>
 
 			<p className='whitespace-normal section-text px-8 py-4'>{project.description}</p>
+			<p
+				className={
+					!specialMessage ? "hidden" : "whitespace-normal section-text special-text pl-14 py-2"
+				}
+			>
+				{project.special}
+			</p>
 			<div className='link-container flex flex-row justify-center items-center p-2'>
 				<a
 					href={project.website}

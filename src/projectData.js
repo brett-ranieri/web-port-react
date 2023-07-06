@@ -11,6 +11,8 @@ export const data = [
 			"Fully responsive front end application built with React, React Bootstrap, and Parcel that allows users to interact with data stored in myMovie API. I also built the server side component on a MERN Stack. Users can sign up, save and update personal information, as well as create a list of their favorites movies.",
 		shortDescription: "Front end React App that interacts with myMovie-database",
 		type: "Bootcamp Project",
+		special:
+			"You can sign up as a new user, or login in with **Username: Tester **Password: Password",
 		images: [
 			{ source: "./img/project/myMovie_1.png", alt: "screenshot of myMovie app" },
 			{ source: "./img/project/myMovie_2.png", alt: "screenshot of profile page" },
@@ -31,6 +33,7 @@ export const data = [
 			"Rest API made with MongoDB and hosted on Vercel. Allows users to store/update personal information (encrypts user passwords) and allows access to information about different movies, directors, and genres. CORS protected",
 		shortDescription: "Rest API made with MongoDB that allows users to store and access data.",
 		type: "Bootcamp Project",
+		special: "",
 		images: [
 			{ source: "./img/project/api_1.png", alt: "screenshot of MongoDB Atlas collection" },
 			{ source: "./img/project/api_2.png", alt: "screenshot of Postman endpoint testing" },
@@ -48,8 +51,9 @@ export const data = [
 		description:
 			"As it's my first FULLY personal project, I needed to feature this website here. Aside from all of the standard navigational areas to explore I have tried to build in some easter eggs. The screenshots highlight the areas you should hunt in, but that's all I'm gonna say about that...up to you to do the rest!",
 		shortDescription:
-			"Look, it's the website you're on right...click for more info on some built in Easter Eggs!",
+			"Hey, it's the website you're on right now...click for more on built in Easter Eggs!",
 		type: "Personal Project",
+		special: "So...I'm not gonna give you a link for this one because you are already here...",
 		images: [
 			{ source: "./img/project/port_1.png", alt: "screenshot of first easter egg" },
 			{ source: "./img/project/port_2.png", alt: "screenshot of second easter egg" },
@@ -67,8 +71,10 @@ export const data = [
 		description:
 			"Serverless, progressive web application built with React. After logging in with Gmail users can use the app to retrieve data from a google calendar via Google API. Information is then displayed in multiple ways, including responsive charts from Recharts. This project also showcases TDD and incorporates Object Oriented Programming.",
 		shortDescription:
-			"Serverless, progressive web application built with React. Allows authenticated users to browse/filter events provided from Google Calendar API.",
+			"Serverless, progressive web application built with React. Allows users to browse/filter events provided from Google Calendar API.",
 		type: "Bootcamp Project",
+		special:
+			"This website requires Google Authentication and references an authentication list. If you'd like to see it reach out and I'll add you.",
 		images: [
 			{ source: "./img/project/meet_1.png", alt: "screenshot of meet app" },
 			{ source: "./img/project/meet_2.png", alt: "another screenshot of meet app" },
@@ -89,10 +95,14 @@ export const data = [
 			"Chat App made with React Native. Allows users to log in and join a chat room where they can send text messages, pictures (taken with camera or shared from photos), and share their devices location. All data stored in a Firebase database. ",
 		shortDescription: "React Native chat app that uses Firebase database.",
 		type: "Bootcamp Project",
+		special:
+			"There is a video demo displaying the functionality of the app in the ReadMe on GitHub. Click the logo to check it out!",
 		images: [
 			{ source: "./img/project/hello_1.png", alt: "screenshot of hello world app" },
-			{ source: "./img/project/hello_2.png", alt: "another screenshot of hello world app" },
-			{ source: "https://placehold.co/300x150", alt: "placeholder9" },
+			{ source: "./img/project/hello_2.png", alt: "screenshot of hello world app chat" },
+			{ source: "./img/project/hello_3.png", alt: "another screenshot of hello world app chat" },
+			{ source: "./img/project/hello_4.png", alt: "screenshot of ReadMe for project" },
+			{ source: "./img/project/hello_5.png", alt: "screenshot of Firebase Storage" },
 		],
 	},
 	{
@@ -107,6 +117,8 @@ export const data = [
 			"Frontend UI for the myMovie-API that is made with Angular. Same functioninality as that of React Frontend but this project allowed me to get a better understanding of TypeScript and Two-way data binding.",
 		shortDescription: "Angular Front end application for myMovie-API",
 		type: "Bootcamp Project",
+		special:
+			"You can sign up as a new user, or login in with **Username: Tester **Password: Password",
 		images: [
 			{ source: "./img/project/angular_1.png", alt: "screenshot of angular movies" },
 			{ source: "./img/project/angular_2.png", alt: "screenshot of angular summary modal" },
@@ -126,6 +138,7 @@ export const data = [
 		shortDescription:
 			"First Javascript application ever made! Loads data from external API and allows user to interface.",
 		type: "Bootcamp Project",
+		special: "",
 		images: [
 			{ source: "./img/project/pokedex_1.png", alt: "screenshot of Pokedex" },
 			{ source: "./img/project/pokedex_2.png", alt: "screenshot of search" },
