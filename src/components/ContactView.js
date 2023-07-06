@@ -5,9 +5,9 @@ import { BsTelephoneOutbound } from "react-icons/bs";
 
 const ContactView = () => {
 	return (
-		<div className='contact main-view-comp flex flex-col justify-center items-center p-6'>
-			<h1 className='marker p-3 text-4xl font-bold text-gray-900'>Reach Out</h1>
-			<p className='p-3 text-l text-gray-900'>
+		<div className='contact main-view-comp flex flex-col justify-center items-center pt-8'>
+			<h1 className='marker pt-3 section-title'>Reach Out</h1>
+			<p className='pb-2 pt-4 section-text'>
 				I look forward to hearing from you after you have had the time to review my portfolio
 				page/projects.
 			</p>
@@ -15,14 +15,14 @@ const ContactView = () => {
 				<img
 					src='./img/photo-of-brett.jpg'
 					alt='brett pointing at sun'
-					className='w-[30vw] max-w-xs m-3 rounded'
+					className='contact-photo w-[30vw] m-3 rounded'
 				/>
 			</div>
-			<p className='p-3 text-l text-gray-900'>
+			<p className='section-text'>
 				{" "}
 				Please contact me in whichever way is most convenient for you.
 			</p>
-			<div className='contact-links flex flex-row justify-center items-center p-6'>
+			<div className='contact-links flex flex-row justify-center items-center pt-2'>
 				<a
 					href='https://github.com/brett-ranieri'
 					className='m-6 hover:scale-105 ease-in-out duration-300'

@@ -152,20 +152,29 @@ font-family: 'Merienda', cursive; */
 
 .contact {
 	background-color: #89cfc7;
+	height: 600px;
+}
+
+.contact-photo {
+	max-width: 200px;
 }
 
 .section-title {
 	font-size: 4em;
 	color: #2f341a;
+	text-shadow: 10px 10px 10px #5f6935;
 }
 
 .section-text {
-	color: #5f6935;
+	color: #2f341a;
 	font-size: 1em;
+	text-shadow: 3px 3px 5px #5f6935;
 }
 
 .section-second {
 	font-size: 2.5em;
+	color: #5f6935;
+	text-shadow: 5px 5px 10px #2f341a;
 }
 
 @keyframes App-logo-spin {
@@ -205,18 +214,23 @@ font-family: 'Merienda', cursive; */
 	background-color: #5f6935;
 	color: #fece7a;
 	display: inline-grid;
-}
-
-.proj-card:hover {
-	border: 2px solid #2f341a;
-	box-shadow: 0px 0px 20px #fece7a;
+	text-shadow: 3px 3px 8px #2f341a;
 }
 
 .proj-title {
 	font-size: 1.5em;
 	line-height: 1.75em;
-	text-shadow: 3px 3px 8px #2f341a;
 }
+
+.proj-card:hover {
+	border: 3px solid #2f341a;
+	box-shadow: 0px 0px 20px #fece7a;
+	color: #2f341a;
+	text-shadow: 5px 5px 5px #fece7a;
+	font-weight: bold;
+}
+
+.proj-t
 
 /*///////////////// SLIDE STYLING //////////////*/
 .slider-btn {
@@ -269,12 +283,14 @@ font-family: 'Merienda', cursive; */
 	color: #2f341a;
 	cursor: pointer;
 	z-index: 200;
+	box-shadow: 2px 2px 5px #fece7a;
 }
 
 .scroll-btn-style:hover {
 	border: 2px solid #fece7a;
 	background-color: #2f341a;
 	color: #fece7a;
+	box-shadow: 5px 5px 8px #2f341a;
 }
 
 .link-btn {
@@ -344,10 +360,12 @@ font-family: 'Merienda', cursive; */
 .btn-icon {
 	width: 70px;
 	height: 70px;
+	color: #2f341a;
 }
 .tele-icon {
 	width: 50px;
 	height: 50px;
+	color: #2f341a;
 }
 
 .menu-btn-icon {
