@@ -191,10 +191,17 @@ font-family: 'Merienda', cursive; */
 	height: 50px;
 	width: 50px;
 	border-radius: 50%;
-	border: 2px solid #000;
-	background-color: #fff;
-	color: #333;
+	border: 2px solid #2f341a;
+	background-color: #fece7a;
+	color: #2f341a;
 	cursor: pointer;
+	z-index: 200;
+}
+
+.scroll-btn-style:hover {
+	border: 2px solid #fece7a;
+	background-color: #2f341a;
+	color: #fece7a;
 }
 
 .flex-container {
@@ -203,7 +210,7 @@ font-family: 'Merienda', cursive; */
 	align-items: center;
 	justify-content: center;
 }
-
+/*////////////////// PROJECT VIEW //////////////////*/
 .proj-modal-btn-style {
 	margin-bottom: 1em;
 }
