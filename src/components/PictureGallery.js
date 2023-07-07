@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Slider from "./Slider";
-// import { useEffect } from "react";
+import { useState } from "react";
+import { firstGallery } from "../projectImages";
 
 const PictureGallery = () => {
+	const [shownPicture, setShownPicture] = useState(firstGallery);
 	// useEffect(() => {
 	// 	handleState();
 	// });
@@ -12,28 +14,41 @@ const PictureGallery = () => {
 	// 	console.log(mainView);
 	// }
 
+	function clickPicture(content) {
+		setShownPicture(content);
+	}
+
 	return (
 		<div>
 			<div className='flex-container proj-btn-container'>
 				<Link
-					className='link-btn'
+					className='primary-btn px-3 py-2'
 					to='/'
 				>
 					Back to Main
 				</Link>
-				<Link
+				{/* <Link
 					className='link-btn ml-2'
 					to='/about'
 				>
 					Back to About
-				</Link>
+				</Link> */}
 			</div>
 
-			<div className='about-container'>
-				<h1 className='text-4xl font-bold text-gray-900'>Look at me! I'm the Picture Gallery!</h1>
+			<div className='gallery-container h-[100vh]'>
+				<h1 className='light-section-title marker pl-6'>Picture Gallery</h1>
+				<div className='h-[58%] flex flex-col justify-center items-center'>
+					<img
+						className='shown-picture'
+						src={shownPicture.image}
+						alt={shownPicture.blurb}
+					/>
+				</div>
+				<p className='light-section-text ml-10'>{shownPicture.blurb}</p>
 				<Slider
 					sliderType={3}
 					sliderMove={370}
+					clickPicture={clickPicture}
 				/>
 			</div>
 		</div>

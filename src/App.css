@@ -165,11 +165,25 @@ font-family: 'Raleway', sans-serif;
 	text-shadow: 10px 10px 10px #5f6935;
 }
 
+.light-section-title {
+	font-size: 4em;
+	color: #fece7a;
+	text-shadow: 10px 10px 10px #5f6935;
+}
+
 .section-text {
 	color: #2f341a;
 	font-size: 1em;
 	text-shadow: 3px 3px 5px #5f6935;
 	font-family: "Raleway", sans-serif;
+}
+
+.light-section-text {
+	color: #fece7a;
+	font-size: 1em;
+	font-weight: 600;
+	font-family: "Raleway", sans-serif;
+	margin-bottom: 1000px;
 }
 
 .special-text {
@@ -479,7 +493,26 @@ font-family: 'Raleway', sans-serif;
 }
 
 .gallery-slider {
-	width: 200px;
+	height: 150px;
+	width: auto;
+}
+
+.gallery-slider-container {
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	background-color: #fece7a;
+}
+
+.gallery-container {
+	background-color: #2f341a;
+	padding-top: 70px;
+}
+
+.shown-picture {
+	max-width: 70%;
+	height: auto;
+	max-height: 80%;
 }
 
 .picture-gallery {

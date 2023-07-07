@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCard";
 import { data } from "../projectData";
 import { images } from "../projectImages";
 
-const Slider = ({ sliderType, sliderMove, onOpen, project, number, modControl }) => {
+const Slider = ({ sliderType, sliderMove, onOpen, project, number, modControl, clickPicture }) => {
 	const [sliderView, setSliderView] = useState("");
 
 	useEffect(() => {
@@ -112,7 +112,7 @@ const Slider = ({ sliderType, sliderMove, onOpen, project, number, modControl })
 	if (sliderView === "gallery")
 		return (
 			<>
-				<div className=' flex items-center'>
+				<div className='gallery-slider-container flex items-center p-2'>
 					<MdChevronLeft
 						className='slider-btn opacity-50 cursor-point hover:opacity-100'
 						onClick={slideLeft}
@@ -120,7 +120,7 @@ const Slider = ({ sliderType, sliderMove, onOpen, project, number, modControl })
 					/>
 					<div
 						id='slider'
-						className='flex flex-row justify-center p-2 m-2 w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll smooth scrollbar-hide'
+						className='flex flex-row p-2 m-2 w-full h-[180px] overflow-x-scroll scroll whitespace-nowrap scroll smooth scrollbar-hide'
 					>
 						{/* <div className='img-container '> */}
 						{images.map((content) => (
@@ -129,6 +129,7 @@ const Slider = ({ sliderType, sliderMove, onOpen, project, number, modControl })
 								alt={content.id}
 								key={content.id}
 								className='gallery-slider m-2'
+								onClick={() => clickPicture(content)}
 							/>
 						))}
 						{/* </div> */}
