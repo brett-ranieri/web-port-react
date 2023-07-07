@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { TfiGallery } from "react-icons/tfi";
 
 const AboutView = () => {
 	const [scrollZoomOne, setScrollZoomOne] = useState(false);
@@ -40,10 +41,10 @@ const AboutView = () => {
 
 				<div className='about-btn-loc'>
 					<Link
-						className='primary-btn py-2 px-4 hover:scale-105'
-						to='/about'
+						className='primary-btn py-2 px-4 hover:scale-105 flex flex-row justify-center items-center gap-2'
+						to='/picture_gallery'
 					>
-						Learn more
+						Check out the Picture Gallery <TfiGallery className='menu-btn-icon place-self-end' />
 					</Link>
 				</div>
 			</div>

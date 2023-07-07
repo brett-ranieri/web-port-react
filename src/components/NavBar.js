@@ -2,6 +2,9 @@ import { useState, useEffect } from "react";
 import { Collapse, Button, IconButton } from "@material-tailwind/react";
 import { BiSearchAlt } from "react-icons/bi";
 import { GiPineTree } from "react-icons/gi";
+import { TfiGallery } from "react-icons/tfi";
+import { Link } from "react-router-dom";
+
 export default function NavBar({ scrollToSection, projects, about, contact, onOpen }) {
 	const [openNav, setOpenNav] = useState(false);
 	const [logoFont, setLogoFont] = useState(0);
@@ -70,14 +73,26 @@ export default function NavBar({ scrollToSection, projects, about, contact, onOp
 					<p className='logo-text'>BR</p>
 				</button>
 				<div className='hidden md:block'>{navList}</div>
-				<Button
-					className='hidden md:inline-block nature-btn p-3'
-					onClick={() => onOpen()}
-				>
-					<div className='flex flex-row justify-center items-center'>
-						<BiSearchAlt className='menu-btn-icon' /> <GiPineTree className='menu-btn-icon' />
-					</div>
-				</Button>
+				<div className='flex flex-row justify-center items-end'>
+					<Link
+						className='hidden md:inline-block primary-btn p-3 mr-3 hover:scale-105'
+						to='/picture_gallery'
+					>
+						<div className='flex flex-row justify-center items-center'>
+							<TfiGallery className='menu-btn-icon' />
+						</div>
+					</Link>
+
+					<Button
+						className='hidden md:inline-block nature-btn p-3'
+						onClick={() => onOpen()}
+					>
+						<div className='flex flex-row justify-center items-center'>
+							<BiSearchAlt className='menu-btn-icon' /> <GiPineTree className='menu-btn-icon' />
+						</div>
+					</Button>
+				</div>
+
 				<IconButton
 					variant='text'
 					className='ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent md:hidden'

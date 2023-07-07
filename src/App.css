@@ -294,7 +294,7 @@ font-family: 'Raleway', sans-serif;
 .about-btn-loc {
 	position: absolute;
 	bottom: 50px;
-	right: 250px;
+	right: 150px;
 	z-index: 102;
 }
 
@@ -502,7 +502,7 @@ font-family: 'Raleway', sans-serif;
 	bottom: 0px;
 	left: 0px;
 	background-color: #fece7a;
-	height: 15%;
+	/* height: 15%; */
 }
 
 .gallery-slider-btn {
