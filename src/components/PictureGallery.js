@@ -36,7 +36,7 @@ const PictureGallery = () => {
 			</div>
 
 			<div className='gallery-container h-[100vh]'>
-				<h1 className='light-section-title marker pl-6'>Picture Gallery</h1>
+				<h1 className='light-section-title marker pl-6 pt-3'>Picture Gallery</h1>
 				<div className='h-[58%] flex flex-col justify-center items-center'>
 					<img
 						className='shown-picture'

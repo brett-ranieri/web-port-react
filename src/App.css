@@ -493,7 +493,7 @@ font-family: 'Raleway', sans-serif;
 }
 
 .gallery-slider {
-	height: 150px;
+	height: 100%;
 	width: auto;
 }
 
@@ -502,6 +502,11 @@ font-family: 'Raleway', sans-serif;
 	bottom: 0px;
 	left: 0px;
 	background-color: #fece7a;
+	height: 15%;
+}
+
+.gallery-slider-btn {
+	height: 80%;
 }
 
 .gallery-container {
@@ -513,6 +518,7 @@ font-family: 'Raleway', sans-serif;
 	max-width: 70%;
 	height: auto;
 	max-height: 80%;
+	box-shadow: 5px 5px 8px #5f6935;
 }
 
 .picture-gallery {

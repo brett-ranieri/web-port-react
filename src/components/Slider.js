@@ -112,15 +112,15 @@ const Slider = ({ sliderType, sliderMove, onOpen, project, number, modControl, c
 	if (sliderView === "gallery")
 		return (
 			<>
-				<div className='gallery-slider-container flex items-center p-2'>
+				<div className='gallery-slider-container md:h-[20%] sm:h-[15%] flex items-center p-2'>
 					<MdChevronLeft
-						className='slider-btn opacity-50 cursor-point hover:opacity-100'
+						className='gallery-slider-btn slider-btn opacity-50 cursor-point hover:opacity-100'
 						onClick={slideLeft}
 						size={40}
 					/>
 					<div
 						id='slider'
-						className='flex flex-row p-2 m-2 w-full h-[180px] overflow-x-scroll scroll whitespace-nowrap scroll smooth scrollbar-hide'
+						className='flex flex-row p-2 m-2 w-full h-[90%] overflow-x-scroll scroll whitespace-nowrap scroll smooth scrollbar-hide'
 					>
 						{/* <div className='img-container '> */}
 						{images.map((content) => (
@@ -128,14 +128,14 @@ const Slider = ({ sliderType, sliderMove, onOpen, project, number, modControl, c
 								src={content.image}
 								alt={content.id}
 								key={content.id}
-								className='gallery-slider m-2'
+								className='gallery-slider mx-2'
 								onClick={() => clickPicture(content)}
 							/>
 						))}
 						{/* </div> */}
 					</div>
 					<MdChevronRight
-						className='slider-btn opacity-50 cursor-point hover:opacity-100'
+						className='gallery-slider-btn slider-btn opacity-50 cursor-point hover:opacity-100'
 						onClick={slideRight}
 						size={40}
 					/>

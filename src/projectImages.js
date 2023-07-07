@@ -42,7 +42,7 @@ export const images = [
 	{
 		id: 9,
 		image: "./img/gallery/img9.jpg",
-		blurb: "Teeing off at a disc gold course in Frisco, CO",
+		blurb: "Teeing off at a disc golf course in Frisco, CO",
 	},
 	{
 		id: 10,
