@@ -29,13 +29,18 @@ const AboutView = () => {
 				<h1 className='marker section-title	about-view-header text-4xl font-extrabold text-gray-900'>
 					About Me
 				</h1>
-				<div className='about-view-text-container rounded pl-2 pt-1'>
+				<div className='about-view-text-container-one rounded pl-2 pt-1'>
 					<p className='about-view-text text-m font-semibold'>
 						After spending most of my life in the Northeast I moved to Colorado following the call
 						of the mountains. Here I met my wife, adopted a small managerie of animals, and decided
-						I wanted a career change. Over a decade in the Entertainment and Event industries
-						provided me with invaluable experience and knowledge that allows me to bring a different
-						perspective to Web Development.
+						I wanted a career change.
+					</p>
+				</div>
+				<div className='about-view-text-container-two rounded pl-2 pt-1'>
+					<p className='about-view-text text-m font-semibold'>
+						Over a decade in the Entertainment and Event industries provided me with invaluable
+						experience and knowledge that allows me to bring a different perspective to Web
+						Development.
 					</p>
 				</div>
 
