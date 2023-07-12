@@ -85,7 +85,7 @@ font-family: 'Raleway', sans-serif;
 }
 
 .main-view-comp {
-	height: 700px;
+	height: auto;
 	width: 100%;
 	position: relative;
 }
@@ -174,7 +174,28 @@ font-family: 'Raleway', sans-serif;
 .section-title {
 	font-size: 4em;
 	color: #2f341a;
-	text-shadow: 10px 10px 10px #5f6935;
+	text-shadow: 6px 6px 5px #5f6935;
+}
+
+.section-subtitle {
+	font-size: 2.5em;
+	text-shadow: 4px 4px 5px #5f6935;
+}
+
+.b-green {
+	background-color: #2f341a;
+}
+
+.b-light {
+	background-color: #fece7a;
+}
+
+.dark {
+	color: #2f341a;
+}
+
+.light {
+	color: #fece7a;
 }
 
 .light-section-title {
@@ -184,10 +205,11 @@ font-family: 'Raleway', sans-serif;
 }
 
 .section-text {
-	color: #2f341a;
+	/* color: #2f341a; */
 	font-size: 1em;
-	text-shadow: 3px 3px 5px #5f6935;
+	/* text-shadow: 3px 3px 5px #5f6935; */
 	font-family: "Raleway", sans-serif;
+	font-weight: 600;
 }
 
 .light-section-text {
