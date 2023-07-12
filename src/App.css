@@ -263,7 +263,7 @@ font-family: 'Raleway', sans-serif;
 	border: 4px solid #2f341a;
 	background-color: #fece7a;
 	color: #2f341a;
-	text-shadow: 3px 3px 8px #5f6935;
+	/* text-shadow: 3px 3px 8px #5f6935; */
 	box-shadow: 5px 5px 8px #2f341a;
 }
 
@@ -577,7 +577,8 @@ font-family: 'Raleway', sans-serif;
 	max-width: 70%;
 	height: auto;
 	max-height: 80%;
-	box-shadow: 5px 5px 8px #5f6935;
+	border: 3px solid #fece7a;
+	box-shadow: 5px 5px 8px #2f341a;
 }
 
 .picture-gallery {
