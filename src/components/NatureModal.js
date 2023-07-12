@@ -74,7 +74,7 @@ const NatureModal = ({ isVisible, onClose }) => {
 			>
 				<div className='flex flex-col modal-container rounded'>
 					<div className='p-2 rounded'>
-						<h3 className='text-2xl font-semibold mb-2 modal-text'>You've done it!</h3>
+						<h3 className='modal-title px-2'>You've done it!</h3>
 						<div>
 							<img
 								src={content.image}
@@ -82,7 +82,7 @@ const NatureModal = ({ isVisible, onClose }) => {
 								className='last-click-img rounded nature-img m-2'
 							/>
 							<div>
-								<p className='modal-text p-2'>
+								<p className='modal-text p-2 pl-4'>
 									Look at you sticking it out until the end. Way to perserve, I know that wasn't too
 									easy of a hike...especially if you live closer to sea level!
 									<br />
@@ -130,18 +130,16 @@ const NatureModal = ({ isVisible, onClose }) => {
 			>
 				<div className='flex flex-col modal-container rounded'>
 					<div className='p-2 rounded'>
-						<h3 className='text-3xl font-semibold text-grat-900 mb-2 modal-text'>
-							WOAH, didn't see you there!
-						</h3>
+						<h3 className='modal-title px-2'>WOAH, didn't see you there!</h3>
 						<div>
 							<img
 								src={content.image}
 								alt={content.alt}
-								className='first-click-img rounded nature-img m-2'
+								className='repeat-img rounded nature-img ml-2 mr-4 mt-4'
 							/>
-							<div>
-								<p className=' p-2 modal-text'>
-									<p className='modal-text p-2'>
+							<div className='modal-text p-2 pl-8'>
+								<p>
+									<p>
 										Snuck right up on us...we didn't expect you back here. You're welcome to take
 										another hike, but you're not going to see anything new.
 										<br />
@@ -212,29 +210,26 @@ const NatureModal = ({ isVisible, onClose }) => {
 				>
 					<div className='flex flex-col modal-container rounded'>
 						<div className='p-2 rounded'>
-							<h3 className='text-3xl font-semibold text-grat-900 mb-2 modal-text'>
-								Looking for some nature?
-							</h3>
+							<h3 className='modal-title px-2'>Looking for some nature?</h3>
 							<div className='float-container'>
 								<img
 									src={content.image}
 									alt={content.alt}
-									className='first-click-img rounded nature-img m-2 mt-7'
+									className='first-click-img rounded nature-img ml-2 mr-4 mt-7'
 								/>
 
-								<div>
-									<h4 className='text-2xl font-semibold modal-text p-2 m-1'>
-										You're in the right place!
-									</h4>
-									<p className='modal-text p-2'>
+								<div className='modal-text p-2 m-1'>
+									<h4>You're in the right place!</h4>
+									<br />
+									<p>
 										My wife and I went on a camping trip to Rocky Mountain National Park and let me
 										tell you, it was <span className='text-xl font-bold'>GORGEOUS!</span>
 										<br />
 										<br />I wanted to make a feature that allowed users to explore photos from our
 										trip, hence this side modal adventure. All photos are stored in an array, as you
-										"hike" this array will be spliced at a random point and the choosen image will
-										be presented. Each step you take, another image is spliced from the array until
-										there's none left!
+										"hike" this array is spliced at a random point and the choosen image will be
+										presented. With each step, another image is spliced from the array until there's
+										none left!
 										<br />
 										<br />
 										If you feel like taking a virtual hike and seeing some of the beauty just press
@@ -269,9 +264,7 @@ const NatureModal = ({ isVisible, onClose }) => {
 				>
 					<div className='flex flex-col modal-container rounded'>
 						<div className='p-2 rounded'>
-							<h3 className='text-xl font-semibold text-grat-900 mb-2 modal-text'>
-								We're on an ADVENTURE!
-							</h3>
+							<h3 className='modal-title px-2'>We're on an ADVENTURE!</h3>
 							<div className='flex justify-center items-center p-2'>
 								<img
 									src={content.image}

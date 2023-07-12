@@ -484,13 +484,18 @@ font-family: 'Raleway', sans-serif;
 }
 
 .first-click-img {
-	height: 20em;
+	height: 19em;
 	float: left;
 }
 
 .last-click-img {
 	height: 20em;
 	float: right;
+}
+
+.repeat-img {
+	height: 22em;
+	float: left;
 }
 
 .float-container {
@@ -503,12 +508,20 @@ font-family: 'Raleway', sans-serif;
 }
 
 .modal-link:hover {
-	text-shadow: 5px 5px 5px #fece7a;
+	/* text-shadow: 5px 5px 5px #fece7a; */
 	color: #2f341a;
 }
 
+.modal-title {
+	font-family: "Raleway", sans-serif;
+	font-weight: 600;
+	font-size: 1.7em;
+}
+
 .modal-text {
-	text-shadow: 5px 5px 5px #2f341a;
+	font-family: "Raleway", sans-serif;
+	font-weight: 500;
+	font-size: 1em;
 }
 
 .wedding-img {
