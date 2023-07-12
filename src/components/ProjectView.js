@@ -28,7 +28,12 @@ const ProjectView = ({ onOpen, modControl }) => {
 				<h1 className='marker ml-1 section-subtitle pt-3 px-4 light'>Current Project:</h1>
 				<p className='p-4 pb-6 ml-6 section-text light'>
 					I am learning Python as I work through the final module of my bootcamp offered by
-					CareerFoundry
+					<a
+						href='https://careerfoundry.com/'
+						className='port-link px-1 underline'
+					>
+						CareerFoundry
+					</a>
 				</p>
 			</div>
 			<div className='b-light'>
