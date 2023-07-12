@@ -93,7 +93,7 @@ const Slider = ({ sliderType, sliderMove, onOpen, project, number, modControl, c
 						{project.images.map((image) => (
 							<img
 								key={image.alt}
-								className='h-[250px] hover:scale-105 ease-in-out duration-300 m-2'
+								className='h-[250px] hover:scale-110 ease-in-out duration-300 m-2'
 								src={image.source}
 								alt={image.alt}
 							/>

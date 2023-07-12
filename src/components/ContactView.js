@@ -7,7 +7,7 @@ const ContactView = () => {
 	return (
 		<div className='contact main-view-comp flex flex-col justify-center items-center pt-8'>
 			<h1 className='marker pt-3 section-title'>Reach Out</h1>
-			<p className='pb-2 pt-4 section-text'>
+			<p className='pb-2 pt-4 section-text dark'>
 				I look forward to hearing from you after you have had the time to review my portfolio
 				page/projects.
 			</p>
@@ -18,7 +18,7 @@ const ContactView = () => {
 					className='contact-photo w-[30vw] m-3 rounded'
 				/>
 			</div>
-			<p className='section-text'>
+			<p className='section-text dark'>
 				{" "}
 				Please contact me in whichever way is most convenient for you.
 			</p>

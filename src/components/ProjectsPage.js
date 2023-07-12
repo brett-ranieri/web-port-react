@@ -28,8 +28,8 @@ const ProjectsPage = () => {
 			</div>
 
 			<div className='proj-container'>
-				<h1 className='section-title marker page-text mt-3 pl-6'>Full List of Projects</h1>
-				<p className='section-text page-text pl-10 pb-6'>
+				<h1 className='section-title marker light-shadow mt-3 pl-6'>Full List of Projects</h1>
+				<p className='section-text pl-10 pb-6 light'>
 					Scroll down to browse all of my projects. The cards on this page contain more details as
 					well as links to view the GitHub Repo and Live Website (if applicable) of each project.
 				</p>

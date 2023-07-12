@@ -17,8 +17,8 @@ const ProjectPageCard = ({ project, number }) => {
 	}, [project.website, project.special]);
 	// if (project.website === "") return <div>I'm a project that doesn't have a website!</div>;
 	return (
-		<div className='proj-page-card hover:scale-102 ease-in-out duration-300 inline-block p-2 m-4'>
-			<h1 className='proj-title px-4 font-bold'>{project.name}</h1>
+		<div className='proj-page-card hover:scale-102 ease-in-out duration-300 inline-block p-2 m-4 scroll'>
+			<h1 className='proj-title px-4 marker'>{project.name}</h1>
 			<p className='italic section-text pl-8 pt-1 font-bold'>{project.type}</p>
 			<p className='italic section-text pl-8 py-2'>Languages: {project.languages}</p>
 			<p className='italic section-text pl-8 pb-3'>Technologies: {project.technologies}</p>

@@ -41,7 +41,7 @@ export const data = [
 		],
 	},
 	{
-		name: "THIS Portfolio Website",
+		name: "THIS Website",
 		languages: "JavaScript, HTML, CSS",
 		technologies: "React, Material Tailwind, HOSTING SITE",
 		stack: "",
@@ -71,7 +71,7 @@ export const data = [
 		description:
 			"Serverless, progressive web application built with React. After logging in with Gmail users can use the app to retrieve data from a google calendar via Google API. Information is then displayed in multiple ways, including responsive charts from Recharts. This project also showcases TDD and incorporates Object Oriented Programming.",
 		shortDescription:
-			"Serverless, progressive web application built with React. Allows users to browse/filter events provided from Google Calendar API.",
+			"Serverless, PWA used to browse/filter events provided from Google Calendar API.",
 		type: "Bootcamp Project",
 		special:
 			"This website requires Google Authentication and references an authentication list. If you'd like to see it reach out and I'll add you.",

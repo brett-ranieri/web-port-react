@@ -95,8 +95,8 @@ function App() {
 									className='w-full object-cover'
 								/>
 								<div className='marker header-text'>
-									<h1 className='p-3 section-title font-bold'>Brett Ranieri</h1>
-									<h3 className='p-3 font-semibold section-text section-second'>Web Developer</h3>
+									<h1 className='p-3 section-title'>Brett Ranieri</h1>
+									<h3 className='ml-6 p-3 section-second'>Web Developer</h3>
 								</div>
 							</div>
 							<div ref={projects}>

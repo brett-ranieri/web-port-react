@@ -9,8 +9,8 @@ const ProjectCard = ({ project, onOpen, modControl }) => {
 	return (
 		<>
 			<div className='w-[350px] h-[400px] mx-2.5 my-4 p-2 proj-card'>
-				<h1 className='proj-title'>{project.name}</h1>
-				<p className='italic'>Languages: {project.languages}</p>
+				<h1 className='proj-title marker'>{project.name}</h1>
+				<p className='italic section-text'>Languages: {project.languages}</p>
 				<div className='flex justify-center items-center pb-2'>
 					<img
 						className='w-[300px] cursor-pointer hover:scale-75 ease-in-out duration-300'
@@ -20,7 +20,7 @@ const ProjectCard = ({ project, onOpen, modControl }) => {
 					/>
 				</div>
 
-				<p className='whitespace-normal'>{project.shortDescription}</p>
+				<p className='whitespace-normal section-text'>{project.shortDescription}</p>
 			</div>
 		</>
 	);

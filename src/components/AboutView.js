@@ -26,18 +26,16 @@ const AboutView = () => {
 					className={`wedding-img h-[150px] m-3 ${scrollZoomOne ? "h-[700px]" : ""}`}
 					id='wedding_photo'
 				/>
-				<h1 className='marker section-title	about-view-header text-4xl font-extrabold text-gray-900'>
-					About Me
-				</h1>
+				<h1 className='marker section-title	about-view-header'>About Me</h1>
 				<div className='about-view-text-container-one rounded pl-2 pt-1'>
-					<p className='about-view-text text-m font-semibold'>
+					<p className='about-view-text section-text pb-1'>
 						After spending most of my life in the Northeast I moved to Colorado following the call
 						of the mountains. Here I met my wife, adopted a small managerie of animals, and decided
 						I wanted a career change.
 					</p>
 				</div>
 				<div className='about-view-text-container-two rounded pl-2 pt-1'>
-					<p className='about-view-text text-m font-semibold'>
+					<p className='about-view-text section-text pb-1'>
 						Over a decade in the Entertainment and Event industries provided me with invaluable
 						experience and knowledge that allows me to bring a different perspective to Web
 						Development.
