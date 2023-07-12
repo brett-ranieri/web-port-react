@@ -17,6 +17,12 @@ const Modal = ({ isVisible, onClose, projModalContent, modNumber }) => {
 				onClick={handleClose}
 			>
 				<div className='w-[85vw] flex flex-col proj-modal-container rounded'>
+					<div
+						className='primary-btn proj-modal-btn px-2 py-1'
+						onClick={() => onClose()}
+					>
+						X
+					</div>
 					<ProjectPageCard
 						project={projModalContent}
 						number={modNumber}

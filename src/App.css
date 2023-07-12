@@ -264,7 +264,7 @@ font-family: 'Raleway', sans-serif;
 	background-color: #fece7a;
 	color: #2f341a;
 	text-shadow: 3px 3px 8px #5f6935;
-	box-shadow: 15px 15px 8px #2f341a;
+	box-shadow: 5px 5px 8px #2f341a;
 }
 
 .proj-card {
@@ -455,6 +455,13 @@ font-family: 'Raleway', sans-serif;
 	right: 20px;
 }
 
+.proj-modal-btn {
+	width: fit-content;
+	height: fit-content;
+	position: relative;
+	top: 0.5em;
+	left: 54em;
+}
 /* .btm-btn:hover {
 	box-shadow: -1px 1px 8px #fece7a;
 } */
