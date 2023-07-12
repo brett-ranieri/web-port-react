@@ -157,6 +157,14 @@ export default function NavBar({ scrollToSection, projects, about, contact, onOp
 					>
 						Contact
 					</Button>
+					<Link
+						className='primary-btn mb-5 mx-2 p-2.5 hover:scale-105'
+						to='/picture_gallery'
+					>
+						<div className='flex flex-row justify-center items-center'>
+							<TfiGallery className='menu-btn-icon' />
+						</div>
+					</Link>
 					<Button
 						className='nature-btn p-2.5 flex flex-row justify-center items-center mb-5 mx-2'
 						onClick={() => onOpen()}
