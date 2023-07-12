@@ -201,7 +201,7 @@ font-family: 'Raleway', sans-serif;
 .light-section-title {
 	font-size: 4em;
 	color: #fece7a;
-	text-shadow: 10px 10px 10px #5f6935;
+	text-shadow: 10px 10px 10px #2f341a;
 }
 
 .section-text {
@@ -307,7 +307,7 @@ font-family: 'Raleway', sans-serif;
 	background-color: #2f341a;
 }
 
-.proj-btn-container {
+/* .proj-btn-container {
 	position: fixed;
 	background-color: antiquewhite;
 	padding: 1em;
@@ -318,10 +318,8 @@ font-family: 'Raleway', sans-serif;
 	justify-content: center;
 	box-shadow: -5px 5px 8px #2f341a;
 	z-index: 1000;
-}
-.proj-container,
-.about-container {
-	padding-top: 90px;
+} */
+.proj-container {
 	background-color: #5f6935;
 }
 /*/////////////// BUTTON STYLING /////////////////*/
@@ -451,6 +449,16 @@ font-family: 'Raleway', sans-serif;
 	color: #5f6935;
 }
 
+.btm-btn {
+	position: absolute;
+	top: 15px;
+	right: 20px;
+}
+
+/* .btm-btn:hover {
+	box-shadow: -1px 1px 8px #fece7a;
+} */
+
 .modal-container {
 	width: 600px;
 	height: 650px;
@@ -551,8 +559,7 @@ font-family: 'Raleway', sans-serif;
 }
 
 .gallery-container {
-	background-color: #2f341a;
-	padding-top: 70px;
+	background-color: #5f6935;
 }
 
 .shown-picture {
