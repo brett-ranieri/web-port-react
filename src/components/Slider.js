@@ -49,7 +49,7 @@ const Slider = ({ sliderType, sliderMove, onOpen, project, number, modControl, c
 			<>
 				<div className='relative flex items-center'>
 					<MdChevronLeft
-						className='slider-btn opacity-50 cursor-point hover:opacity-100'
+						className='slider-btn opacity-50 cursor-pointer hover:opacity-100'
 						onClick={slideLeft}
 						size={40}
 					/>
@@ -68,7 +68,7 @@ const Slider = ({ sliderType, sliderMove, onOpen, project, number, modControl, c
 						))}
 					</div>
 					<MdChevronRight
-						className='slider-btn opacity-50 cursor-point hover:opacity-100'
+						className='slider-btn opacity-50 cursor-pointer hover:opacity-100'
 						onClick={slideRight}
 						size={40}
 					/>
@@ -81,7 +81,7 @@ const Slider = ({ sliderType, sliderMove, onOpen, project, number, modControl, c
 			<>
 				<div className='proj-slider relative flex items-center'>
 					<MdChevronLeft
-						className='no-highlight slider-btn opacity-50 cursor-point hover:opacity-100'
+						className='no-highlight slider-btn opacity-50 cursor-pointer hover:opacity-100'
 						onClick={slideLeft}
 						size={40}
 					/>
@@ -101,7 +101,7 @@ const Slider = ({ sliderType, sliderMove, onOpen, project, number, modControl, c
 						{/* </div> */}
 					</div>
 					<MdChevronRight
-						className='no-highlight slider-btn opacity-50 cursor-point hover:opacity-100'
+						className='no-highlight slider-btn opacity-50 cursor-pointer hover:opacity-100'
 						onClick={slideRight}
 						size={40}
 					/>
@@ -114,7 +114,7 @@ const Slider = ({ sliderType, sliderMove, onOpen, project, number, modControl, c
 			<>
 				<div className='gallery-slider-container md:h-[20%] sm:h-[15%] flex items-center p-2'>
 					<MdChevronLeft
-						className='gallery-slider-btn slider-btn opacity-50 cursor-point hover:opacity-100'
+						className='gallery-slider-btn slider-btn opacity-50 cursor-pointer hover:opacity-100'
 						onClick={slideLeft}
 						size={40}
 					/>
@@ -128,14 +128,14 @@ const Slider = ({ sliderType, sliderMove, onOpen, project, number, modControl, c
 								src={content.image}
 								alt={content.id}
 								key={content.id}
-								className='gallery-slider mx-2'
+								className='gallery-slider mx-2 cursor-pointer'
 								onClick={() => clickPicture(content)}
 							/>
 						))}
 						{/* </div> */}
 					</div>
 					<MdChevronRight
-						className='gallery-slider-btn slider-btn opacity-50 cursor-point hover:opacity-100'
+						className='gallery-slider-btn slider-btn opacity-50 cursor-pointer hover:opacity-100'
 						onClick={slideRight}
 						size={40}
 					/>
