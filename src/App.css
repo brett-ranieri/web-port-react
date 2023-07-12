@@ -474,6 +474,10 @@ font-family: 'Raleway', sans-serif;
 	border: 3px solid #2f341a;
 }
 
+#rotated:hover {
+	cursor: pointer;
+}
+
 .nature-img {
 	box-shadow: 5px 5px 8px #2f341a;
 	border: 1px solid #2f341a;

@@ -5,6 +5,15 @@ import { BsTelephoneOutbound } from "react-icons/bs";
 import { HiDocumentDownload } from "react-icons/hi";
 
 const ContactView = () => {
+	let rotation = 0;
+	const angle = 45;
+
+	function rotateImage() {
+		const rotated = document.getElementById("rotated");
+		rotation = (rotation + angle) % 360;
+		rotated.style.transform = `rotate(${rotation}deg)`;
+	}
+
 	return (
 		<div className='contact main-view-comp flex flex-col justify-center items-center pt-8'>
 			<h1 className='marker pt-3 section-title'>Reach Out</h1>
@@ -14,9 +23,11 @@ const ContactView = () => {
 			</p>
 			<div className='photo-form-container'>
 				<img
+					id='rotated'
 					src='./img/photo-of-brett.jpg'
 					alt='brett pointing at sun'
 					className='contact-photo w-[30vw] m-3 rounded'
+					onClick={() => rotateImage()}
 				/>
 			</div>
 			<p className='section-text dark'>

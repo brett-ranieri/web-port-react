@@ -57,7 +57,7 @@ export const data = [
 		images: [
 			{ source: "./img/project/port_1.png", alt: "screenshot of first easter egg" },
 			{ source: "./img/project/port_2.png", alt: "screenshot of second easter egg" },
-			{ source: "https://placehold.co/300x150", alt: "placeholder15" },
+			{ source: "./img/project/port_3.png", alt: "screenshot of third easter egg" },
 		],
 	},
 	{
