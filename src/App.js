@@ -26,10 +26,10 @@ function App() {
 	////////////////////State for Project View////////////////////////
 	// let [mainView, setMainView] = useState(false);
 
-	// 	useEffect(() => {
-	// 		setMainView(false);
-	// 		console.log("used");
-	// 	});
+	// useEffect(() => {
+	// 	console.log("reloaded");
+	// 	window.location.reload(false);
+	// }, []);
 
 	// 	function handleState() {
 	// 		setMainView(true);
@@ -90,7 +90,7 @@ function App() {
 							/>
 							<div className='header-container'>
 								<img
-									src='./img/home-banner.jpg'
+									src='%PUBLIC_URL%/img/home-banner.jpg'
 									alt='brett standing looking out over mountains'
 									className='w-full object-cover'
 								/>
@@ -113,7 +113,7 @@ function App() {
 							</div>
 							<div className='footer-container'>
 								<img
-									src='./img/tree-banner.jpg'
+									src='%PUBLIC_URL%/img/tree-banner.jpg'
 									alt='layers of pine trees in fog'
 									className='w-[100vw] h-[400px] object-cover'
 								/>
