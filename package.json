@@ -1,7 +1,7 @@
 {
 	"name": "web-port-react",
 	"version": "0.1.0",
-	"homepage": "https://brett-ranieri.github.io/web-port-react",
+	"homepage": ".",
 	"private": false,
 	"dependencies": {
 		"@ap.cx/react-fullpage": "^0.3.0",
