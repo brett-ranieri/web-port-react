@@ -90,7 +90,7 @@ function App() {
 							/>
 							<div className='header-container'>
 								<img
-									src='%PUBLIC_URL%/img/home-banner.jpg'
+									src='./img/home-banner.jpg'
 									alt='brett standing looking out over mountains'
 									className='w-full object-cover'
 								/>
@@ -113,7 +113,7 @@ function App() {
 							</div>
 							<div className='footer-container'>
 								<img
-									src='%PUBLIC_URL%/img/tree-banner.jpg'
+									src='./img/tree-banner.jpg'
 									alt='layers of pine trees in fog'
 									className='w-[100vw] h-[400px] object-cover'
 								/>
