@@ -19,7 +19,7 @@ const ProjectsPage = () => {
 		<div className='proj-container'>
 			<Link
 				className='secondary-btn btm-btn py-2 px-4'
-				to='/web-port-react'
+				to='/'
 				onClick={console.log("clicked")}
 			>
 				Back to Main
