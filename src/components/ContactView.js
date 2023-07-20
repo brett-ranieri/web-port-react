@@ -66,7 +66,7 @@ const ContactView = () => {
 					<BsTelephoneOutbound className='tele-icon' />
 				</a>
 				<a
-					href='/branieri_developer_resume_1.0.pdf'
+					href='/web-port-react/branieri_developer_resume_1.0.pdf'
 					className='m-6 hover:scale-105 ease-in-out duration-300 flex flex-col justify-center'
 					target='_blank'
 					download
