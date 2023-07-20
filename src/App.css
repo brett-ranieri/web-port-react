@@ -507,6 +507,10 @@ font-family: 'Raleway', sans-serif;
 	width: 90px;
 }
 
+.nat-icon:hover {
+	color: #2f341a;
+}
+
 .modal-link:hover {
 	/* text-shadow: 5px 5px 5px #fece7a; */
 	color: #2f341a;
