@@ -108,7 +108,7 @@ const NatureModal = ({ isVisible, onClose }) => {
 								<GiCampingTent className='btn-icon' />
 							</button>
 							<a
-								href='https://github.com/brett-ranieri/web-port-react'
+								href='https://github.com/brett-ranieri/web-port-react/blob/main/src/components/NatureModal.js'
 								className='m-6 hover:scale-105 ease-in-out duration-300'
 								target='_blank'
 								rel='noreferrer'
