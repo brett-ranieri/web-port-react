@@ -15,6 +15,9 @@ module.exports = withMT({
 				dark: "6px 6px 5px #2f341a",
 				tan: "3px 3px 5px #fece7a",
 			},
+			transitionProperty: {
+				height: "height",
+			},
 		},
 	},
 	plugins: [require("tailwind-scrollbar-hide")],
