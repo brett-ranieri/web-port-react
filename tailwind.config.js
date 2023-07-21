@@ -10,6 +10,11 @@ module.exports = withMT({
 				lgreen: "#5f6935",
 				tan: "#fece7a",
 			},
+			dropShadow: {
+				light: "6px 6px 5px #5f6935",
+				dark: "6px 6px 5px #2f341a",
+				tan: "3px 3px 5px #fece7a",
+			},
 		},
 	},
 	plugins: [require("tailwind-scrollbar-hide")],
