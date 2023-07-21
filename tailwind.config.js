@@ -18,6 +18,9 @@ module.exports = withMT({
 			transitionProperty: {
 				height: "height",
 			},
+			zIndex: {
+				1000: "1000",
+			},
 		},
 	},
 	plugins: [require("tailwind-scrollbar-hide")],
