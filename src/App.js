@@ -88,15 +88,19 @@ function App() {
 								projModalContent={projModalContent}
 								modNumber={modNumber}
 							/>
-							<div className='header-container'>
+							<div className='header-container relative'>
 								<img
 									src='./img/home-banner.jpg'
 									alt='brett standing looking out over mountains'
 									className='w-full object-cover'
 								/>
 								<div className='marker header-text'>
-									<h1 className='p-3 section-title'>Brett Ranieri</h1>
-									<h3 className='ml-6 p-3 section-second'>Web Developer</h3>
+									<h1 className='text-dgreen text-4xl sm:text-5xl md:text-6xl 2xl:text-8xl absolute top-2 sm:top-4 md:top-10 2xl:top-20 right-1 sm:right-5 md:right-6 2xl:right-20'>
+										Brett Ranieri
+									</h1>
+									<h3 className='text-lgreen text-2xl sm:text-3xl md:text-4xl 2xl:text-6xl text-border-dgreen absolute top-12 sm:top-20 md:top-32 2xl:top-[200px] right-1 sm:right-5 md:right-6 2xl:right-20'>
+										Web Developer
+									</h3>
 								</div>
 							</div>
 							<div ref={projects}>

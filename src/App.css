@@ -50,8 +50,7 @@ font-family: 'Raleway', sans-serif;
 	z-index: 1000;
 }
 
-.navbar-container,
-.header-container {
+.navbar-container {
 	box-shadow: -5px 5px 8px #2f341a;
 }
 
@@ -94,24 +93,24 @@ font-family: 'Raleway', sans-serif;
 	position: relative;
 	z-index: 103;
 	background-color: antiquewhite;
-	box-shadow: 5px 5px 8px #2f341a;
+	/* box-shadow: 5px 5px 8px #2f341a; */
 }
 
 .about-view {
 	position: relative;
 	height: 700px;
 	width: 100%;
-	box-shadow: 5px 5px 8px #2f341a;
+	/* box-shadow: 5px 5px 8px #2f341a; */
 	z-index: 102;
 }
-
+/* removed */
 .about-view-header {
 	position: absolute;
 	top: 70px;
 	right: 250px;
 	z-index: 101;
 }
-
+/* removed */
 .about-view-text-container-one {
 	position: absolute;
 	width: 325px;
@@ -128,12 +127,12 @@ font-family: 'Raleway', sans-serif;
 	width: 325px;
 	height: auto;
 	bottom: 30%;
-	left: 15%;
+	left: 5%;
 	z-index: 101;
 	background-color: #2f341a;
 	opacity: 0.8;
 }
-
+/* removed */
 .about-view-text {
 	position: relative;
 	width: 315px;
@@ -141,7 +140,7 @@ font-family: 'Raleway', sans-serif;
 	z-index: 102;
 	color: antiquewhite;
 }
-
+/* removed */
 .about-view-content {
 	position: relative;
 	/* although it caps size of sharp image, for some reason adding position relative here is causing h1, p and button to animate along with image grow... */
@@ -164,9 +163,9 @@ font-family: 'Raleway', sans-serif;
 
 .contact {
 	background-color: #89cfc7;
-	height: 600px;
+	height: auto;
 }
-
+/* removed */
 .contact-photo {
 	max-width: 200px;
 }
@@ -177,36 +176,42 @@ font-family: 'Raleway', sans-serif;
 	text-shadow: 6px 6px 5px #5f6935;
 }
 
+.sm-section-title {
+	font-size: 2em;
+	color: #2f341a;
+	text-shadow: 6px 6px 5px #5f6935;
+}
+
 .section-subtitle {
 	font-size: 2.5em;
 	text-shadow: 4px 4px 5px #5f6935;
 }
 
-.b-green {
+/* .b-green {
 	background-color: #2f341a;
 }
 
 .b-light {
 	background-color: #fece7a;
-}
-
+} */
+/* 
 .dark {
 	color: #2f341a;
 }
 
 .light {
 	color: #fece7a;
-}
+} */
 
 .light-section-title {
 	font-size: 4em;
 	color: #fece7a;
 	text-shadow: 10px 10px 10px #2f341a;
 }
-
+/* removed */
 .section-text {
 	/* color: #2f341a; */
-	font-size: 1em;
+	/* font-size: 1em; */
 	/* text-shadow: 3px 3px 5px #5f6935; */
 	font-family: "Raleway", sans-serif;
 	font-weight: 600;
@@ -325,6 +330,12 @@ font-family: 'Raleway', sans-serif;
 /*/////////////// BUTTON STYLING /////////////////*/
 
 .about-btn-loc {
+	position: absolute;
+	bottom: 50px;
+	right: 150px;
+	z-index: 102;
+}
+.sm-about-btn-loc {
 	position: absolute;
 	bottom: 50px;
 	right: 150px;
@@ -529,7 +540,7 @@ font-family: 'Raleway', sans-serif;
 }
 
 .wedding-img {
-	transition: height 1s ease-in-out 0.1s;
+	/* transition: height 1s ease-in-out 0.1s; */
 	z-index: 100;
 }
 
@@ -558,15 +569,19 @@ font-family: 'Raleway', sans-serif;
 }
 
 .header-text {
-	position: absolute;
+	/* position: absolute;
 	top: 50px;
 	right: 50px;
-	color: #2f341a;
+	color: #2f341a; */
 	z-index: 102;
 }
 
 .marker {
 	font-family: "Permanent Marker", cursive;
+}
+
+.raleway {
+	font-family: "Raleway", sans-serif;
 }
 
 .gallery-slider {

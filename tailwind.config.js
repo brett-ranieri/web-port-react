@@ -9,6 +9,7 @@ module.exports = withMT({
 				dgreen: "#2f341a",
 				lgreen: "#5f6935",
 				tan: "#fece7a",
+				offwhite: "#faebd7",
 			},
 			dropShadow: {
 				light: "6px 6px 5px #5f6935",
@@ -19,6 +20,8 @@ module.exports = withMT({
 				height: "height",
 			},
 			zIndex: {
+				101: "101",
+				102: "102",
 				1000: "1000",
 			},
 		},

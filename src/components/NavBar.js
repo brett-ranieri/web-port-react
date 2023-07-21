@@ -132,45 +132,50 @@ export default function NavBar({ scrollToSection, projects, about, contact, onOp
 				</IconButton>
 			</div>
 			<Collapse open={openNav}>
-				<div className='container mx-auto flex flex-row justify-center items-center'>
-					<Button
-						className='secondary-btn mb-5 mx-2'
-						onClick={() => {
-							scrollToSection(projects);
-						}}
-					>
-						Projects
-					</Button>
-					<Button
-						className='secondary-btn mb-5 mx-2'
-						onClick={() => {
-							scrollToSection(about);
-						}}
-					>
-						About
-					</Button>
-					<Button
-						className='secondary-btn mb-5 mx-2'
-						onClick={() => {
-							scrollToSection(contact);
-						}}
-					>
-						Contact
-					</Button>
-					<Link
-						className='primary-btn mb-5 mx-2 p-2.5 hover:scale-105'
-						to='/picture_gallery'
-					>
-						<div className='flex flex-row justify-center items-center'>
-							<TfiGallery className='menu-btn-icon' />
-						</div>
-					</Link>
-					<Button
-						className='nature-btn p-2.5 flex flex-row justify-center items-center mb-5 mx-2'
-						onClick={() => onOpen()}
-					>
-						<BiSearchAlt className='menu-btn-icon' /> <GiPineTree className='menu-btn-icon' />
-					</Button>
+				<div className='container mx-auto flex flex-col justify-center items-center'>
+					<div className='flex flex-row'>
+						<Link
+							className='raleway text-dgreen font-semibold hover:text-lgreen mb-1 mx-2'
+							onClick={() => {
+								scrollToSection(projects);
+							}}
+						>
+							Projects
+						</Link>
+						<Link
+							className='raleway font-semibold text-dgreen hover:text-lgreen mb-1 mx-2'
+							onClick={() => {
+								scrollToSection(about);
+							}}
+						>
+							About
+						</Link>
+						<Link
+							className='raleway font-semibold text-dgreen hover:text-lgreen mb-2 mx-2'
+							onClick={() => {
+								scrollToSection(contact);
+							}}
+						>
+							Contact
+						</Link>
+					</div>
+
+					<div className='flex flex-row'>
+						<Link
+							className='primary-btn mb-5 mx-2 p-2.5 hover:scale-105'
+							to='/picture_gallery'
+						>
+							<div className='flex flex-row justify-center items-center'>
+								<TfiGallery className='menu-btn-icon' />
+							</div>
+						</Link>
+						<Button
+							className='nature-btn p-2.5 flex flex-row justify-center items-center mb-5 mx-2'
+							onClick={() => onOpen()}
+						>
+							<BiSearchAlt className='menu-btn-icon' /> <GiPineTree className='menu-btn-icon' />
+						</Button>
+					</div>
 				</div>
 			</Collapse>
 		</div>
