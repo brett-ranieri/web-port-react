@@ -39,13 +39,13 @@ function App() {
 	// 		console.log(mainView);
 	// 	}
 
-	useEffect(() => {
-		if (showModal || showModal2) {
-			document.body.style.overflow = "hidden";
-		} else {
-			document.body.style.overflow = "unset";
-		}
-	}, [showModal, showModal2]);
+	// useEffect(() => {
+	// 	if (showModal || showModal2) {
+	// 		document.body.style.overflow = "hidden";
+	// 	} else {
+	// 		document.body.style.overflow = "unset";
+	// 	}
+	// }, [showModal, showModal2]);
 
 	const modControl = (project, number) => {
 		setProjModalContent(project);
