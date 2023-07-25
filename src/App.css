@@ -556,6 +556,7 @@ font-family: 'Raleway', sans-serif;
 	border: 3px solid #fece7a;
 	overflow-y: auto;
 	overflow-x: hidden;
+	overscroll-behavior: contain;
 }
 
 .footer-container,
