@@ -81,7 +81,7 @@ const Slider = ({ sliderType, sliderMove, onOpen, project, number, modControl, c
 			<>
 				<div className='proj-slider relative flex items-center'>
 					<MdChevronLeft
-						className='no-highlight slider-btn opacity-50 cursor-pointer hover:opacity-100'
+						className='no-highlight bg-lgreen text-tan h-[100px] sm:h-[200px] md:h-[250px] opacity-50 cursor-pointer hover:opacity-100'
 						onClick={slideLeft}
 						size={40}
 					/>
@@ -93,7 +93,7 @@ const Slider = ({ sliderType, sliderMove, onOpen, project, number, modControl, c
 						{project.images.map((image) => (
 							<img
 								key={image.alt}
-								className='h-[250px] hover:scale-110 ease-in-out duration-300 m-2'
+								className='h-[150px] sm:h-[250px] md:h-[300px] hover:scale-110 ease-in-out duration-300 m-2'
 								src={image.source}
 								alt={image.alt}
 							/>
@@ -101,7 +101,7 @@ const Slider = ({ sliderType, sliderMove, onOpen, project, number, modControl, c
 						{/* </div> */}
 					</div>
 					<MdChevronRight
-						className='no-highlight slider-btn opacity-50 cursor-pointer hover:opacity-100'
+						className='no-highlight bg-lgreen text-tan h-[100px] sm:h-[200px] md:h-[250px] opacity-50 cursor-pointer hover:opacity-100'
 						onClick={slideRight}
 						size={40}
 					/>

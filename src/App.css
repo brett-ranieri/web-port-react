@@ -170,7 +170,7 @@ font-family: 'Raleway', sans-serif;
 .contact-photo {
 	max-width: 200px;
 }
-
+/* should be removed */
 .section-title {
 	font-size: 4em;
 	color: #2f341a;
@@ -303,10 +303,12 @@ font-family: 'Raleway', sans-serif;
 }
 
 /*///////////////// SLIDE STYLING //////////////*/
+
+/* should be removed */
 .slider-btn {
 	background-color: #5f6935;
 	color: #fece7a;
-	height: 200px;
+	/* height: 200px; */
 }
 
 #slider {
@@ -325,6 +327,7 @@ font-family: 'Raleway', sans-serif;
 	box-shadow: -5px 5px 8px #2f341a;
 	z-index: 1000;
 } */
+/* should be removed */
 .proj-container {
 	background-color: #5f6935;
 }
@@ -445,8 +448,7 @@ font-family: 'Raleway', sans-serif;
 	width: 50px;
 	height: 50px;
 }
-
-.contact-links {
+-btn .contact-links {
 	color: #2f341a;
 }
 
@@ -459,7 +461,7 @@ font-family: 'Raleway', sans-serif;
 .tele-icon:hover {
 	color: #5f6935;
 }
-
+/* should be removed */
 .btm-btn {
 	position: absolute;
 	top: 15px;

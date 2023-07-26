@@ -16,9 +16,9 @@ const ProjectsPage = () => {
 	// }
 
 	return (
-		<div className='proj-container'>
+		<div className='bg-lgreen'>
 			<Link
-				className='secondary-btn btm-btn py-2 px-4'
+				className='secondary-btn absolute top-[15px] right-[20px] py-2 px-4'
 				to='/'
 				onClick={console.log("clicked")}
 			>
@@ -26,8 +26,10 @@ const ProjectsPage = () => {
 			</Link>
 
 			<div>
-				<h1 className='section-title marker light-shadow pl-6'>Full List of Projects</h1>
-				<p className='section-text pl-10 pb-6 light'>
+				<h1 className='text-5xl sm:text-6xl md:text-7xl text-dgreen marker drop-shadow-tan pt-[70px] lg:pt-4 px-6 pb-4'>
+					Full List of Projects
+				</h1>
+				<p className='text-sm md:text-base raleway font-semibold text-tan text-center px-4 md:text-start md:px-10 pb-4 light'>
 					Scroll down to browse all of my projects. The cards on this page contain more details as
 					well as links to view the GitHub Repo and Live Website (if applicable) of each project.
 				</p>
