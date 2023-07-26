@@ -17,11 +17,17 @@ const ProjectPageCard = ({ project, number }) => {
 	}, [project.website, project.special]);
 	// if (project.website === "") return <div>I'm a project that doesn't have a website!</div>;
 	return (
-		<div className='proj-page-card hover:scale-102 ease-in-out duration-300 inline-block p-2 m-4 scroll'>
-			<h1 className='proj-title px-4 marker'>{project.name}</h1>
-			<p className='italic section-text pl-8 pt-1 font-bold'>{project.type}</p>
-			<p className='italic section-text pl-8 py-2'>Languages: {project.languages}</p>
-			<p className='italic section-text pl-8 pb-3'>Technologies: {project.technologies}</p>
+		<div className='proj-page-card w-[300px] sm:w-[500px] md:w-[680px] lg:w-[880px] xl:w-[1080px] h-auto bg-tan text-dgreen border-4 border-solid border-dgreen rounded-md hover:scale-102 ease-in-out duration-300 inline-block p-2 m-4 scroll'>
+			<h1 className='marker text-2xl sm:text-4xl px-4 py-2 drop-shadow-light'>{project.name}</h1>
+			<p className='raleway text-sm sm:text-base italic pl-6 sm:pl-8 pt-1 font-bold'>
+				{project.type}
+			</p>
+			<p className='raleway text-sm sm:text-base italic pl-6 sm:pl-8 py-2 font-semibold'>
+				Languages: {project.languages}
+			</p>
+			<p className='raleway text-sm sm:text-base italic pl-6 sm:pl-8 pb-3 font-semibold'>
+				Technologies: {project.technologies}
+			</p>
 			{/* <div className='img-container flex flex-row justify-center p-2'>
 				{project.images.map((image) => (
 					<img
@@ -39,21 +45,25 @@ const ProjectPageCard = ({ project, number }) => {
 				number={number}
 			/>
 
-			<p className='whitespace-normal section-text px-8 py-4'>{project.description}</p>
+			<p className='whitespace-normal raleway text-sm sm:text-base px-8 py-4 font-medium'>
+				{project.description}
+			</p>
 			<p
 				className={
-					!specialMessage ? "hidden" : "whitespace-normal section-text special-text pl-14 py-2"
+					!specialMessage
+						? "hidden"
+						: "whitespace-normal raleway font-bold text-xs text-center py-2"
 				}
 			>
 				{project.special}
 			</p>
-			<div className='link-container flex flex-row justify-center items-center p-2'>
+			<div className='flex flex-row justify-center items-center p-2'>
 				<a
 					href={project.website}
 					className={
 						!webAddress
 							? "hidden"
-							: "port-link underline m-2 hover:scale-105 ease-in-out duration-300"
+							: "hover:text-lgreen underline m-2 hover:scale-105 ease-in-out duration-300"
 					}
 					target='_blank'
 					rel='noreferrer'
@@ -66,7 +76,7 @@ const ProjectPageCard = ({ project, number }) => {
 					target='_blank'
 					rel='noreferrer'
 				>
-					<FaGithubSquare className='port-link btn-icon hover:scale-105 ease-in-out duration-300' />
+					<FaGithubSquare className='hover:text-lgreen w-[70px] h-[70px] hover:scale-105 ease-in-out duration-300' />
 				</a>
 			</div>
 		</div>

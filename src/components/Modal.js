@@ -16,7 +16,7 @@ const Modal = ({ isVisible, onClose, projModalContent, modNumber }) => {
 				id='projWrapper'
 				onClick={handleClose}
 			>
-				<div className='w-[85vw] flex flex-col proj-modal-container rounded'>
+				<div className='w-auto sm:w-[85vw] flex flex-col proj-modal-container rounded'>
 					<div
 						className='secondary-btn proj-modal-btn px-2 py-1 mb-2 text-xs'
 						onClick={() => onClose()}

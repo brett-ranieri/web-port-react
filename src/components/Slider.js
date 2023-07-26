@@ -87,7 +87,7 @@ const Slider = ({ sliderType, sliderMove, onOpen, project, number, modControl, c
 					/>
 					<div
 						id={number}
-						className='flex flex-row m-2 w-[70vw] h-full overflow-x-scroll scroll whitespace-nowrap scroll smooth scrollbar-hide'
+						className='flex flex-row m-2 w-[100vw] h-full overflow-x-scroll scroll whitespace-nowrap scroll smooth scrollbar-hide'
 					>
 						{/* <div className='img-container flex flex-row justify-center p-2'> */}
 						{project.images.map((image) => (
