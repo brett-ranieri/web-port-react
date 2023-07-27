@@ -3,7 +3,6 @@ import ProjectPageCard from "./ProjectPageCard";
 import { data } from "../projectData";
 import { Link } from "react-router-dom";
 import ScrollToTop from "./ScrollToTop";
-import { Button } from "@material-tailwind/react";
 import { useEffect } from "react";
 
 const ProjectsPage = () => {
@@ -17,16 +16,23 @@ const ProjectsPage = () => {
 
 	return (
 		<div className='bg-lgreen'>
-			<Link
-				className='secondary-btn absolute top-[15px] right-[20px] py-2 px-4'
+			<div className='pb-[70px]'>
+				<Link
+					className='secondary-btn absolute top-[15px] right-[15px] px-3 py-2'
+					to='/'
+				>
+					Back to Main
+				</Link>
+			</div>
+			{/* <Link
+				className='secondary-btn btm-btn absolute top-[15px] right-[20px] py-2 px-4'
 				to='/'
-				onClick={console.log("clicked")}
 			>
 				Back to Main
-			</Link>
+			</Link> */}
 
-			<div>
-				<h1 className='text-5xl sm:text-6xl md:text-7xl text-dgreen marker drop-shadow-tan pt-[70px] lg:pt-4 px-6 pb-4'>
+			<div className=''>
+				<h1 className='text-5xl sm:text-6xl md:text-7xl text-dgreen marker drop-shadow-tan px-6 pb-4'>
 					Full List of Projects
 				</h1>
 				<p className='text-sm md:text-base raleway font-semibold text-tan text-center px-4 md:text-start md:px-10 pb-4 light'>
