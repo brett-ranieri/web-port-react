@@ -70,7 +70,7 @@ export default function NavBar({ scrollToSection, projects, about, contact, onOp
 					}
 					onClick={() => changeLogo()}
 				>
-					<p className='logo-text'>BR</p>
+					<p className='logo-text px-4'>BR</p>
 				</button>
 				<div className='hidden md:block'>{navList}</div>
 				<div className='flex flex-row justify-center items-end'>
@@ -95,7 +95,7 @@ export default function NavBar({ scrollToSection, projects, about, contact, onOp
 
 				<IconButton
 					variant='text'
-					className='ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent md:hidden'
+					className='ml-auto px-8 h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent md:hidden'
 					ripple={false}
 					onClick={() => setOpenNav(!openNav)}
 				>
