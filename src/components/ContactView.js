@@ -37,7 +37,7 @@ const ContactView = () => {
 					{" "}
 					Please contact me in whichever way is most convenient for you.
 				</p>
-				<div className='contact-links grid grid-cols-2 gap-3 sm:flex sm:flex-row justify-center items-center pt-2'>
+				<div className='text-dgreen grid grid-cols-2 gap-3 sm:flex sm:flex-row justify-center items-center pt-2'>
 					<a
 						href='https://github.com/brett-ranieri'
 						className='m-3 md:m-6 hover:scale-105 ease-in-out duration-300'
