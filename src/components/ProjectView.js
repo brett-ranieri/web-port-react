@@ -9,16 +9,12 @@ const ProjectView = ({ onOpen, modControl }) => {
 	function setSliderMove() {
 		let width = window.innerWidth;
 		if (width < 540) {
-			console.log(1);
 			setMove(width * 0.8);
 		} else if (width >= 540 && width < 720) {
-			console.log(2);
 			setMove(width * 0.58);
 		} else if (width >= 720 && width < 960) {
-			console.log(3);
 			setMove(width * 0.47);
 		} else if (width >= 960) {
-			console.log(4);
 			setMove(width * 0.42);
 		}
 	}
@@ -31,10 +27,10 @@ const ProjectView = ({ onOpen, modControl }) => {
 
 	return (
 		<div className='project main-view-comp'>
-			<h1 className='marker text-dgreen text-3xl sm:text-5xl md:text-6xl drop-shadow-light p-2'>
+			<h1 className='marker text-dgreen text-3xl sm:text-5xl md:text-6xl px-6 py-3'>
 				Highlighted Work
 			</h1>
-			<p className='p-3 ml-6 section-text dark'>
+			<p className='raleway text-dgreen text-sm sm:text-base font-medium px-8 pb-3'>
 				The slider below displays some of my favorite recent projects. Click on the screenshots of
 				any project to learn more.
 			</p>
