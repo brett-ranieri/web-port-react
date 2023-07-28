@@ -1,8 +1,34 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 import Slider from "./Slider";
 
 const ProjectView = ({ onOpen, modControl }) => {
+	const [move, setMove] = useState();
+
+	function setSliderMove() {
+		let width = window.innerWidth;
+		if (width < 540) {
+			console.log(1);
+			setMove(width * 0.8);
+		} else if (width >= 540 && width < 720) {
+			console.log(2);
+			setMove(width * 0.58);
+		} else if (width >= 720 && width < 960) {
+			console.log(3);
+			setMove(width * 0.47);
+		} else if (width >= 960) {
+			console.log(4);
+			setMove(width * 0.42);
+		}
+	}
+
+	useEffect(() => {
+		setSliderMove();
+	}, []);
+
+	window.addEventListener("resize", () => setSliderMove());
+
 	return (
 		<div className='project main-view-comp'>
 			<h1 className='marker text-dgreen text-3xl sm:text-5xl md:text-6xl drop-shadow-light p-2'>
@@ -14,7 +40,7 @@ const ProjectView = ({ onOpen, modControl }) => {
 			</p>
 			<Slider
 				sliderType={1}
-				sliderMove={370}
+				sliderMove={move}
 				onOpen={onOpen}
 				modControl={modControl}
 			/>
