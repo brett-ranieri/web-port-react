@@ -4,25 +4,35 @@ import { useState, useEffect } from "react";
 import Slider from "./Slider";
 
 const ProjectView = ({ onOpen, modControl }) => {
-	const [move, setMove] = useState();
+	const [move, setMove] = useState(150);
 
 	function setSliderMove() {
 		let width = window.innerWidth;
 		if (width < 540) {
+			// console.log(1);
 			setMove(width * 0.8);
 		} else if (width >= 540 && width < 720) {
+			// console.log(2);
 			setMove(width * 0.58);
 		} else if (width >= 720 && width < 960) {
+			// console.log(3);
 			setMove(width * 0.47);
 		} else if (width >= 960) {
+			// console.log(4);
 			setMove(width * 0.42);
 		}
+		console.log("reset ", move);
+		console.log("width ", width);
 	}
 
 	useEffect(() => {
-		setSliderMove();
-	}, []);
+		console.log("ue ", move);
+	}, [move]);
 
+	window.addEventListener("load", () => {
+		setSliderMove();
+		console.log("load");
+	});
 	window.addEventListener("resize", () => setSliderMove());
 
 	return (
