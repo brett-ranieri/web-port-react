@@ -20,7 +20,7 @@ const ContactView = () => {
 				<h1 className='marker text-dgreen drop-shadow-light text-5xl sm:text-6xl md:text-7xl'>
 					Reach Out
 				</h1>
-				<p className='raleway text-dgreen text-base font-semibold p-3'>
+				<p className='raleway text-dgreen text-base font-semibold px-8 py-3'>
 					I look forward to hearing from you after you have had the time to review my portfolio
 					page/projects.
 				</p>
@@ -33,7 +33,7 @@ const ContactView = () => {
 						onClick={() => rotateImage()}
 					/>
 				</div>
-				<p className='raleway text-dgreen text-base font-semibold p-3'>
+				<p className='raleway text-dgreen text-base font-semibold px-8'>
 					{" "}
 					Please contact me in whichever way is most convenient for you.
 				</p>
