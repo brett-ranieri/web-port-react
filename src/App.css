@@ -603,17 +603,17 @@ font-family: 'Raleway', sans-serif;
 	background-color: #fece7a;
 	/* height: 15%; */
 }
-
+/* removed */
 .gallery-slider-btn {
 	height: 80%;
 }
-
+/* removed */
 .gallery-container {
 	background-color: #5f6935;
 }
 
 .shown-picture {
-	max-width: 70%;
+	max-width: 80%;
 	height: auto;
 	max-height: 80%;
 	border: 3px solid #fece7a;

@@ -112,9 +112,9 @@ const Slider = ({ sliderType, sliderMove, onOpen, project, number, modControl, c
 	if (sliderView === "gallery")
 		return (
 			<>
-				<div className='gallery-slider-container md:h-[20%] sm:h-[15%] flex items-center p-2'>
+				<div className='bg-tan fixed bottom-0 left-0 h-[15vh] sm:h-[20vh] w-[100vw] flex items-center p-2'>
 					<MdChevronLeft
-						className='gallery-slider-btn slider-btn opacity-50 cursor-pointer hover:opacity-100'
+						className='bg-lgreen text-tan h-[80%] opacity-50 cursor-pointer hover:opacity-100'
 						onClick={slideLeft}
 						size={40}
 					/>
