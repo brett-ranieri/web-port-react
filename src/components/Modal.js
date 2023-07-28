@@ -16,25 +16,27 @@ const Modal = ({ isVisible, onClose, projModalContent, modNumber }) => {
 				id='projWrapper'
 				onClick={handleClose}
 			>
-				<div className='w-auto sm:w-[85vw] flex flex-col proj-modal-container rounded'>
+				<div className='w-[90vw] proj-modal-container rounded'>
 					<div
 						className='secondary-btn proj-modal-btn px-2 py-1 mb-2 text-xs'
 						onClick={() => onClose()}
 					>
 						CLOSE
 					</div>
-					<ProjectPageCard
-						project={projModalContent}
-						number={modNumber}
-					/>
-					<div className='flex-container proj-modal-btn-style mt-0'>
-						<Link
-							className='primary-btn px-4 py-2'
-							to='/projects'
-							onClick={onClose}
-						>
-							See all Projects
-						</Link>
+					<div className='flex flex-col items-center'>
+						<ProjectPageCard
+							project={projModalContent}
+							number={modNumber}
+						/>
+						<div className='flex-container proj-modal-btn-style mt-0'>
+							<Link
+								className='primary-btn px-4 py-2'
+								to='/projects'
+								onClick={onClose}
+							>
+								See all Projects
+							</Link>
+						</div>
 					</div>
 				</div>
 			</div>
