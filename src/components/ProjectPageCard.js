@@ -40,7 +40,7 @@ const ProjectPageCard = ({ project, number }) => {
 
 			<Slider
 				sliderType={2}
-				sliderMove={300}
+				sliderMove={200}
 				project={project}
 				number={number}
 			/>
