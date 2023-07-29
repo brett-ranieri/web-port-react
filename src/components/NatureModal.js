@@ -13,7 +13,6 @@ const NatureModal = ({ isVisible, onClose }) => {
 	const [naturePictures, setNaturePictures] = useState([]);
 
 	useEffect(() => {
-		console.log("used ");
 		setNaturePictures(fillArray(natureImages));
 	}, [reload]);
 
@@ -33,7 +32,6 @@ const NatureModal = ({ isVisible, onClose }) => {
 	}
 
 	function handleReset() {
-		console.log("reloaded");
 		setReload(Math.random());
 		setFirstClick(true);
 		setFinalSlide(false);
@@ -43,9 +41,7 @@ const NatureModal = ({ isVisible, onClose }) => {
 	}
 
 	function getPicture() {
-		console.log("images ", naturePictures.length);
 		if (naturePictures.length === 0) {
-			console.log("spot 12");
 			setContent(endImage);
 			setFinalSlide(true);
 		} else {
@@ -53,14 +49,7 @@ const NatureModal = ({ isVisible, onClose }) => {
 			setContent(choosen[0]);
 			setBackAgain(false);
 			setFirstClick(false);
-			console.log(choosen[0].id);
-			console.log("np ", naturePictures.length);
-			console.log("org ", natureImages.length);
 		}
-	}
-
-	function checkArray() {
-		console.log("checking ", naturePictures);
 	}
 
 	if (!isVisible) return null;

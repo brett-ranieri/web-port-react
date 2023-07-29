@@ -7,7 +7,6 @@ const ScrollToTop = () => {
 	useEffect(() => {
 		window.addEventListener("scroll", () => {
 			if (window.pageYOffset > 300) {
-				console.log("i moved");
 				setShowScrollTopButton(true);
 			} else {
 				setShowScrollTopButton(false);

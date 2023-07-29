@@ -17,8 +17,6 @@ const AboutView = () => {
 	return (
 		<div className='about-view main-view-comp flex flex-col justify-center items-center'>
 			<div className='blur'></div>
-			{/* <h1>I'm the About Page</h1>
-			<p>Here you will find information about me.</p> */}
 			<div className='relative h-full flex flex-col justify-center items-center'>
 				<img
 					src='./img/wedding_photo.jpg'

@@ -1,16 +1,13 @@
-// import FullPageScroll from "./components/FullPageScroll";
 import AboutView from "./components/AboutView";
 import ProjectView from "./components/ProjectView";
 import ContactView from "./components/ContactView";
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState } from "react";
 import "./App.css";
 import NavBar from "./components/NavBar";
 import ScrollToTop from "./components/ScrollToTop";
-import { BrowserRouter, Routes, Route, Navigate, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ProjectsPage from "./components/ProjectsPage";
-import AboutPage from "./components/AboutPage";
 import PictureGallery from "./components/PictureGallery";
-// import { Button } from "@material-tailwind/react";
 import NatureModal from "./components/NatureModal";
 import Modal from "./components/Modal";
 
@@ -22,68 +19,6 @@ function App() {
 	const [showModal2, setShowModal2] = useState(false);
 	const [projModalContent, setProjModalContent] = useState({});
 	const [modNumber, setModNumber] = useState(0);
-
-	//////////////////// MOVE TEST ///////////////////////////////////////
-	// const [move, setMove] = useState(150);
-
-	// function setSliderMove() {
-	// 	let width = window.innerWidth;
-	// 	if (width < 540) {
-	// 		console.log(1);
-	// 		setMove(width * 0.8);
-	// 	} else if (width >= 540 && width < 720) {
-	// 		console.log(2);
-	// 		setMove(width * 0.58);
-	// 	} else if (width >= 720 && width < 960) {
-	// 		console.log(3);
-	// 		setMove(width * 0.47);
-	// 	} else if (width >= 960) {
-	// 		console.log(4);
-	// 		setMove(width * 0.42);
-	// 	}
-	// 	console.log("reset ", move);
-	// 	console.log("width ", width);
-	// }
-
-	// useEffect(() => {
-	// 	console.log("ue ", move);
-	// }, [move]);
-
-	// useEffect(() => {
-	// 	console.log("check ", move);
-	// });
-
-	// window.addEventListener("load", () => {
-	// 	setSliderMove();
-	// 	console.log("load");
-	// });
-	// window.addEventListener("resize", () => setSliderMove());
-
-	///////////////////////////////////////////////////////////////////////////
-
-	////////////////////State for Project View////////////////////////
-	// let [mainView, setMainView] = useState(false);
-
-	// useEffect(() => {
-	// 	console.log("reloaded");
-	// 	window.location.reload(false);
-	// }, []);
-
-	// 	function handleState() {
-	// 		setMainView(true);
-	// 	}
-
-	// 	function logState() {
-	// 		console.log(mainView);
-	// 	}
-
-	// useEffect(() => {
-	// 	if (showModal || showModal2) {
-	// 		document.body.style.overflow = "hidden";
-	// 	} else {
-	// 		document.body.style.overflow = "unset";
-	// 	}
-	// }, [showModal, showModal2]);
 
 	const modControl = (project, number) => {
 		setProjModalContent(project);
@@ -98,7 +33,6 @@ function App() {
 	};
 
 	return (
-		// <FullPageScroll />
 		<BrowserRouter basename={process.env.PUBLIC_URL}>
 			<Routes>
 				<Route
@@ -174,21 +108,7 @@ function App() {
 					path='/projects'
 					element={
 						<div>
-							<ProjectsPage
-							// handleState={handleState}
-							// mainView={mainView}
-							/>
-						</div>
-					}
-				/>
-				<Route
-					path='/about'
-					element={
-						<div>
-							<AboutPage
-							// handleState={handleState}
-							// mainView={mainView}
-							/>
+							<ProjectsPage />
 						</div>
 					}
 				/>
@@ -196,10 +116,7 @@ function App() {
 					path='/picture_gallery'
 					element={
 						<div>
-							<PictureGallery
-							// handleState={handleState}
-							// mainView={mainView}
-							/>
+							<PictureGallery />
 						</div>
 					}
 				/>

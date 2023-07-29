@@ -6,13 +6,6 @@ import { firstGallery } from "../projectImages";
 
 const PictureGallery = () => {
 	const [shownPicture, setShownPicture] = useState(firstGallery);
-	// useEffect(() => {
-	// 	handleState();
-	// });
-
-	// function logState() {
-	// 	console.log(mainView);
-	// }
 
 	function clickPicture(content) {
 		setShownPicture(content);
@@ -31,7 +24,7 @@ const PictureGallery = () => {
 			<h1 className='marker text-tan text-4xl sm:text-5xl drop-shadow-dark pl-6'>
 				Picture Gallery
 			</h1>
-			<div className='h-[60vh] w-[100vw] flex flex-col justify-center items-center'>
+			<div className='h-[60vh] sm:h-[55vh] w-[100vw] flex flex-col justify-center items-center'>
 				<img
 					className='shown-picture'
 					src={shownPicture.image}

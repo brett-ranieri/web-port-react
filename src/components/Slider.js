@@ -23,7 +23,6 @@ const Slider = ({ sliderType, sliderMove, onOpen, project, number, modControl, c
 		if (sliderView === "projectCard") {
 			const slider = document.getElementById(number);
 
-			console.log(slider);
 			slider.scrollLeft = slider.scrollLeft - sliderMove;
 		} else {
 			const slider = document.getElementById("slider");
@@ -34,7 +33,6 @@ const Slider = ({ sliderType, sliderMove, onOpen, project, number, modControl, c
 	const slideRight = () => {
 		if (sliderView === "projectCard") {
 			const slider = document.getElementById(number);
-			console.log(slider);
 			slider.scrollLeft = slider.scrollLeft + sliderMove;
 		} else {
 			const slider = document.getElementById("slider");
@@ -89,7 +87,6 @@ const Slider = ({ sliderType, sliderMove, onOpen, project, number, modControl, c
 						id={number}
 						className='flex flex-row m-2 w-[100vw] h-full overflow-x-scroll scroll whitespace-nowrap scroll smooth scrollbar-hide'
 					>
-						{/* <div className='img-container flex flex-row justify-center p-2'> */}
 						{project.images.map((image) => (
 							<img
 								key={image.alt}
@@ -98,7 +95,6 @@ const Slider = ({ sliderType, sliderMove, onOpen, project, number, modControl, c
 								alt={image.alt}
 							/>
 						))}
-						{/* </div> */}
 					</div>
 					<MdChevronRight
 						className='no-highlight bg-lgreen text-tan h-[100px] sm:h-[200px] md:h-[250px] opacity-50 cursor-pointer hover:opacity-100'
@@ -122,7 +118,6 @@ const Slider = ({ sliderType, sliderMove, onOpen, project, number, modControl, c
 						id='slider'
 						className='flex flex-row p-2 m-2 w-full h-[90%] overflow-x-scroll scroll whitespace-nowrap scroll smooth scrollbar-hide'
 					>
-						{/* <div className='img-container '> */}
 						{images.map((content) => (
 							<img
 								src={content.image}
@@ -132,7 +127,6 @@ const Slider = ({ sliderType, sliderMove, onOpen, project, number, modControl, c
 								onClick={() => clickPicture(content)}
 							/>
 						))}
-						{/* </div> */}
 					</div>
 					<MdChevronRight
 						className='bg-lgreen text-tan h-[80%] opacity-50 cursor-pointer hover:opacity-100'

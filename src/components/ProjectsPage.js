@@ -10,10 +10,6 @@ const ProjectsPage = () => {
 		window.scrollTo(0, 0);
 	});
 
-	// function logState() {
-	// 	console.log(mainView);
-	// }
-
 	return (
 		<div className='bg-lgreen'>
 			<div className='pb-[70px]'>
@@ -24,12 +20,6 @@ const ProjectsPage = () => {
 					Back to Main
 				</Link>
 			</div>
-			{/* <Link
-				className='secondary-btn btm-btn absolute top-[15px] right-[20px] py-2 px-4'
-				to='/'
-			>
-				Back to Main
-			</Link> */}
 
 			<div className=''>
 				<h1 className='text-5xl sm:text-6xl md:text-7xl text-dgreen marker drop-shadow-tan px-6 pb-4'>
@@ -39,8 +29,7 @@ const ProjectsPage = () => {
 					Scroll down to browse all of my projects. The cards on this page contain more details as
 					well as links to view the GitHub Repo and Live Website (if applicable) of each project.
 				</p>
-				{/* <Button onClick={handleState}>Set State</Button>
-			<Button onClick={logState}>Log State</Button> */}
+
 				<div className='flex-container'>
 					{data.map((project) => (
 						<React.Fragment key={project.number}>
