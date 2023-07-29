@@ -94,7 +94,7 @@ const NatureModal = ({ isVisible, onClose }) => {
 								className='modal-btn-style flex justify-center items-center p-2'
 								onClick={handleReset}
 							>
-								<GiCampingTent className='btn-icon' />
+								<GiCampingTent className='h-[70px] w-[70px]' />
 							</button>
 							<a
 								href='https://github.com/brett-ranieri/web-port-react/blob/main/src/components/NatureModal.js'
@@ -102,7 +102,7 @@ const NatureModal = ({ isVisible, onClose }) => {
 								target='_blank'
 								rel='noreferrer'
 							>
-								<FaGithubSquare className='nat-icon' />
+								<FaGithubSquare className='h-[90px] w-[90px] hover:text-dgreen' />
 							</a>
 						</div>
 					</div>
@@ -149,7 +149,7 @@ const NatureModal = ({ isVisible, onClose }) => {
 										<p>
 											Maybe you want to spend some time checking out my{" "}
 											<Link
-												className='modal-link font-bold underline'
+												className='hover:text-dgreen font-bold underline'
 												to='/projects'
 												onClick={onClose}
 											>
@@ -159,7 +159,7 @@ const NatureModal = ({ isVisible, onClose }) => {
 										<p>
 											The{" "}
 											<Link
-												className='modal-link font-bold underline'
+												className='hover:text-dgreen font-bold underline'
 												to='/picture_gallery'
 												onClick={onClose}
 											>
@@ -177,13 +177,13 @@ const NatureModal = ({ isVisible, onClose }) => {
 								className='modal-btn-style flex justify-center items-center p-2'
 								onClick={onClose}
 							>
-								<GiCampingTent className='btn-icon' />
+								<GiCampingTent className='h-[70px] w-[70px]' />
 							</button>
 							<button
 								className='modal-btn-style flex justify-center items-center p-2'
 								onClick={getPicture}
 							>
-								<GiFootsteps className='btn-icon' />
+								<GiFootsteps className='h-[70px] w-[70px]' />
 							</button>
 						</div>
 					</div>
@@ -237,13 +237,13 @@ const NatureModal = ({ isVisible, onClose }) => {
 									className='modal-btn-style flex justify-center items-center p-2'
 									onClick={onClose}
 								>
-									<GiCampingTent className='btn-icon' />
+									<GiCampingTent className='h-[70px] w-[70px]' />
 								</button>
 								<button
 									className='modal-btn-style flex justify-center items-center p-2'
 									onClick={handleFirstClick}
 								>
-									<GiFootsteps className='btn-icon' />
+									<GiFootsteps className='h-[70px] w-[70px]' />
 								</button>
 							</div>
 						</div>
@@ -273,13 +273,13 @@ const NatureModal = ({ isVisible, onClose }) => {
 									className='modal-btn-style flex justify-center items-center p-2'
 									onClick={onClose}
 								>
-									<GiCampingTent className='btn-icon' />
+									<GiCampingTent className='h-[70px] w-[70px]' />
 								</button>
 								<button
 									className='modal-btn-style flex justify-center items-center p-2'
 									onClick={getPicture}
 								>
-									<GiFootsteps className='btn-icon' />
+									<GiFootsteps className='h-[70px] w-[70px]' />
 								</button>
 							</div>
 						</div>

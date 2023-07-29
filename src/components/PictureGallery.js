@@ -15,7 +15,7 @@ const PictureGallery = () => {
 		<div className='bg-lgreen h-[100vh]'>
 			<div className='pb-[70px]'>
 				<Link
-					className='primary-btn btm-btn px-3 py-2'
+					className='primary-btn absolute top-[15px] right-[15px] px-3 py-2'
 					to='/'
 				>
 					Back to Main

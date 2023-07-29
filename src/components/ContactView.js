@@ -44,13 +44,13 @@ const ContactView = () => {
 						target='_blank'
 						rel='noreferrer'
 					>
-						<FaGithubSquare className='btn-icon' />
+						<FaGithubSquare className='h-[70px] w-[70px] hover:text-lgreen' />
 					</a>
 					<a
 						href='mailto:brett.ranieri@gmail.com'
 						className='m-3 md:m-6 hover:scale-105 ease-in-out duration-300'
 					>
-						<MdOutlineEmail className='btn-icon' />
+						<MdOutlineEmail className='h-[70px] w-[70px] hover:text-lgreen' />
 					</a>
 					<a
 						href='https://www.linkedin.com/in/brett-ranieri-bb9a6614/'
@@ -58,7 +58,7 @@ const ContactView = () => {
 						target='_blank'
 						rel='noreferrer'
 					>
-						<FaLinkedin className='btn-icon' />
+						<FaLinkedin className='h-[70px] w-[70px] hover:text-lgreen' />
 					</a>
 					<a
 						href='tel:6312785673'
@@ -66,7 +66,7 @@ const ContactView = () => {
 						target='_blank'
 						rel='noreferrer'
 					>
-						<BsTelephoneOutbound className='tele-icon' />
+						<BsTelephoneOutbound className='h-[50px] w-[50px] hover:text-lgreen' />
 					</a>
 					<a
 						href='/web-port-react/branieri_developer_resume_1.0.pdf'
@@ -74,7 +74,7 @@ const ContactView = () => {
 						target='_blank'
 						download
 					>
-						<HiDocumentDownload className='btn-icon' />
+						<HiDocumentDownload className='h-[70px] w-[70px] hover:text-lgreen' />
 						<p className='text-center'>Resume</p>
 					</a>
 				</div>
