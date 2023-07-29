@@ -480,13 +480,13 @@ font-family: 'Raleway', sans-serif;
 	box-shadow: -1px 1px 8px #fece7a;
 } */
 
-.modal-container {
+/* .modal-container {
 	width: 600px;
-	height: 650px;
+	height: 650px; 
 	background-color: #5f6935;
 	color: #fece7a;
 	border: 3px solid #2f341a;
-}
+} */
 
 #rotated:hover {
 	cursor: pointer;
@@ -549,13 +549,10 @@ font-family: 'Raleway', sans-serif;
 
 .project-modal,
 .nature-modal {
-	z-index: 500;
+	z-index: 1001;
 }
 
-.proj-modal-container {
-	height: 80vh;
-	background-color: #5f6935;
-	border: 3px solid #fece7a;
+.modal-container {
 	overflow-y: auto;
 	overflow-x: hidden;
 	overscroll-behavior: contain;

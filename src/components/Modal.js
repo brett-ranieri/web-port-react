@@ -16,7 +16,7 @@ const Modal = ({ isVisible, onClose, projModalContent, modNumber }) => {
 				id='projWrapper'
 				onClick={handleClose}
 			>
-				<div className='w-[90vw] proj-modal-container rounded'>
+				<div className='w-[90vw] h-[80vh] proj-modal-container bg-lgreen border-4 border-solid border-tan rounded'>
 					<div
 						className='secondary-btn proj-modal-btn px-2 py-1 mb-2 text-xs'
 						onClick={() => onClose()}

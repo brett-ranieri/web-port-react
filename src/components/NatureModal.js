@@ -72,7 +72,7 @@ const NatureModal = ({ isVisible, onClose }) => {
 				id='wrapper'
 				onClick={handleClose}
 			>
-				<div className='flex flex-col modal-container rounded'>
+				<div className='modal-container w-[80vw] md:w-[60vw] lg:w-[50vw] xl:w-[40vw] h-[90vh] sm:h-[80vh] md:h-[75vh] xl:h-[65vh] flex flex-col text-tan bg-lgreen border-4 border-solid border-dgreen rounded'>
 					<div className='p-2 rounded'>
 						<h3 className='modal-title px-2'>You've done it!</h3>
 						<div>
@@ -128,7 +128,7 @@ const NatureModal = ({ isVisible, onClose }) => {
 				id='wrapper'
 				onClick={handleClose}
 			>
-				<div className='flex flex-col modal-container rounded'>
+				<div className='modal-container w-[80vw] md:w-[60vw] lg:w-[50vw] xl:w-[40vw] h-[90vh] sm:h-[80vh] md:h-[75vh] xl:h-[65vh] flex flex-col text-tan bg-lgreen border-4 border-solid border-dgreen rounded'>
 					<div className='p-2 rounded'>
 						<h3 className='modal-title px-2'>WOAH, didn't see you there!</h3>
 						<div>
@@ -208,7 +208,7 @@ const NatureModal = ({ isVisible, onClose }) => {
 					id='wrapper'
 					onClick={handleClose}
 				>
-					<div className='flex flex-col modal-container rounded'>
+					<div className='modal-container w-[80vw] md:w-[60vw] lg:w-[50vw] xl:w-[40vw] h-[90vh] sm:h-[80vh] md:h-[75vh] xl:h-[65vh] flex flex-col text-tan bg-lgreen border-4 border-solid border-dgreen rounded'>
 						<div className='p-2 rounded'>
 							<h3 className='modal-title px-2'>Looking for some nature?</h3>
 							<div className='float-container'>
@@ -262,7 +262,7 @@ const NatureModal = ({ isVisible, onClose }) => {
 					id='wrapper'
 					onClick={handleClose}
 				>
-					<div className='flex flex-col modal-container rounded'>
+					<div className='modal-container w-[80vw] md:w-[60vw] lg:w-[50vw] xl:w-[40vw] h-[90vh] sm:h-[80vh] md:h-[75vh] xl:h-auto flex flex-col text-tan bg-lgreen border-4 border-solid border-dgreen rounded'>
 						<div className='p-2 rounded'>
 							<h3 className='modal-title px-2'>We're on an ADVENTURE!</h3>
 							<div className='flex justify-center items-center p-2'>
