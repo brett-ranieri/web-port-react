@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/web-port-react/static/css/main.c2d8dad1.css",
-    "main.js": "/web-port-react/static/js/main.24f9606e.js",
+    "main.css": "/web-port-react/static/css/main.38a9a185.css",
+    "main.js": "/web-port-react/static/js/main.9567b552.js",
     "static/js/787.23643744.chunk.js": "/web-port-react/static/js/787.23643744.chunk.js",
     "static/media/wedding_photo.jpg": "/web-port-react/static/media/wedding_photo.9a30b5f75474dd8a0b33.jpg",
     "index.html": "/web-port-react/index.html",
-    "main.c2d8dad1.css.map": "/web-port-react/static/css/main.c2d8dad1.css.map",
-    "main.24f9606e.js.map": "/web-port-react/static/js/main.24f9606e.js.map",
+    "main.38a9a185.css.map": "/web-port-react/static/css/main.38a9a185.css.map",
+    "main.9567b552.js.map": "/web-port-react/static/js/main.9567b552.js.map",
     "787.23643744.chunk.js.map": "/web-port-react/static/js/787.23643744.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c2d8dad1.css",
-    "static/js/main.24f9606e.js"
+    "static/css/main.38a9a185.css",
+    "static/js/main.9567b552.js"
   ]
 }
