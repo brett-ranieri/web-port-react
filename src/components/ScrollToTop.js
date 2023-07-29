@@ -7,7 +7,6 @@ const ScrollToTop = () => {
 	useEffect(() => {
 		window.addEventListener("scroll", () => {
 			if (window.pageYOffset > 300) {
-				console.log("i moved");
 				setShowScrollTopButton(true);
 			} else {
 				setShowScrollTopButton(false);
@@ -26,7 +25,7 @@ const ScrollToTop = () => {
 		<div>
 			{showScrollTopButton && (
 				<TbArrowBigUpLinesFilled
-					className='scroll-btn-position scroll-btn-style'
+					className='fixed bottom-6 right-6 scroll-btn-style'
 					onClick={scrollToTop}
 				/>
 			)}

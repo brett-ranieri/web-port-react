@@ -13,7 +13,6 @@ const NatureModal = ({ isVisible, onClose }) => {
 	const [naturePictures, setNaturePictures] = useState([]);
 
 	useEffect(() => {
-		console.log("used ");
 		setNaturePictures(fillArray(natureImages));
 	}, [reload]);
 
@@ -33,7 +32,6 @@ const NatureModal = ({ isVisible, onClose }) => {
 	}
 
 	function handleReset() {
-		console.log("reloaded");
 		setReload(Math.random());
 		setFirstClick(true);
 		setFinalSlide(false);
@@ -43,9 +41,7 @@ const NatureModal = ({ isVisible, onClose }) => {
 	}
 
 	function getPicture() {
-		console.log("images ", naturePictures.length);
 		if (naturePictures.length === 0) {
-			console.log("spot 12");
 			setContent(endImage);
 			setFinalSlide(true);
 		} else {
@@ -53,14 +49,7 @@ const NatureModal = ({ isVisible, onClose }) => {
 			setContent(choosen[0]);
 			setBackAgain(false);
 			setFirstClick(false);
-			console.log(choosen[0].id);
-			console.log("np ", naturePictures.length);
-			console.log("org ", natureImages.length);
 		}
-	}
-
-	function checkArray() {
-		console.log("checking ", naturePictures);
 	}
 
 	if (!isVisible) return null;
@@ -72,9 +61,9 @@ const NatureModal = ({ isVisible, onClose }) => {
 				id='wrapper'
 				onClick={handleClose}
 			>
-				<div className='flex flex-col modal-container rounded'>
+				<div className='modal-container w-[80vw] md:w-[60vw] lg:w-[50vw] xl:w-[40vw] h-[90vh] sm:h-[80vh] md:h-[75vh] xl:h-[65vh] flex flex-col text-tan bg-lgreen border-4 border-solid border-dgreen rounded'>
 					<div className='p-2 rounded'>
-						<h3 className='modal-title px-2'>You've done it!</h3>
+						<h3 className='raleway font-bold text-xl sm:text-3xl px-2'>You've done it!</h3>
 						<div>
 							<img
 								src={content.image}
@@ -82,7 +71,7 @@ const NatureModal = ({ isVisible, onClose }) => {
 								className='last-click-img rounded nature-img m-2'
 							/>
 							<div>
-								<p className='modal-text p-2 pl-4'>
+								<p className='raleway font-semibold text-sm sm:text-base p-2 pl-4'>
 									Look at you sticking it out until the end. Way to perserve, I know that wasn't too
 									easy of a hike...especially if you live closer to sea level!
 									<br />
@@ -105,7 +94,7 @@ const NatureModal = ({ isVisible, onClose }) => {
 								className='modal-btn-style flex justify-center items-center p-2'
 								onClick={handleReset}
 							>
-								<GiCampingTent className='btn-icon' />
+								<GiCampingTent className='h-[70px] w-[70px]' />
 							</button>
 							<a
 								href='https://github.com/brett-ranieri/web-port-react/blob/main/src/components/NatureModal.js'
@@ -113,7 +102,7 @@ const NatureModal = ({ isVisible, onClose }) => {
 								target='_blank'
 								rel='noreferrer'
 							>
-								<FaGithubSquare className='nat-icon' />
+								<FaGithubSquare className='h-[90px] w-[90px] hover:text-dgreen' />
 							</a>
 						</div>
 					</div>
@@ -128,16 +117,18 @@ const NatureModal = ({ isVisible, onClose }) => {
 				id='wrapper'
 				onClick={handleClose}
 			>
-				<div className='flex flex-col modal-container rounded'>
+				<div className='modal-container w-[80vw] md:w-[60vw] lg:w-[50vw] xl:w-[40vw] h-[90vh] sm:h-[80vh] md:h-[75vh] xl:h-[65vh] flex flex-col text-tan bg-lgreen border-4 border-solid border-dgreen rounded'>
 					<div className='p-2 rounded'>
-						<h3 className='modal-title px-2'>WOAH, didn't see you there!</h3>
+						<h3 className='raleway font-bold text-xl sm:text-3xl px-2'>
+							WOAH, didn't see you there!
+						</h3>
 						<div>
 							<img
 								src={content.image}
 								alt={content.alt}
 								className='repeat-img rounded nature-img ml-2 mr-4 mt-4'
 							/>
-							<div className='modal-text p-2 pl-8'>
+							<div className='raleway font-semibold text-sm sm:text-base p-2 pl-8'>
 								<p>
 									<p>
 										Snuck right up on us...we didn't expect you back here. You're welcome to take
@@ -158,7 +149,7 @@ const NatureModal = ({ isVisible, onClose }) => {
 										<p>
 											Maybe you want to spend some time checking out my{" "}
 											<Link
-												className='modal-link font-bold underline'
+												className='hover:text-dgreen font-bold underline'
 												to='/projects'
 												onClick={onClose}
 											>
@@ -168,7 +159,7 @@ const NatureModal = ({ isVisible, onClose }) => {
 										<p>
 											The{" "}
 											<Link
-												className='modal-link font-bold underline'
+												className='hover:text-dgreen font-bold underline'
 												to='/picture_gallery'
 												onClick={onClose}
 											>
@@ -186,13 +177,13 @@ const NatureModal = ({ isVisible, onClose }) => {
 								className='modal-btn-style flex justify-center items-center p-2'
 								onClick={onClose}
 							>
-								<GiCampingTent className='btn-icon' />
+								<GiCampingTent className='h-[70px] w-[70px]' />
 							</button>
 							<button
 								className='modal-btn-style flex justify-center items-center p-2'
 								onClick={getPicture}
 							>
-								<GiFootsteps className='btn-icon' />
+								<GiFootsteps className='h-[70px] w-[70px]' />
 							</button>
 						</div>
 					</div>
@@ -208,9 +199,11 @@ const NatureModal = ({ isVisible, onClose }) => {
 					id='wrapper'
 					onClick={handleClose}
 				>
-					<div className='flex flex-col modal-container rounded'>
+					<div className='modal-container w-[80vw] md:w-[60vw] lg:w-[50vw] xl:w-[40vw] h-[90vh] sm:h-[80vh] md:h-[75vh] xl:h-[65vh] flex flex-col text-tan bg-lgreen border-4 border-solid border-dgreen rounded'>
 						<div className='p-2 rounded'>
-							<h3 className='modal-title px-2'>Looking for some nature?</h3>
+							<h3 className='raleway font-bold text-xl sm:text-3xl px-2'>
+								Looking for some nature?
+							</h3>
 							<div className='float-container'>
 								<img
 									src={content.image}
@@ -218,7 +211,7 @@ const NatureModal = ({ isVisible, onClose }) => {
 									className='first-click-img rounded nature-img ml-2 mr-4 mt-7'
 								/>
 
-								<div className='modal-text p-2 m-1'>
+								<div className='raleway font-semibold text-sm sm:text-base p-2 m-1'>
 									<h4>You're in the right place!</h4>
 									<br />
 									<p>
@@ -244,13 +237,13 @@ const NatureModal = ({ isVisible, onClose }) => {
 									className='modal-btn-style flex justify-center items-center p-2'
 									onClick={onClose}
 								>
-									<GiCampingTent className='btn-icon' />
+									<GiCampingTent className='h-[70px] w-[70px]' />
 								</button>
 								<button
 									className='modal-btn-style flex justify-center items-center p-2'
 									onClick={handleFirstClick}
 								>
-									<GiFootsteps className='btn-icon' />
+									<GiFootsteps className='h-[70px] w-[70px]' />
 								</button>
 							</div>
 						</div>
@@ -262,9 +255,9 @@ const NatureModal = ({ isVisible, onClose }) => {
 					id='wrapper'
 					onClick={handleClose}
 				>
-					<div className='flex flex-col modal-container rounded'>
+					<div className='modal-container w-[80vw] md:w-[60vw] lg:w-[50vw] xl:w-[40vw] h-auto flex flex-col text-tan bg-lgreen border-4 border-solid border-dgreen rounded'>
 						<div className='p-2 rounded'>
-							<h3 className='modal-title px-2'>We're on an ADVENTURE!</h3>
+							<h3 className='raleway font-bold text-xl sm:text-3xl px-2'>We're on an ADVENTURE!</h3>
 							<div className='flex justify-center items-center p-2'>
 								<img
 									src={content.image}
@@ -273,20 +266,20 @@ const NatureModal = ({ isVisible, onClose }) => {
 								/>
 							</div>
 							<div className='flex flex-row justify-normal p-2'>
-								<p className='modal-text'>{content.blurb}</p>
+								<p className='raleway font-semibold text-sm sm:text-base'>{content.blurb}</p>
 							</div>
 							<div className='flex flex-row justify-around p-3'>
 								<button
 									className='modal-btn-style flex justify-center items-center p-2'
 									onClick={onClose}
 								>
-									<GiCampingTent className='btn-icon' />
+									<GiCampingTent className='h-[70px] w-[70px]' />
 								</button>
 								<button
 									className='modal-btn-style flex justify-center items-center p-2'
 									onClick={getPicture}
 								>
-									<GiFootsteps className='btn-icon' />
+									<GiFootsteps className='h-[70px] w-[70px]' />
 								</button>
 							</div>
 						</div>

@@ -1,16 +1,13 @@
-// import FullPageScroll from "./components/FullPageScroll";
 import AboutView from "./components/AboutView";
 import ProjectView from "./components/ProjectView";
 import ContactView from "./components/ContactView";
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState } from "react";
 import "./App.css";
 import NavBar from "./components/NavBar";
 import ScrollToTop from "./components/ScrollToTop";
-import { BrowserRouter, Routes, Route, Navigate, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ProjectsPage from "./components/ProjectsPage";
-import AboutPage from "./components/AboutPage";
 import PictureGallery from "./components/PictureGallery";
-// import { Button } from "@material-tailwind/react";
 import NatureModal from "./components/NatureModal";
 import Modal from "./components/Modal";
 
@@ -22,30 +19,6 @@ function App() {
 	const [showModal2, setShowModal2] = useState(false);
 	const [projModalContent, setProjModalContent] = useState({});
 	const [modNumber, setModNumber] = useState(0);
-
-	////////////////////State for Project View////////////////////////
-	// let [mainView, setMainView] = useState(false);
-
-	// useEffect(() => {
-	// 	console.log("reloaded");
-	// 	window.location.reload(false);
-	// }, []);
-
-	// 	function handleState() {
-	// 		setMainView(true);
-	// 	}
-
-	// 	function logState() {
-	// 		console.log(mainView);
-	// 	}
-
-	useEffect(() => {
-		if (showModal || showModal2) {
-			document.body.style.overflow = "hidden";
-		} else {
-			document.body.style.overflow = "unset";
-		}
-	}, [showModal, showModal2]);
 
 	const modControl = (project, number) => {
 		setProjModalContent(project);
@@ -60,7 +33,6 @@ function App() {
 	};
 
 	return (
-		// <FullPageScroll />
 		<BrowserRouter basename={process.env.PUBLIC_URL}>
 			<Routes>
 				<Route
@@ -88,15 +60,19 @@ function App() {
 								projModalContent={projModalContent}
 								modNumber={modNumber}
 							/>
-							<div className='header-container'>
+							<div className='header-container relative'>
 								<img
 									src='./img/home-banner.jpg'
 									alt='brett standing looking out over mountains'
 									className='w-full object-cover'
 								/>
 								<div className='marker header-text'>
-									<h1 className='p-3 section-title'>Brett Ranieri</h1>
-									<h3 className='ml-6 p-3 section-second'>Web Developer</h3>
+									<h1 className='text-dgreen text-4xl sm:text-5xl md:text-6xl 2xl:text-8xl absolute top-2 sm:top-4 md:top-10 2xl:top-20 right-1 sm:right-5 md:right-6 2xl:right-20'>
+										Brett Ranieri
+									</h1>
+									<h3 className='text-lgreen text-2xl sm:text-3xl md:text-4xl 2xl:text-6xl text-border-dgreen absolute top-12 sm:top-20 md:top-32 2xl:top-[200px] right-1 sm:right-5 md:right-6 2xl:right-20'>
+										Web Developer
+									</h3>
 								</div>
 							</div>
 							<div ref={projects}>
@@ -132,21 +108,7 @@ function App() {
 					path='/projects'
 					element={
 						<div>
-							<ProjectsPage
-							// handleState={handleState}
-							// mainView={mainView}
-							/>
-						</div>
-					}
-				/>
-				<Route
-					path='/about'
-					element={
-						<div>
-							<AboutPage
-							// handleState={handleState}
-							// mainView={mainView}
-							/>
+							<ProjectsPage />
 						</div>
 					}
 				/>
@@ -154,10 +116,7 @@ function App() {
 					path='/picture_gallery'
 					element={
 						<div>
-							<PictureGallery
-							// handleState={handleState}
-							// mainView={mainView}
-							/>
+							<PictureGallery />
 						</div>
 					}
 				/>

@@ -50,8 +50,7 @@ font-family: 'Raleway', sans-serif;
 	z-index: 1000;
 }
 
-.navbar-container,
-.header-container {
+.navbar-container {
 	box-shadow: -5px 5px 8px #2f341a;
 }
 
@@ -94,58 +93,14 @@ font-family: 'Raleway', sans-serif;
 	position: relative;
 	z-index: 103;
 	background-color: antiquewhite;
-	box-shadow: 5px 5px 8px #2f341a;
+	overflow-y: initial !important;
 }
 
 .about-view {
 	position: relative;
 	height: 700px;
 	width: 100%;
-	box-shadow: 5px 5px 8px #2f341a;
 	z-index: 102;
-}
-
-.about-view-header {
-	position: absolute;
-	top: 70px;
-	right: 250px;
-	z-index: 101;
-}
-
-.about-view-text-container-one {
-	position: absolute;
-	width: 325px;
-	height: auto;
-	bottom: 50%;
-	left: 12%;
-	z-index: 101;
-	background-color: #2f341a;
-	opacity: 0.8;
-}
-
-.about-view-text-container-two {
-	position: absolute;
-	width: 325px;
-	height: auto;
-	bottom: 30%;
-	left: 15%;
-	z-index: 101;
-	background-color: #2f341a;
-	opacity: 0.8;
-}
-
-.about-view-text {
-	position: relative;
-	width: 315px;
-	height: auto;
-	z-index: 102;
-	color: antiquewhite;
-}
-
-.about-view-content {
-	position: relative;
-	/* although it caps size of sharp image, for some reason adding position relative here is causing h1, p and button to animate along with image grow... */
-	max-width: 1000px;
 }
 
 .blur {
@@ -164,15 +119,11 @@ font-family: 'Raleway', sans-serif;
 
 .contact {
 	background-color: #89cfc7;
-	height: 600px;
+	height: auto;
 }
 
-.contact-photo {
-	max-width: 200px;
-}
-
-.section-title {
-	font-size: 4em;
+.sm-section-title {
+	font-size: 2em;
 	color: #2f341a;
 	text-shadow: 6px 6px 5px #5f6935;
 }
@@ -182,34 +133,10 @@ font-family: 'Raleway', sans-serif;
 	text-shadow: 4px 4px 5px #5f6935;
 }
 
-.b-green {
-	background-color: #2f341a;
-}
-
-.b-light {
-	background-color: #fece7a;
-}
-
-.dark {
-	color: #2f341a;
-}
-
-.light {
-	color: #fece7a;
-}
-
 .light-section-title {
 	font-size: 4em;
 	color: #fece7a;
 	text-shadow: 10px 10px 10px #2f341a;
-}
-
-.section-text {
-	/* color: #2f341a; */
-	font-size: 1em;
-	/* text-shadow: 3px 3px 5px #5f6935; */
-	font-family: "Raleway", sans-serif;
-	font-weight: 600;
 }
 
 .light-section-text {
@@ -218,11 +145,6 @@ font-family: 'Raleway', sans-serif;
 	font-weight: 600;
 	font-family: "Raleway", sans-serif;
 	margin-bottom: 1000px;
-}
-
-.special-text {
-	font-size: 0.75em;
-	font-weight: 700;
 }
 
 .section-second {
@@ -255,31 +177,12 @@ font-family: 'Raleway', sans-serif;
 	margin-bottom: 1em;
 }
 
-.proj-page-card {
-	width: 80vw;
-	height: auto;
-	padding: 10px;
-	border-radius: 5px;
-	border: 4px solid #2f341a;
-	background-color: #fece7a;
-	color: #2f341a;
-	/* text-shadow: 3px 3px 8px #5f6935; */
-	box-shadow: 5px 5px 8px #2f341a;
-}
-
 .proj-card {
 	border-radius: 5px;
 	border: 2px solid #fece7a;
 	background-color: #5f6935;
 	color: #fece7a;
 	display: inline-grid;
-	/* text-shadow: 3px 3px 8px #2f341a; */
-}
-
-.proj-title {
-	font-size: 2em;
-	line-height: 1.75em;
-	text-shadow: 3px 3px 8px #2f341a;
 }
 
 .proj-card:hover {
@@ -296,35 +199,19 @@ font-family: 'Raleway', sans-serif;
 	border-radius: 10px;
 }
 
-/*///////////////// SLIDE STYLING //////////////*/
-.slider-btn {
-	background-color: #5f6935;
-	color: #fece7a;
-	height: 200px;
-}
-
 #slider {
 	background-color: #2f341a;
 }
 
-/* .proj-btn-container {
-	position: fixed;
-	background-color: antiquewhite;
-	padding: 1em;
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	box-shadow: -5px 5px 8px #2f341a;
-	z-index: 1000;
-} */
-.proj-container {
-	background-color: #5f6935;
-}
 /*/////////////// BUTTON STYLING /////////////////*/
 
 .about-btn-loc {
+	position: absolute;
+	bottom: 50px;
+	right: 150px;
+	z-index: 102;
+}
+.sm-about-btn-loc {
 	position: absolute;
 	bottom: 50px;
 	right: 150px;
@@ -424,35 +311,9 @@ font-family: 'Raleway', sans-serif;
 	box-shadow: -5px 5px 8px #2f341a;
 }
 
-.btn-icon {
-	width: 70px;
-	height: 70px;
-}
-
-.tele-icon {
-	width: 50px;
-	height: 50px;
-}
-
-.contact-links {
-	color: #2f341a;
-}
-
 .menu-btn-icon {
 	width: 20px;
 	height: 20px;
-}
-
-.btn-icon:hover,
-.tele-icon:hover,
-.port-link:hover {
-	color: #5f6935;
-}
-
-.btm-btn {
-	position: absolute;
-	top: 15px;
-	right: 20px;
 }
 
 .proj-modal-btn {
@@ -461,17 +322,6 @@ font-family: 'Raleway', sans-serif;
 	position: relative;
 	top: 1em;
 	left: 1em;
-}
-/* .btm-btn:hover {
-	box-shadow: -1px 1px 8px #fece7a;
-} */
-
-.modal-container {
-	width: 600px;
-	height: 650px;
-	background-color: #5f6935;
-	color: #fece7a;
-	border: 3px solid #2f341a;
 }
 
 #rotated:hover {
@@ -502,45 +352,19 @@ font-family: 'Raleway', sans-serif;
 	height: auto;
 }
 
-.nat-icon {
-	height: 90px;
-	width: 90px;
-}
-
-.nat-icon:hover {
-	color: #2f341a;
-}
-
-.modal-link:hover {
-	/* text-shadow: 5px 5px 5px #fece7a; */
-	color: #2f341a;
-}
-
-.modal-title {
-	font-family: "Raleway", sans-serif;
-	font-weight: 600;
-	font-size: 1.7em;
-}
-
-.modal-text {
-	font-family: "Raleway", sans-serif;
-	font-weight: 500;
-	font-size: 1em;
-}
-
 .wedding-img {
-	transition: height 1s ease-in-out 0.1s;
 	z-index: 100;
 }
 
 .project-modal,
 .nature-modal {
-	z-index: 500;
+	z-index: 1001;
 }
 
-.proj-modal-container {
-	background-color: #5f6935;
-	border: 3px solid #fece7a;
+.modal-container {
+	overflow-y: auto;
+	overflow-x: hidden;
+	overscroll-behavior: contain;
 }
 
 .footer-container,
@@ -558,15 +382,15 @@ font-family: 'Raleway', sans-serif;
 }
 
 .header-text {
-	position: absolute;
-	top: 50px;
-	right: 50px;
-	color: #2f341a;
 	z-index: 102;
 }
 
 .marker {
 	font-family: "Permanent Marker", cursive;
+}
+
+.raleway {
+	font-family: "Raleway", sans-serif;
 }
 
 .gallery-slider {
@@ -579,19 +403,10 @@ font-family: 'Raleway', sans-serif;
 	bottom: 0px;
 	left: 0px;
 	background-color: #fece7a;
-	/* height: 15%; */
-}
-
-.gallery-slider-btn {
-	height: 80%;
-}
-
-.gallery-container {
-	background-color: #5f6935;
 }
 
 .shown-picture {
-	max-width: 70%;
+	max-width: 80%;
 	height: auto;
 	max-height: 80%;
 	border: 3px solid #fece7a;
