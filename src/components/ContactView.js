@@ -1,7 +1,7 @@
 import React from "react";
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
-import { BsTelephoneOutbound } from "react-icons/bs";
+import { BsTelephoneOutbound, BsMedium } from "react-icons/bs";
 import { HiDocumentDownload } from "react-icons/hi";
 
 const ContactView = () => {
@@ -67,6 +67,14 @@ const ContactView = () => {
 						rel='noreferrer'
 					>
 						<BsTelephoneOutbound className='h-[50px] w-[50px] hover:text-lgreen' />
+					</a>
+					<a
+						href='https://medium.com/@brett.ranieri'
+						className='m-3 md:m-6 hover:scale-105 ease-in-out duration-300 flex flex-col justify-center'
+						target='_blank'
+						rel='noreferrer'
+					>
+						<BsMedium className='h-[70px] w-[70px] hover:text-lgreen' />
 					</a>
 					<a
 						href='/web-port-react/branieri_developer_resume_1.0.pdf'

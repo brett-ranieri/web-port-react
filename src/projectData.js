@@ -43,7 +43,7 @@ export const data = [
 	{
 		name: "THIS Website",
 		languages: "JavaScript, HTML, CSS",
-		technologies: "React, Material Tailwind, HOSTING SITE",
+		technologies: "React, Material Tailwind",
 		stack: "",
 		number: 7,
 		website: "",
