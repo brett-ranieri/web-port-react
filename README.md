@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# My Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Create React App project built from scratch to present my coding projects and show off a bit of my personality.
 
-## Available Scripts
+## Project Description
 
-In the project directory, you can run:
+Using React, and Tailwind I built this site as my first personal project. I wanted to not only focus on the standard navigation expected from a portfolio site, but also build in features and easter eggs that would require me to continue learning as a Javascript developer.
 
-### `npm start`
+## How to get the project running
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Development:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Navigate to root folder in terminal
+- Run the following: `npm run start`
+- In browser, navigate to http://localhost:3000/web-port-react
 
-### `npm test`
+Production:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Navigate to following URL in any browser:
+  https://brett-ranieri.github.io/web-port-react/
 
-### `npm run build`
+## Development Dependencies
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- "autoprefixer": "^10.4.14"
+- "postcss": "^8.4.23"
+- "tailwindcss": "^3.3.2"
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Project Dependencies
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- "@ap.cx/react-fullpage": "^0.3.0"
+- "@material-tailwind/react": "^2.0.1"
+- "@testing-library/jest-dom": "^5.16.5"
+- "@testing-library/react": "^13.4.0"
+- "@testing-library/user-event": "^13.5.0"
+- "gh-pages": "^5.0.0"
+- "react": "^18.2.0"
+- "react-dom": "^18.2.0"
+- "react-icons": "^4.8.0"
+- "react-router-dom": "^6.11.2"
+- "react-scripts": "5.0.1"
+- "tailwind-scrollbar-hide": "^1.1.7"
+- "web-vitals": "^2.1.4"
 
-### `npm run eject`
+## Tools and Features to Highlight
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Slider**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Displays loaded images and allows user to navigate through them horizontally.
+- Incorporated in three different locations in website.
+- Each use of slider is customized for it's specific use case.
+- https://github.com/brett-ranieri/web-port-react/blob/main/src/components/Slider.js
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**Nature Modal**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Built in easter egg that allows users to review images in a modal.
+- Images are randomly generated each time through the modal.
+- Situational displays based on a variety of states that are coded into the component.
+- https://github.com/brett-ranieri/web-port-react/blob/main/src/components/NatureModal.js
 
-## Learn More
+**Scroll To Top Button**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Component that is rendered when user scrolls down on either the landing page or project page.
+- When clicked, will scroll the viewport to the top of the page.
+- https://github.com/brett-ranieri/web-port-react/blob/main/src/components/ScrollToTop.js
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  
