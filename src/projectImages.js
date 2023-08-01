@@ -17,7 +17,7 @@ export const images = [
 	{
 		id: 4,
 		image: "./img/gallery/img4.jpg",
-		blurb: "Some moss slowly growing on an old handrail",
+		blurb: "Hiking the Great Sand Dunes in Southern Colorado",
 	},
 	{
 		id: 5,
@@ -32,12 +32,12 @@ export const images = [
 	{
 		id: 7,
 		image: "./img/gallery/img7.jpg",
-		blurb: "My wife and I with our best men at our wedding",
+		blurb: "The best men look so handsome in their bowties",
 	},
 	{
 		id: 8,
 		image: "./img/gallery/img8.jpg",
-		blurb: "Benny in a box (alt title: Avo-cat-o)",
+		blurb: "Family wedding portrait (minus the cats...)",
 	},
 	{
 		id: 9,
@@ -57,7 +57,7 @@ export const images = [
 	{
 		id: 12,
 		image: "./img/gallery/img12.jpg",
-		blurb: "You are definitely NOT allowed to take pictures in the Sistine Chapel",
+		blurb: "Benny in a box (alt title: Avo-cat-o)",
 	},
 	{
 		id: 13,
@@ -93,7 +93,7 @@ export const images = [
 	{
 		id: 19,
 		image: "./img/gallery/img19.jpg",
-		blurb: "Hiking the Great Sand Dunes in Southern Colorado",
+		blurb: "Maurice lounging in his fancy hat",
 	},
 	{
 		id: 20,
@@ -109,6 +109,16 @@ export const images = [
 		id: 22,
 		image: "./img/gallery/img22.jpg",
 		blurb: "The sun peeking through the trees at Rocky Mountain National Park",
+	},
+	{
+		id: 23,
+		image: "./img/gallery/img23.jpg",
+		blurb: "You are definitely NOT allowed to take pictures in the Sistine Chapel",
+	},
+	{
+		id: 24,
+		image: "./img/gallery/img24.jpg",
+		blurb: "Some moss slowly growing on an old handrail",
 	},
 ];
 
