@@ -61,7 +61,7 @@ const NatureModal = ({ isVisible, onClose }) => {
 				id='wrapper'
 				onClick={handleClose}
 			>
-				<div className='modal-container w-[80vw] md:w-[60vw] lg:w-[50vw] xl:w-[40vw] h-[90vh] sm:h-[80vh] md:h-[75vh] xl:h-[65vh] flex flex-col text-tan bg-lgreen border-4 border-solid border-dgreen rounded'>
+				<div className='modal-container w-[80vw] md:w-[60vw] lg:w-[50vw] xl:w-[40vw] h-auto flex flex-col text-tan bg-lgreen border-4 border-solid border-dgreen rounded'>
 					<div className='p-2 rounded'>
 						<h3 className='raleway font-bold text-xl sm:text-3xl px-2'>You've done it!</h3>
 						<div>
@@ -72,13 +72,12 @@ const NatureModal = ({ isVisible, onClose }) => {
 							/>
 							<div>
 								<p className='raleway font-semibold text-sm sm:text-base p-2 pl-4'>
-									Look at you sticking it out until the end. Way to perserve, I know that wasn't too
-									easy of a hike...especially if you live closer to sea level!
-									<br />
-									<br />
-									You've made it to the final image, which is a picture of my wife standing on a
-									trail bridge looking up at the forest around Lake Bierstadt. At this point that
-									array of pictures has a length of zero...it's the only way you'd see this content.
+									{/* Look at you sticking it out until the end. Way to perserve, I know that wasn't too */}
+									{/* easy of a hike...especially if you live closer to sea level! */}
+									{/* <br /> */}
+									{/* <br /> */}
+									You've made it to the final image! At this point that array of pictures has a
+									length of zero...it's the only way you'd see this content.
 									<span className='font-bold'> IF</span> you were to close the modal now and click
 									the button in the NavBar again something new will happen...just saying.
 									<br />
@@ -94,7 +93,7 @@ const NatureModal = ({ isVisible, onClose }) => {
 								className='modal-btn-style flex justify-center items-center p-2'
 								onClick={handleReset}
 							>
-								<GiCampingTent className='h-[70px] w-[70px]' />
+								<GiCampingTent className='h-[50px] w-[50px]' />
 							</button>
 							<a
 								href='https://github.com/brett-ranieri/web-port-react/blob/main/src/components/NatureModal.js'
@@ -102,7 +101,7 @@ const NatureModal = ({ isVisible, onClose }) => {
 								target='_blank'
 								rel='noreferrer'
 							>
-								<FaGithubSquare className='h-[90px] w-[90px] hover:text-dgreen' />
+								<FaGithubSquare className='h-[70px] w-[70px] hover:text-dgreen' />
 							</a>
 						</div>
 					</div>
@@ -117,7 +116,7 @@ const NatureModal = ({ isVisible, onClose }) => {
 				id='wrapper'
 				onClick={handleClose}
 			>
-				<div className='modal-container w-[80vw] md:w-[60vw] lg:w-[50vw] xl:w-[40vw] h-[90vh] sm:h-[80vh] md:h-[75vh] xl:h-[65vh] flex flex-col text-tan bg-lgreen border-4 border-solid border-dgreen rounded'>
+				<div className='modal-container w-[80vw] md:w-[60vw] lg:w-[50vw] xl:w-[40vw] h-auto flex flex-col text-tan bg-lgreen border-4 border-solid border-dgreen rounded'>
 					<div className='p-2 rounded'>
 						<h3 className='raleway font-bold text-xl sm:text-3xl px-2'>
 							WOAH, didn't see you there!
@@ -130,43 +129,39 @@ const NatureModal = ({ isVisible, onClose }) => {
 							/>
 							<div className='raleway font-semibold text-sm sm:text-base p-2 pl-8'>
 								<p>
+									Snuck right up on us...we didn't expect you back. Feel free to take another hike,
+									but you're the pictures aren't new.
+									<br />
+									<br />
+									<span className='italic'>
+										*SPOILER ALERT*
+										<br />
+										That array of pictures has been re-populated and will appear in a new order. You
+										can test me...but there's definitely more to see here on my site.
+									</span>
+									<br />
+									<br />
 									<p>
-										Snuck right up on us...we didn't expect you back here. You're welcome to take
-										another hike, but you're not going to see anything new.
-										<br />
-										<br />
-										<span className='italic'>
-											*SPOILER ALERT*
-											<br />
-											That array of pictures I keep talking about has been re-populated and will now
-											appear in a new order if you were to step through the exercise again. You're
-											welcome to do so if you'd like, and at this point you know the drill so I'll
-											save the insturctions...but let me tell you there's definitely more to see
-											here on my site.
-										</span>
-										<br />
-										<br />
-										<p>
-											Maybe you want to spend some time checking out my{" "}
-											<Link
-												className='hover:text-dgreen font-bold underline'
-												to='/projects'
-												onClick={onClose}
-											>
-												projects?
-											</Link>
-										</p>
-										<p>
-											The{" "}
-											<Link
-												className='hover:text-dgreen font-bold underline'
-												to='/picture_gallery'
-												onClick={onClose}
-											>
-												Gallery
-											</Link>{" "}
-											also has more nature pictures!
-										</p>
+										Maybe you want to spend some time checking out my{" "}
+										<Link
+											className='hover:text-dgreen font-bold underline'
+											to='/projects'
+											onClick={onClose}
+										>
+											projects?
+										</Link>
+									</p>
+									<br />
+									<p>
+										The{" "}
+										<Link
+											className='hover:text-dgreen font-bold underline'
+											to='/picture_gallery'
+											onClick={onClose}
+										>
+											Gallery
+										</Link>{" "}
+										also has some more nature pictures!
 									</p>
 								</p>
 							</div>
@@ -177,13 +172,13 @@ const NatureModal = ({ isVisible, onClose }) => {
 								className='modal-btn-style flex justify-center items-center p-2'
 								onClick={onClose}
 							>
-								<GiCampingTent className='h-[70px] w-[70px]' />
+								<GiCampingTent className='h-[50px] w-[50px]' />
 							</button>
 							<button
 								className='modal-btn-style flex justify-center items-center p-2'
 								onClick={getPicture}
 							>
-								<GiFootsteps className='h-[70px] w-[70px]' />
+								<GiFootsteps className='h-[50px] w-[50px]' />
 							</button>
 						</div>
 					</div>
@@ -199,7 +194,7 @@ const NatureModal = ({ isVisible, onClose }) => {
 					id='wrapper'
 					onClick={handleClose}
 				>
-					<div className='modal-container w-[80vw] md:w-[60vw] lg:w-[50vw] xl:w-[40vw] h-[90vh] sm:h-[80vh] md:h-[75vh] xl:h-[65vh] flex flex-col text-tan bg-lgreen border-4 border-solid border-dgreen rounded'>
+					<div className='modal-container w-[80vw] md:w-[60vw] lg:w-[50vw] xl:w-[40vw] h-auto flex flex-col text-tan bg-lgreen border-4 border-solid border-dgreen rounded'>
 						<div className='p-2 rounded'>
 							<h3 className='raleway font-bold text-xl sm:text-3xl px-2'>
 								Looking for some nature?
@@ -208,26 +203,25 @@ const NatureModal = ({ isVisible, onClose }) => {
 								<img
 									src={content.image}
 									alt={content.alt}
-									className='first-click-img rounded nature-img ml-2 mr-4 mt-7'
+									className='first-click-img rounded nature-img ml-2 mr-4 mt-4'
 								/>
 
 								<div className='raleway font-semibold text-sm sm:text-base p-2 m-1'>
-									<h4>You're in the right place!</h4>
-									<br />
+									{/* <h4>You're in the right place!</h4> */}
+									{/* <br /> */}
 									<p>
-										My wife and I went on a camping trip to Rocky Mountain National Park and let me
-										tell you, it was <span className='text-xl font-bold'>GORGEOUS!</span>
+										{/* My wife and I went on a camping trip to Rocky Mountain National Park and let me */}
+										{/* tell you, it was <span className='text-xl font-bold'>GORGEOUS!</span> */}
+										{/* <br /> */}
+										{/* <br /> */}
+										This modal adventure will show you some photos from a trip my wife and I took to
+										Rocky Mountain National Park. All photos are stored in an array, as you "hike"
+										this array is spliced at a random point and the choosen image will be presented.
+										With each step, another image is spliced from the array until there's none left!
 										<br />
-										<br />I wanted to make a feature that allowed users to explore photos from our
-										trip, hence this side modal adventure. All photos are stored in an array, as you
-										"hike" this array is spliced at a random point and the choosen image will be
-										presented. With each step, another image is spliced from the array until there's
-										none left!
 										<br />
-										<br />
-										If you feel like taking a virtual hike and seeing some of the beauty just press
-										on the footsteps. Don't worry though, at any point you can head back to camp
-										(close the modal) by clicking the tent.
+										If you feel like taking a virtual hike press on the footsteps. At any point you
+										can head back to camp and close the modal by clicking the tent.
 									</p>
 								</div>
 							</div>
@@ -237,13 +231,13 @@ const NatureModal = ({ isVisible, onClose }) => {
 									className='modal-btn-style flex justify-center items-center p-2'
 									onClick={onClose}
 								>
-									<GiCampingTent className='h-[70px] w-[70px]' />
+									<GiCampingTent className='h-[50px] w-[50px]' />
 								</button>
 								<button
 									className='modal-btn-style flex justify-center items-center p-2'
 									onClick={handleFirstClick}
 								>
-									<GiFootsteps className='h-[70px] w-[70px]' />
+									<GiFootsteps className='h-[50px] w-[50px]' />
 								</button>
 							</div>
 						</div>
@@ -273,13 +267,13 @@ const NatureModal = ({ isVisible, onClose }) => {
 									className='modal-btn-style flex justify-center items-center p-2'
 									onClick={onClose}
 								>
-									<GiCampingTent className='h-[70px] w-[70px]' />
+									<GiCampingTent className='h-[50px] w-[50px]' />
 								</button>
 								<button
 									className='modal-btn-style flex justify-center items-center p-2'
 									onClick={getPicture}
 								>
-									<GiFootsteps className='h-[70px] w-[70px]' />
+									<GiFootsteps className='h-[50px] w-[50px]' />
 								</button>
 							</div>
 						</div>

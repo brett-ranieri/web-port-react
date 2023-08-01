@@ -1,7 +1,7 @@
 import AboutView from "./components/AboutView";
 import ProjectView from "./components/ProjectView";
 import ContactView from "./components/ContactView";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./App.css";
 import NavBar from "./components/NavBar";
 import ScrollToTop from "./components/ScrollToTop";
@@ -31,6 +31,14 @@ function App() {
 			behavior: "smooth",
 		});
 	};
+
+	useEffect(() => {
+		if (showModal) {
+			document.body.style.overflow = "hidden";
+		} else {
+			document.body.style.overflow = "unset";
+		}
+	}, [showModal]);
 
 	return (
 		<BrowserRouter basename={process.env.PUBLIC_URL}>
