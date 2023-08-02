@@ -33,7 +33,6 @@ const NatureModal = ({ isVisible, onClose }) => {
 
 	function handleReset() {
 		setReload(Math.random());
-		setFirstClick(true);
 		setFinalSlide(false);
 		setBackAgain(true);
 		setContent(againImage);
@@ -54,138 +53,6 @@ const NatureModal = ({ isVisible, onClose }) => {
 
 	if (!isVisible) return null;
 
-	if (finalSlide)
-		return (
-			<div
-				className='nature-modal fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex justify-center items-center'
-				id='wrapper'
-				onClick={handleClose}
-			>
-				<div className='modal-container w-[80vw] md:w-[60vw] lg:w-[50vw] xl:w-[40vw] h-auto flex flex-col text-tan bg-lgreen border-4 border-solid border-dgreen rounded'>
-					<div className='p-2 rounded'>
-						<h3 className='raleway font-bold text-xl sm:text-3xl px-2'>You've done it!</h3>
-						<div>
-							<img
-								src={content.image}
-								alt={content.alt}
-								className='last-click-img rounded nature-img m-2'
-							/>
-							<div>
-								<p className='raleway font-semibold text-sm sm:text-base p-2 pl-4'>
-									{/* Look at you sticking it out until the end. Way to perserve, I know that wasn't too */}
-									{/* easy of a hike...especially if you live closer to sea level! */}
-									{/* <br /> */}
-									{/* <br /> */}
-									You've made it to the final image! At this point that array of pictures has a
-									length of zero...it's the only way you'd see this content.
-									<span className='font-bold'> IF</span> you were to close the modal now and click
-									the button in the NavBar again something new will happen...just saying.
-									<br />
-									<br />
-									Clicking on the GitHub link below will take you to the repo for this project
-									(specifically the code for this NatureModal component). Of course, you can click
-									on the tent to close the modal and keep exploring elsewhere.
-								</p>
-							</div>
-						</div>
-						<div className='flex flex-row justify-around items-center p-3 h-[116px]'>
-							<button
-								className='modal-btn-style flex justify-center items-center p-2'
-								onClick={handleReset}
-							>
-								<GiCampingTent className='h-[50px] w-[50px]' />
-							</button>
-							<a
-								href='https://github.com/brett-ranieri/web-port-react/blob/main/src/components/NatureModal.js'
-								className='m-6 hover:scale-105 ease-in-out duration-300'
-								target='_blank'
-								rel='noreferrer'
-							>
-								<FaGithubSquare className='h-[70px] w-[70px] hover:text-dgreen' />
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		);
-
-	if (backAgain)
-		return (
-			<div
-				className='nature-modal fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex justify-center items-center'
-				id='wrapper'
-				onClick={handleClose}
-			>
-				<div className='modal-container w-[80vw] md:w-[60vw] lg:w-[50vw] xl:w-[40vw] h-auto flex flex-col text-tan bg-lgreen border-4 border-solid border-dgreen rounded'>
-					<div className='p-2 rounded'>
-						<h3 className='raleway font-bold text-xl sm:text-3xl px-2'>
-							WOAH, didn't see you there!
-						</h3>
-						<div>
-							<img
-								src={content.image}
-								alt={content.alt}
-								className='repeat-img rounded nature-img ml-2 mr-4 mt-4'
-							/>
-							<div className='raleway font-semibold text-sm sm:text-base p-2 pl-8'>
-								<p>
-									Snuck right up on us...we didn't expect you back. Feel free to take another hike,
-									but you're the pictures aren't new.
-									<br />
-									<br />
-									<span className='italic'>
-										*SPOILER ALERT*
-										<br />
-										That array of pictures has been re-populated and will appear in a new order. You
-										can test me...but there's definitely more to see here on my site.
-									</span>
-									<br />
-									<br />
-									<p>
-										Maybe you want to spend some time checking out my{" "}
-										<Link
-											className='hover:text-dgreen font-bold underline'
-											to='/projects'
-											onClick={onClose}
-										>
-											projects?
-										</Link>
-									</p>
-									<br />
-									<p>
-										The{" "}
-										<Link
-											className='hover:text-dgreen font-bold underline'
-											to='/picture_gallery'
-											onClick={onClose}
-										>
-											Gallery
-										</Link>{" "}
-										also has some more nature pictures!
-									</p>
-								</p>
-							</div>
-						</div>
-
-						<div className='flex flex-row justify-around p-3'>
-							<button
-								className='modal-btn-style flex justify-center items-center p-2'
-								onClick={onClose}
-							>
-								<GiCampingTent className='h-[50px] w-[50px]' />
-							</button>
-							<button
-								className='modal-btn-style flex justify-center items-center p-2'
-								onClick={getPicture}
-							>
-								<GiFootsteps className='h-[50px] w-[50px]' />
-							</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		);
-
 	return (
 		<>
 			{firstClick ? (
@@ -199,21 +66,15 @@ const NatureModal = ({ isVisible, onClose }) => {
 							<h3 className='raleway font-bold text-xl sm:text-3xl px-2'>
 								Looking for some nature?
 							</h3>
-							<div className='float-container'>
+							<div>
 								<img
 									src={content.image}
 									alt={content.alt}
-									className='first-click-img rounded nature-img ml-2 mr-4 mt-4'
+									className='h-56 float-left rounded nature-img ml-2 mr-4 mt-4'
 								/>
 
 								<div className='raleway font-semibold text-sm sm:text-base p-2 m-1'>
-									{/* <h4>You're in the right place!</h4> */}
-									{/* <br /> */}
 									<p>
-										{/* My wife and I went on a camping trip to Rocky Mountain National Park and let me */}
-										{/* tell you, it was <span className='text-xl font-bold'>GORGEOUS!</span> */}
-										{/* <br /> */}
-										{/* <br /> */}
 										This modal adventure will show you some photos from a trip my wife and I took to
 										Rocky Mountain National Park. All photos are stored in an array, as you "hike"
 										this array is spliced at a random point and the choosen image will be presented.
@@ -236,6 +97,124 @@ const NatureModal = ({ isVisible, onClose }) => {
 								<button
 									className='modal-btn-style flex justify-center items-center p-2'
 									onClick={handleFirstClick}
+								>
+									<GiFootsteps className='h-[50px] w-[50px]' />
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			) : finalSlide ? (
+				<div
+					className='nature-modal fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex justify-center items-center'
+					id='wrapper'
+					onClick={handleClose}
+				>
+					<div className='modal-container w-[80vw] md:w-[60vw] lg:w-[50vw] xl:w-[40vw] h-auto flex flex-col text-tan bg-lgreen border-4 border-solid border-dgreen rounded'>
+						<div className='p-2 rounded'>
+							<h3 className='raleway font-bold text-xl sm:text-3xl px-2'>You've done it!</h3>
+							<div>
+								<img
+									src={content.image}
+									alt={content.alt}
+									className='h-56 float-right rounded nature-img m-2'
+								/>
+								<div>
+									<p className='raleway font-semibold text-sm sm:text-base p-2 pl-4'>
+										You've made it to the final image! At this point that array of pictures has a
+										length of zero...it's the only way you'd see this content.
+										<span className='font-bold'> IF</span> you were to close the modal now and click
+										the button in the NavBar again something new will happen...just saying.
+										<br />
+										<br />
+										Clicking on the GitHub link below will take you to the repo for this project
+										(specifically the code for this NatureModal component). Of course, you can click
+										on the tent to close the modal and keep exploring elsewhere.
+									</p>
+								</div>
+							</div>
+							<div className='flex flex-row justify-around items-center p-3 h-[116px]'>
+								<button
+									className='modal-btn-style flex justify-center items-center p-2'
+									onClick={handleReset}
+								>
+									<GiCampingTent className='h-[50px] w-[50px]' />
+								</button>
+								<a
+									href='https://github.com/brett-ranieri/web-port-react/blob/main/src/components/NatureModal.js'
+									className='m-6 hover:scale-105 ease-in-out duration-300'
+									target='_blank'
+									rel='noreferrer'
+								>
+									<FaGithubSquare className='h-[70px] w-[70px] hover:text-dgreen' />
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			) : backAgain ? (
+				<div
+					className='nature-modal fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex justify-center items-center'
+					id='wrapper'
+					onClick={handleClose}
+				>
+					<div className='modal-container w-[80vw] md:w-[60vw] lg:w-[50vw] xl:w-[40vw] h-auto flex flex-col text-tan bg-lgreen border-4 border-solid border-dgreen rounded'>
+						<div className='p-2 rounded'>
+							<h3 className='raleway font-bold text-xl sm:text-3xl px-2'>
+								WOAH, didn't see you there!
+							</h3>
+							<div>
+								<img
+									src={content.image}
+									alt={content.alt}
+									className='h-56 float-left rounded nature-img ml-2 mr-4 mt-4'
+								/>
+								<div className='raleway font-semibold text-sm sm:text-base p-2 pl-8'>
+									<p>
+										Snuck right up on us...we didn't expect you back. Feel free to take another
+										hike, but the pictures are all the same.
+										<br />
+										<br />
+										<span className='italic'>
+											*SPOILER ALERT*
+											<br />
+											That array of pictures has been re-populated and will appear in a new order.
+											Ta-da!
+										</span>
+										<br />
+										<br />
+										Maybe you want to spend some time checking out my{" "}
+										<Link
+											className='hover:text-dgreen font-bold underline'
+											to='/projects'
+											onClick={onClose}
+										>
+											projects?
+										</Link>
+										<br />
+										The{" "}
+										<Link
+											className='hover:text-dgreen font-bold underline'
+											to='/picture_gallery'
+											onClick={onClose}
+										>
+											Gallery
+										</Link>{" "}
+										also has some more nature pictures.
+									</p>
+								</div>
+							</div>
+
+							<div className='flex flex-row justify-around p-3'>
+								<button
+									className='modal-btn-style flex justify-center items-center p-2'
+									onClick={onClose}
+								>
+									<GiCampingTent className='h-[50px] w-[50px]' />
+								</button>
+								<button
+									className='modal-btn-style flex justify-center items-center p-2'
+									onClick={getPicture}
 								>
 									<GiFootsteps className='h-[50px] w-[50px]' />
 								</button>

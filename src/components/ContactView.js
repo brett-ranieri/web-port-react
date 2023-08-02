@@ -17,9 +17,7 @@ const ContactView = () => {
 	return (
 		<div className='contact main-view-comp'>
 			<div className=' flex flex-col justify-center items-center pt-8'>
-				<h1 className='marker text-dgreen drop-shadow-light text-5xl sm:text-6xl md:text-7xl'>
-					Reach Out
-				</h1>
+				<h1 className='marker text-dgreen text-5xl sm:text-6xl md:text-7xl'>Reach Out</h1>
 				<p className='raleway text-dgreen text-base font-semibold px-8 py-3'>
 					I look forward to hearing from you after you have had the time to review my portfolio
 					page/projects.

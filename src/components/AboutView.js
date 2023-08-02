@@ -44,7 +44,7 @@ const AboutView = () => {
 					</p>
 				</div>
 
-				<div className='about-btn-loc'>
+				<div className='absolute z-102 bottom-14 right-[150px]'>
 					<Link
 						className='primary-btn py-2 px-4 invisible md:visible hover:scale-105 flex flex-row justify-center items-center gap-2'
 						to='/picture_gallery'

@@ -62,7 +62,7 @@ export const images = [
 	{
 		id: 13,
 		image: "./img/gallery/img13.jpg",
-		blurb: "Another Thursday playing Broadway Show League softball",
+		blurb: "Miss spending Thursdays playing Broadway Show League softball",
 	},
 	{
 		id: 14,
@@ -161,12 +161,17 @@ export const natureImages = [
 	},
 ];
 
-export const firstClickImage = { image: "./img/nature_modal/img1.jpg" };
+export const firstClickImage = {
+	image: "./img/nature_modal/img1.jpg",
+	alt: "Feet up in the tent",
+};
 
 export const endImage = {
 	image: "./img/nature_modal/img7.jpg",
-	blurb:
-		"We're back at the campground now and it looks like someone moved in while we were gone. Are those some elk out there?",
+	alt: "Allison standing on a tree bridge",
 };
 
-export const againImage = { image: "./img/nature_modal/img8.jpg" };
+export const againImage = {
+	image: "./img/nature_modal/img8.jpg",
+	alt: "Allison and I surprised",
+};
