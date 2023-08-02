@@ -53,9 +53,7 @@ const ProjectView = ({ onOpen, modControl }) => {
 				</Link>
 			</div>
 			<div className='bg-dgreen'>
-				<h1 className='marker text-tan drop-shadow-light text-3xl sm:text-5xl md:text-6xl p-3'>
-					Current Project:
-				</h1>
+				<h1 className='marker text-tan text-3xl sm:text-5xl md:text-6xl p-3'>Current Project:</h1>
 				<p className='px-4 pb-6 ml-6 raleway font-medium text-tan'>
 					I am learning Python as I work through the final module of my bootcamp offered by
 					<a
@@ -67,7 +65,7 @@ const ProjectView = ({ onOpen, modControl }) => {
 				</p>
 			</div>
 			<div className='bg-tan'>
-				<h1 className='marker text-dgreen drop-shadow-light text-2xl sm:text-3xl md:text-6xl p-3'>
+				<h1 className='marker text-dgreen text-2xl sm:text-3xl md:text-6xl p-3'>
 					Familiar Languages/Technologies:
 				</h1>
 				<ul className='pb-3 mx-6 raleway font-semibold text-dgreen flex flex-row flex-wrap'>
