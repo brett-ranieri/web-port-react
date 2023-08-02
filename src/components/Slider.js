@@ -47,7 +47,7 @@ const Slider = ({ sliderType, sliderMove, onOpen, project, number, modControl, c
 			<>
 				<div className='relative flex items-center'>
 					<MdChevronLeft
-						className='bg-lgreen text-tan h-[100px] opacity-50 cursor-pointer hover:opacity-100'
+						className='bg-lgreen text-tan h-48 opacity-50 cursor-pointer hover:opacity-100'
 						onClick={slideLeft}
 						size={40}
 					/>
@@ -66,7 +66,7 @@ const Slider = ({ sliderType, sliderMove, onOpen, project, number, modControl, c
 						))}
 					</div>
 					<MdChevronRight
-						className='bg-lgreen text-tan h-[100px] opacity-50 cursor-pointer hover:opacity-100'
+						className='bg-lgreen text-tan h-48 opacity-50 cursor-pointer hover:opacity-100'
 						onClick={slideRight}
 						size={40}
 					/>
