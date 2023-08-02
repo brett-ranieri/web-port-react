@@ -203,27 +203,6 @@ font-family: 'Raleway', sans-serif;
 	background-color: #2f341a;
 }
 
-/*/////////////// BUTTON STYLING /////////////////*/
-
-.about-btn-loc {
-	position: absolute;
-	bottom: 50px;
-	right: 150px;
-	z-index: 102;
-}
-.sm-about-btn-loc {
-	position: absolute;
-	bottom: 50px;
-	right: 150px;
-	z-index: 102;
-}
-
-.scroll-btn-position {
-	position: fixed;
-	bottom: 15px;
-	right: 20px;
-}
-
 .scroll-btn-style {
 	height: 50px;
 	width: 50px;
@@ -241,30 +220,6 @@ font-family: 'Raleway', sans-serif;
 	background-color: #2f341a;
 	color: #fece7a;
 	box-shadow: 5px 5px 8px #2f341a;
-}
-
-.link-btn {
-	display: block;
-	width: auto;
-	padding-left: 15px;
-	padding-right: 15px;
-	height: 40px;
-	line-height: 35px;
-	font-size: 18px;
-	letter-spacing: 1px;
-	color: #fff;
-	background: #2f341a;
-	border: 2px solid #fff;
-	border-radius: 10px;
-	text-align: center;
-	position: relative;
-	transition: all 0.35s;
-}
-
-.link-btn:hover {
-	border: 3px solid #9fb83d;
-	color: #9fb83d;
-	box-shadow: -5px 5px 8px #2f341a;
 }
 
 .modal-btn-style,
@@ -331,25 +286,6 @@ font-family: 'Raleway', sans-serif;
 .nature-img {
 	box-shadow: 5px 5px 8px #2f341a;
 	border: 1px solid #2f341a;
-}
-
-.first-click-img {
-	height: 14em;
-	float: left;
-}
-
-.last-click-img {
-	height: 14em;
-	float: right;
-}
-
-.repeat-img {
-	height: 14em;
-	float: left;
-}
-
-.float-container {
-	height: auto;
 }
 
 .wedding-img {

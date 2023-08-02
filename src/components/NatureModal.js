@@ -66,11 +66,11 @@ const NatureModal = ({ isVisible, onClose }) => {
 							<h3 className='raleway font-bold text-xl sm:text-3xl px-2'>
 								Looking for some nature?
 							</h3>
-							<div className='float-container'>
+							<div>
 								<img
 									src={content.image}
 									alt={content.alt}
-									className='first-click-img rounded nature-img ml-2 mr-4 mt-4'
+									className='h-56 float-left rounded nature-img ml-2 mr-4 mt-4'
 								/>
 
 								<div className='raleway font-semibold text-sm sm:text-base p-2 m-1'>
@@ -117,7 +117,7 @@ const NatureModal = ({ isVisible, onClose }) => {
 								<img
 									src={content.image}
 									alt={content.alt}
-									className='last-click-img rounded nature-img m-2'
+									className='h-56 float-right rounded nature-img m-2'
 								/>
 								<div>
 									<p className='raleway font-semibold text-sm sm:text-base p-2 pl-4'>
@@ -167,7 +167,7 @@ const NatureModal = ({ isVisible, onClose }) => {
 								<img
 									src={content.image}
 									alt={content.alt}
-									className='repeat-img rounded nature-img ml-2 mr-4 mt-4'
+									className='h-56 float-left rounded nature-img ml-2 mr-4 mt-4'
 								/>
 								<div className='raleway font-semibold text-sm sm:text-base p-2 pl-8'>
 									<p>
