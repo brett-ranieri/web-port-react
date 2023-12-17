@@ -55,13 +55,8 @@ const ProjectView = ({ onOpen, modControl }) => {
 			<div className='bg-dgreen'>
 				<h1 className='marker text-tan text-3xl sm:text-5xl md:text-6xl p-3'>Current Project:</h1>
 				<p className='px-4 pb-6 ml-6 raleway font-medium text-tan'>
-					I am learning Python as I work through the final module of my bootcamp offered by
-					<a
-						href='https://careerfoundry.com/'
-						className='port-link px-1 underline'
-					>
-						CareerFoundry
-					</a>
+					I am writing an NFL Pick'ems app using React and Next.js with a SQL backend. All data is
+					pulled from an ESPN API. Stay Tuned!!
 				</p>
 			</div>
 			<div className='bg-tan'>
