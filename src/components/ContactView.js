@@ -75,7 +75,7 @@ const ContactView = () => {
 						<BsMedium className='h-[70px] w-[70px] hover:text-lgreen' />
 					</a>
 					<a
-						href='/web-port-react/branieri_developer_resume_2.9.pdf'
+						href='/web-port-react/branieri_developer_resume_3.0.pdf'
 						className='m-3 md:m-6 hover:scale-105 ease-in-out duration-300 flex flex-col justify-center'
 						target='_blank'
 						download
