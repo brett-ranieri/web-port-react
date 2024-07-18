@@ -8,7 +8,7 @@ export const data = [
 		website: "https://pickems-app.vercel.app/",
 		gitLink: "https://github.com/brett-ranieri/pickems-app",
 		description:
-			"React app that allows a user to pick the winner of upcoming NFL games. Once games are completed, app awards points to the user for every correct prediction.",
+			"React app that allows a user to pick the winner of upcoming NFL games. Once games are completed, app awards points to the user for every correct prediction. All data on games, and winners is pulled from an ESPN API",
 		shortDescription: "React app for picking winner of upcoming NFL games.",
 		type: "Personal Project",
 		special:

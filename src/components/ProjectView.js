@@ -55,8 +55,9 @@ const ProjectView = ({ onOpen, modControl }) => {
 			<div className='bg-dgreen'>
 				<h1 className='marker text-tan text-3xl sm:text-5xl md:text-6xl p-3'>Current Project:</h1>
 				<p className='px-4 pb-6 ml-6 raleway font-medium text-tan'>
-					I am writing an NFL Pick'ems app using React and Next.js with a SQL backend. All data is
-					pulled from an ESPN API. Stay Tuned!!
+					I am continuing to build features for my Pick'ems App. My current focus is on adding
+					calculations and displays to the ScoringView. Check out the link in the Projects section
+					above to learn more!
 				</p>
 			</div>
 			<div className='bg-tan'>
@@ -76,6 +77,7 @@ const ProjectView = ({ onOpen, modControl }) => {
 					<li className='p-3'>SASS</li>
 					<li className='p-3'>Angular</li>
 					<li className='p-3'>Python</li>
+					<li className='p-3'>Next.js</li>
 				</ul>
 			</div>
 		</div>
