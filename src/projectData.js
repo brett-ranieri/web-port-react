@@ -1,10 +1,30 @@
 export const data = [
 	{
+		name: "Pick'ems App",
+		languages: "JavaScript, SQL, HTML, CSS",
+		technologies: "React, Next.js, Postgres, Tailwind, Vercel",
+		stack: "",
+		number: 1,
+		website: "https://pickems-app.vercel.app/",
+		gitLink: "https://github.com/brett-ranieri/pickems-app",
+		description:
+			"React app that allows a user to pick the winner of upcoming NFL games. Once games are completed, app awards points to the user for every correct prediction. All data on games, and winners is pulled from an ESPN API",
+		shortDescription: "React app for picking winner of upcoming NFL games.",
+		type: "Personal Project",
+		special:
+			"To see functionality (and make picks) you can select 'Future_Employer' as your User in the dropdown",
+		images: [
+			{ source: "./img/project/pickems_1.png", alt: "screenshot of Pick'ems landing page" },
+			{ source: "./img/project/pickems_2.png", alt: "screenshot of picks page" },
+			{ source: "./img/project/pickems_3.png", alt: "screenshot of scores page" },
+		],
+	},
+	{
 		name: "myMovie React App",
 		languages: "JavaScript, HTML, CSS",
 		technologies: "React, Node, Express, Parcel, React Bootstrap",
 		stack: "MERN",
-		number: 1,
+		number: 2,
 		website: "https://mymovieapp-brettranieri.netlify.app/",
 		gitLink: "https://github.com/brett-ranieri/myMovie-client",
 		description:
@@ -26,7 +46,7 @@ export const data = [
 		languages: "Python, HTML, CSS",
 		technologies: "Django, virtualenvwrapper, pandas, psycopg2, matplotlib",
 		stack: "",
-		number: 2,
+		number: 3,
 		website: "",
 		gitLink: "https://github.com/brett-ranieri/recipe-app",
 		description:
@@ -47,7 +67,7 @@ export const data = [
 		languages: "JavaScript, HTML, CSS",
 		technologies: "React, Material Tailwind",
 		stack: "",
-		number: 7,
+		number: 8,
 		website: "",
 		gitLink: "https://github.com/brett-ranieri/web-port-react",
 		description:
@@ -67,7 +87,7 @@ export const data = [
 		languages: "JavaScript",
 		technologies: "React, Node, React Bootstrap, Recharts, SASS, Lighthouse",
 		stack: "",
-		number: 4,
+		number: 5,
 		website: "https://brett-ranieri.github.io/meet/",
 		gitLink: "https://github.com/brett-ranieri/meet",
 		description:
@@ -90,7 +110,7 @@ export const data = [
 		languages: "JavaScript, HTML, CSS",
 		technologies: "React, React Native, Expo, Firebase",
 		stack: "",
-		number: 5,
+		number: 6,
 		website: "",
 		gitLink: "https://github.com/brett-ranieri/hello-world",
 		description:
@@ -112,7 +132,7 @@ export const data = [
 		languages: "JavaScript",
 		technologies: "MongoDB, Node.js, Express, Mongoose, MongoDB Atlas, Vercel, JSDoc",
 		stack: "MERN",
-		number: 8,
+		number: 9,
 		website: "",
 		gitLink: "https://github.com/brett-ranieri/movie-api",
 		description:
@@ -131,7 +151,7 @@ export const data = [
 		languages: "TypeScript, HTML, CSS",
 		technologies: "Angular, Angular Material, TypeDoc",
 		stack: "",
-		number: 6,
+		number: 7,
 		website: "https://brett-ranieri.github.io/myMovie-Angular-client/",
 		gitLink: "https://github.com/brett-ranieri/myMovie-Angular-client",
 		description:
@@ -151,7 +171,7 @@ export const data = [
 		languages: "JavaScript, HTML, CSS",
 		technologies: "Bootstrap",
 		stack: "",
-		number: 3,
+		number: 4,
 		website: "https://brett-ranieri.github.io/first-js-app/",
 		gitLink: "https://github.com/brett-ranieri/first-js-app",
 		description:
